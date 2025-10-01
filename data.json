@@ -1,0 +1,118 @@
+{
+  "info": {
+    "titulo": "AlegreMente 2025",
+    "subtitulo": "Un viaje por el cuerpo, la memoria y la alegría"
+  },
+  "escenas": [
+    {
+      "id": "escena-1",
+      "titulo": "El sol no canta / Mi cuerpo es solo mío",
+      "sentido": "Sofía inicia el camino para recuperar su autonomía corporal y el derecho a decir ‘esto no está bien’.",
+      "imagen": "escena1.jpg",
+      "musica": "Mi cuerpo es solo mío",
+      "ubicacionMusica": "Inicio (Orquesta + coro)",
+      "centros": ["Teatro: Lucero", "Danza: Padre Misericordioso A", "Plástico: Colegio"],
+      "participantes": [
+        {
+          "nombre": "Sofía",
+          "rol": "Protagonista",
+          "foto": "sofia.jpg",
+          "bio": "La viajera de nuestra historia.",
+          "tags": ["Teatro"]
+        },
+        {
+          "nombre": "Figura Sombría",
+          "rol": "Antagonista simbólico",
+          "foto": "placeholder.jpg",
+          "bio": "Representa el no-consentimiento.",
+          "tags": ["Teatro"]
+        },
+        {
+          "nombre": "Coro infantil",
+          "rol": "Coro",
+          "foto": "placeholder.jpg",
+          "bio": "Voces que acompañan la escena.",
+          "tags": ["Coro"]
+        }
+      ]
+    },
+    {
+      "id": "escena-2",
+      "titulo": "Buenos Aires del alma / Mango Tango",
+      "sentido": "Llega el aire, el ritmo y la risa que devuelven la alegría vital.",
+      "imagen": "escena2.jpg",
+      "musica": "Mango Tango",
+      "ubicacionMusica": "Mitad (Orquesta)",
+      "centros": ["Teatro: Lucero", "Danza: Arroyo", "Plástico: Jerusalén"],
+      "participantes": [
+        {
+          "nombre": "Bailarines Tango Joven",
+          "rol": "Danza",
+          "foto": "placeholder.jpg",
+          "bio": "Fusión lúdica de tango con contemporáneo.",
+          "tags": ["Danza"]
+        }
+      ]
+    },
+    {
+      "id": "escena-3",
+      "titulo": "Carnaval / Pueblo Tambor / Siyahamba",
+      "sentido": "Sofía se reconoce en comunidad: donde hay tambor, hay camino.",
+      "imagen": "escena3.jpg",
+      "musica": "Siyahamba / Pueblo Tambor",
+      "ubicacionMusica": "Final (Orquesta + tambores)",
+      "centros": ["Teatro: Arroyo – Betania", "Danza: Betania", "Plástico: Colegio"],
+      "participantes": []
+    },
+    {
+      "id": "escena-4",
+      "titulo": "Ciudad Rima / Happy Blues",
+      "sentido": "La tristeza se canta y se baila; la historia se dice con dignidad.",
+      "imagen": "escena4.jpg",
+      "musica": "Happy Blues",
+      "ubicacionMusica": "Mitad (Orquesta)",
+      "centros": ["Teatro: Arroyo", "Danza: Jerusalén", "Plástico: Lucero"],
+      "participantes": []
+    },
+    {
+      "id": "escena-5",
+      "titulo": "Montaña Trenza / Vivo en un país",
+      "sentido": "Conecta con raíces, memoria y pertenencia.",
+      "imagen": "escena5.jpg",
+      "musica": "Vivo en un país",
+      "ubicacionMusica": "Final (Orquesta + coro)",
+      "centros": ["Teatro: Jerusalén", "Danza: Santo Domingo", "Plástico: Santo Domingo"],
+      "participantes": []
+    },
+    {
+      "id": "escena-6",
+      "titulo": "Tierra Imaginaria",
+      "sentido": "Imaginar es libertad y creación.",
+      "imagen": "escena6.jpg",
+      "musica": "Tierra Imaginaria",
+      "ubicacionMusica": "Inicio (Orquesta)",
+      "centros": ["Teatro: Jerusalén", "Danza: Colegio", "Plástico: Arroyo"],
+      "participantes": []
+    },
+    {
+      "id": "escena-7",
+      "titulo": "Isla Alegría / Merengue del primer dedo",
+      "sentido": "El cuerpo merece gozo; el ritmo nace de un gesto mínimo.",
+      "imagen": "escena7.jpg",
+      "musica": "Merengue del primer dedo",
+      "ubicacionMusica": "Inicio (Orquesta + percusión caribeña)",
+      "centros": ["Teatro: Padre Misericordioso B", "Danza: Padre Misericordioso B", "Plástico: Padre Misericordioso B"],
+      "participantes": []
+    },
+    {
+      "id": "escena-8",
+      "titulo": "Colombia Tierra Querida",
+      "sentido": "Apoteosis: celebración de la vida, la voz y la tierra.",
+      "imagen": "escena8.jpg",
+      "musica": "Colombia Tierra Querida",
+      "ubicacionMusica": "Mitad → final (Orquesta)",
+      "centros": ["Teatro: Padre Misericordioso B", "Danza: Santo Domingo", "Plástico: Lucero"],
+      "participantes": []
+    }
+  ]
+}

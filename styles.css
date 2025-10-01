@@ -1,0 +1,258 @@
+/* ===========================
+   Musicala · Programa de mano
+   styles.css
+   Basado en Manual de Identidad Visual
+   =========================== */
+
+/* ---------- Variables de marca ---------- */
+:root{
+  /* Primarios (Manual) */
+  --azul-bach:#220A63;            /* texto logo (sobre blanco) */
+  --azul-mozart:#0C41C4;          /* primario UI */
+  --violeta-beethoven:#680DBF;    /* acento */
+  --violeta-vivaldi:#5729FF;      /* acento 2 */
+  --magenta-brahms:#CE0071;       /* acento 3 */
+
+  /* Secundarios */
+  --azul-wagner:#0C0A1E;
+  --azul-chopin:#121223;
+  --gris-tchaikovsky:#232323;
+  --gris-haydn:#E6E8E8;
+  --blanco-debussy:#F9F9F9;
+
+  /* UI */
+  --gris-900:#0e1525;
+  --gris-700:#1b2437;
+  --gris-500:#334155;
+  --gris-300:#94a3b8;
+  --gris-200:#cbd5e1;
+  --gris-100:#e2e8f0;
+
+  --blanco:#ffffff;
+
+  --bg: radial-gradient(1200px 800px at 0% 0%, rgba(12,65,196,.10), transparent 60%),
+        radial-gradient(1000px 800px at 100% 0%, rgba(104,13,191,.10), transparent 60%),
+        linear-gradient(180deg, #0a0f1f, #0b1228);
+
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* ---------- Reset básico ---------- */
+*{ box-sizing:border-box }
+html,body{ height:100% }
+body{
+  margin:0;
+  font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  color:var(--blanco);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img{ max-width:100%; display:block }
+
+/* Enlaces */
+a{ color:#b2c7ff; text-decoration:none }
+a:hover{ text-decoration:underline }
+
+/* ---------- Layout ---------- */
+.app{
+  display:grid;
+  grid-template-columns: 300px 1fr;
+  min-height:100vh;
+}
+.sidebar{
+  position:sticky; top:0; align-self:start;
+  height:100vh; overflow:auto;
+  padding:20px;
+  background: linear-gradient(180deg, rgba(12,65,196,.16), rgba(12,65,196,.04));
+  border-right:1px solid rgba(255,255,255,.06);
+  backdrop-filter: blur(6px);
+}
+.main{ padding:24px; max-width:1200px; width:100% }
+
+/* ---------- Brand ---------- */
+.brand{ display:flex; align-items:center; gap:12px; margin-bottom:16px }
+.brand img{
+  width:40px; height:40px; border-radius:var(--radius-sm);
+  box-shadow:0 4px 16px rgba(12,65,196,.35)
+}
+.brand h1{ margin:0; font-weight:800; font-size:18px; letter-spacing:.3px }
+.brand small{ color:var(--gris-300) }
+
+/* ---------- Buscador ---------- */
+.search{ position:relative; margin:12px 0 16px }
+.search input{
+  width:100%; padding:12px 14px 12px 40px;
+  border-radius:var(--radius-md);
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.06);
+  color:var(--blanco);
+  outline:none;
+}
+.search input::placeholder{ color:rgba(255,255,255,.65) }
+.search svg{ position:absolute; left:12px; top:50%; transform:translateY(-50%); opacity:.7 }
+
+/* ---------- Menú de escenas ---------- */
+.menu{ display:flex; flex-direction:column; gap:8px }
+.menu button{
+  appearance:none; cursor:pointer;
+  border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  color:var(--blanco);
+  padding:12px; text-align:left;
+  border-radius:var(--radius-md);
+  font-weight:600;
+  transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.menu button:hover{ transform:translateY(-2px); border-color:rgba(255,255,255,.16) }
+.menu button.active{
+  background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven));
+  border-color:transparent;
+  box-shadow:0 6px 22px rgba(12,65,196,.25), inset 0 0 0 1px rgba(255,255,255,.12)
+}
+.badge{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:4px 10px; border-radius:999px;
+  font-size:12px; font-weight:700;
+  background:rgba(12,65,196,.18);
+  border:1px solid rgba(255,255,255,.12)
+}
+
+/* ---------- Header ---------- */
+.header{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px }
+.title{ display:flex; align-items:center; gap:14px }
+.title .dot{
+  width:10px; height:10px; border-radius:50%;
+  background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven));
+  box-shadow:0 0 0 6px rgba(12,65,196,.18)
+}
+h2{ margin:0; font-size:28px; letter-spacing:.2px }
+.subtitle{ margin:6px 0 0; color:var(--gris-200) }
+
+/* ---------- Cards ---------- */
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-lg);
+}
+.card .content{ padding:18px }
+
+/* ---------- Grids ---------- */
+.grid{ display:grid; gap:16px }
+.grid.cols-2{ grid-template-columns: repeat(2, minmax(0,1fr)) }
+.grid.cols-3{ grid-template-columns: repeat(3, minmax(0,1fr)) }
+.grid.cols-4{ grid-template-columns: repeat(4, minmax(0,1fr)) }
+
+/* ---------- Personas (elenco) ---------- */
+.person{
+  display:flex; gap:12px; align-items:center;
+  padding:10px; border-radius:var(--radius-md);
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.03);
+  cursor:pointer;
+  transition:transform .12s ease, border-color .12s ease, background .12s ease;
+}
+.person:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+}
+.person img{
+  width:56px; height:56px; object-fit:cover;
+  border-radius:var(--radius-md);
+  border:1px solid rgba(255,255,255,.18)
+}
+.person b{ display:block }
+.role{ font-size:12px; color:var(--gris-200) }
+
+/* ---------- Chips ---------- */
+.chips{ display:flex; flex-wrap:wrap; gap:8px }
+.chip{
+  font-size:12px; padding:6px 10px; border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.04)
+}
+
+/* ---------- Listas ---------- */
+.bullets{ margin:0; padding-left:18px }
+.bullets li{ line-height:1.6 }
+
+/* ---------- Footer & utils ---------- */
+footer{ margin-top:28px; color:var(--gris-200); font-size:14px }
+.muted{ color:var(--gris-300) }
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); border:0
+}
+
+/* ---------- Dialog (modal) ---------- */
+dialog{
+  border:none; border-radius:18px; padding:0;
+  background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.92));
+  color:#0e1525;
+  max-width:680px; width:clamp(300px, 80vw, 680px);
+}
+dialog::backdrop{ background:rgba(0,0,0,.6) }
+.modal-header{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:14px 16px; border-bottom:1px solid #e2e8f0
+}
+.modal-body{ padding:16px }
+.btn{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 14px; border-radius:12px;
+  border:1px solid #e2e8f0; background:#fff; color:#0e1525;
+  cursor:pointer; font-weight:600;
+}
+.btn:hover{ background:#f8fafc }
+
+/* ---------- Focus (accesibilidad) ---------- */
+:focus-visible{
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+.menu button:focus-visible,
+.person:focus-visible,
+.btn:focus-visible,
+.search input:focus-visible{
+  outline: 2px solid var(--magenta-brahms);
+  box-shadow: 0 0 0 4px rgba(206,0,113,.25);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 1024px){
+  .app{ grid-template-columns: 1fr }
+  .sidebar{ position:relative; height:auto }
+  .grid.cols-4{ grid-template-columns: repeat(2, minmax(0,1fr)) }
+}
+@media (max-width: 640px){
+  .grid.cols-3{ grid-template-columns: repeat(2, minmax(0,1fr)) }
+  .grid.cols-2{ grid-template-columns: 1fr }
+  h2{ font-size:22px }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; animation:none !important }
+}
+
+/* ---------- Print (PDF/impresión) ---------- */
+@media print{
+  body{ background:#fff; color:#111 }
+  .sidebar{ display:none }
+  .app{ display:block }
+  .main{ padding:0 }
+  .card{
+    border:1px solid #d1d5db;
+    box-shadow:none;
+    background:#fff;
+    break-inside: avoid;
+    margin-bottom:12px;
+  }
+  a{ color:#111; text-decoration: underline }
+}
