@@ -1,201 +1,174 @@
 /* ===========================
    Musicala · Programa de mano
-   styles.css
-   Basado en Manual de Identidad Visual
+   styles.css (mobile-first)
    =========================== */
 
-/* ---------- Variables de marca ---------- */
+/* ---------- Marca / tema oscuro ---------- */
 :root{
-  /* Primarios (Manual) */
-  --azul-bach:#220A63;            /* texto logo (sobre blanco) */
-  --azul-mozart:#0C41C4;          /* primario UI */
-  --violeta-beethoven:#680DBF;    /* acento */
-  --violeta-vivaldi:#5729FF;      /* acento 2 */
-  --magenta-brahms:#CE0071;       /* acento 3 */
+  --azul-mozart:#0C41C4;
+  --violeta-beethoven:#680DBF;
+  --magenta-brahms:#CE0071;
 
-  /* Secundarios */
-  --azul-wagner:#0C0A1E;
-  --azul-chopin:#121223;
-  --gris-tchaikovsky:#232323;
-  --gris-haydn:#E6E8E8;
-  --blanco-debussy:#F9F9F9;
+  --bg-1:#0a0f1f;
+  --bg-2:#0b1228;
+  --card: rgba(255,255,255,.06);
+  --card-b: rgba(255,255,255,.10);
 
-  /* UI */
-  --gris-900:#0e1525;
-  --gris-700:#1b2437;
-  --gris-500:#334155;
-  --gris-300:#94a3b8;
-  --gris-200:#cbd5e1;
-  --gris-100:#e2e8f0;
+  --text:#fff;
+  --muted:#b6c0d4;
 
-  --blanco:#ffffff;
-
-  --bg: radial-gradient(1200px 800px at 0% 0%, rgba(12,65,196,.10), transparent 60%),
-        radial-gradient(1000px 800px at 100% 0%, rgba(104,13,191,.10), transparent 60%),
-        linear-gradient(180deg, #0a0f1f, #0b1228);
-
-  --radius-sm: 10px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --shadow-lg: 0 10px 30px rgba(0,0,0,.25);
+  /* Tipografía base (controlable) */
+  --fz: 17px;          /* tamaño base mobile para personas mayores */
+  --lh: 1.55;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
 }
 
-/* ---------- Reset básico ---------- */
-*{ box-sizing:border-box }
 html,body{ height:100% }
 body{
   margin:0;
   font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-  color:var(--blanco);
-  background: var(--bg);
+  font-size: var(--fz);
+  line-height: var(--lh);
+  color: var(--text);
+  background:
+    radial-gradient(1000px 800px at 100% 0%, rgba(104,13,191,.10), transparent 60%),
+    radial-gradient(1200px 800px at 0% 0%, rgba(12,65,196,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-2));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-img{ max-width:100%; display:block }
 
-/* Enlaces */
+img{ display:block; max-width:100% }
 a{ color:#b2c7ff; text-decoration:none }
 a:hover{ text-decoration:underline }
-
-/* ---------- Layout ---------- */
-.app{
-  display:grid;
-  grid-template-columns: 300px 1fr;
-  min-height:100vh;
-}
-.sidebar{
-  position:sticky; top:0; align-self:start;
-  height:100vh; overflow:auto;
-  padding:20px;
-  background: linear-gradient(180deg, rgba(12,65,196,.16), rgba(12,65,196,.04));
-  border-right:1px solid rgba(255,255,255,.06);
-  backdrop-filter: blur(6px);
-}
-.main{ padding:24px; max-width:1200px; width:100% }
-
-/* ---------- Brand ---------- */
-.brand{ display:flex; align-items:center; gap:12px; margin-bottom:16px }
-.brand img{
-  width:40px; height:40px; border-radius:var(--radius-sm);
-  box-shadow:0 4px 16px rgba(12,65,196,.35)
-}
-.brand h1{ margin:0; font-weight:800; font-size:18px; letter-spacing:.3px }
-.brand small{ color:var(--gris-300) }
-
-/* ---------- Buscador ---------- */
-.search{ position:relative; margin:12px 0 16px }
-.search input{
-  width:100%; padding:12px 14px 12px 40px;
-  border-radius:var(--radius-md);
-  border:1px solid rgba(255,255,255,.08);
-  background:rgba(255,255,255,.06);
-  color:var(--blanco);
-  outline:none;
-}
-.search input::placeholder{ color:rgba(255,255,255,.65) }
-.search svg{ position:absolute; left:12px; top:50%; transform:translateY(-50%); opacity:.7 }
-
-/* ---------- Menú de escenas ---------- */
-.menu{ display:flex; flex-direction:column; gap:8px }
-.menu button{
-  appearance:none; cursor:pointer;
-  border:1px solid rgba(255,255,255,.08);
-  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-  color:var(--blanco);
-  padding:12px; text-align:left;
-  border-radius:var(--radius-md);
-  font-weight:600;
-  transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease, background .15s ease;
-}
-.menu button:hover{ transform:translateY(-2px); border-color:rgba(255,255,255,.16) }
-.menu button.active{
-  background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven));
-  border-color:transparent;
-  box-shadow:0 6px 22px rgba(12,65,196,.25), inset 0 0 0 1px rgba(255,255,255,.12)
-}
-.badge{
-  display:inline-flex; align-items:center; gap:6px;
-  padding:4px 10px; border-radius:999px;
-  font-size:12px; font-weight:700;
-  background:rgba(12,65,196,.18);
-  border:1px solid rgba(255,255,255,.12)
-}
-
-/* ---------- Header ---------- */
-.header{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px }
-.title{ display:flex; align-items:center; gap:14px }
-.title .dot{
-  width:10px; height:10px; border-radius:50%;
-  background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven));
-  box-shadow:0 0 0 6px rgba(12,65,196,.18)
-}
-h2{ margin:0; font-size:28px; letter-spacing:.2px }
-.subtitle{ margin:6px 0 0; color:var(--gris-200) }
-
-/* ---------- Cards ---------- */
-.card{
-  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  box-shadow:var(--shadow-lg);
-}
-.card .content{ padding:18px }
-
-/* ---------- Grids ---------- */
-.grid{ display:grid; gap:16px }
-.grid.cols-2{ grid-template-columns: repeat(2, minmax(0,1fr)) }
-.grid.cols-3{ grid-template-columns: repeat(3, minmax(0,1fr)) }
-.grid.cols-4{ grid-template-columns: repeat(4, minmax(0,1fr)) }
-
-/* ---------- Personas (elenco) ---------- */
-.person{
-  display:flex; gap:12px; align-items:center;
-  padding:10px; border-radius:var(--radius-md);
-  border:1px solid rgba(255,255,255,.08);
-  background:rgba(255,255,255,.03);
-  cursor:pointer;
-  transition:transform .12s ease, border-color .12s ease, background .12s ease;
-}
-.person:hover{
-  transform: translateY(-1px);
-  border-color: rgba(255,255,255,.18);
-  background: rgba(255,255,255,.06);
-}
-.person img{
-  width:56px; height:56px; object-fit:cover;
-  border-radius:var(--radius-md);
-  border:1px solid rgba(255,255,255,.18)
-}
-.person b{ display:block }
-.role{ font-size:12px; color:var(--gris-200) }
-
-/* ---------- Chips ---------- */
-.chips{ display:flex; flex-wrap:wrap; gap:8px }
-.chip{
-  font-size:12px; padding:6px 10px; border-radius:999px;
-  border:1px solid rgba(255,255,255,.10);
-  background:rgba(255,255,255,.04)
-}
-
-/* ---------- Listas ---------- */
-.bullets{ margin:0; padding-left:18px }
-.bullets li{ line-height:1.6 }
-
-/* ---------- Footer & utils ---------- */
-footer{ margin-top:28px; color:var(--gris-200); font-size:14px }
-.muted{ color:var(--gris-300) }
 .sr-only{
   position:absolute; width:1px; height:1px; padding:0; margin:-1px;
-  overflow:hidden; clip:rect(0,0,0,0); border:0
+  overflow:hidden; clip:rect(0,0,0,0); border:0;
 }
 
-/* ---------- Dialog (modal) ---------- */
+/* ---------- Layout ---------- */
+.app{ display:block }
+.wrap{ padding:12px 16px }
+.topbar{
+  position:sticky; top:0; z-index:10;
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:10px 12px;
+  background:linear-gradient(180deg, rgba(12,65,196,.16), rgba(12,65,196,.04));
+  border-bottom:1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(6px);
+}
+.homebtn{
+  font-size:20px; line-height:1;
+  background:transparent; color:#fff; border:none; padding:8px;
+}
+.brand{ display:flex; align-items:center; gap:10px }
+.brand img{ width:36px; height:36px; border-radius:10px; box-shadow:0 4px 16px rgba(12,65,196,.35) }
+.brand-text strong{ display:block; font-size:18px; letter-spacing:.2px }
+.brand-text small{ color:var(--muted) }
+
+.font-ctrl{ display:flex; gap:6px }
+.btn-fz{
+  min-width:44px; padding:8px 10px; border-radius:12px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.08); color:#fff; font-weight:700;
+}
+
+.search{ position:sticky; top:62px; z-index:9; background:transparent }
+.search input{
+  width:100%; padding:14px 14px 14px 44px;
+  font-size:1.05rem;
+  border-radius:14px; border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.06); color:#fff; outline:none;
+}
+.search svg{ position:absolute; left:26px; top:50%; transform:translate(-50%,-50%); opacity:.7 }
+.search input::placeholder{ color:rgba(255,255,255,.7) }
+
+/* ---------- Menú de escenas ---------- */
+.menu{ display:flex; flex-direction:column; gap:10px; padding-top:8px }
+.menu button{
+  appearance:none; cursor:pointer; text-align:left;
+  display:block; width:100%;
+  min-height:52px; /* dedo cómodo */
+  padding:12px;
+  border-radius:14px; border:1px solid rgba(255,255,255,.12);
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  color:#fff; font-weight:700;
+}
+.menu button .row{ display:flex; justify-content:space-between; align-items:center; gap:8px }
+.badge{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 10px; border-radius:999px; font-size:.85rem; font-weight:800;
+  background:rgba(12,65,196,.18); border:1px solid rgba(255,255,255,.12);
+}
+.menu button.active{
+  background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven));
+  border-color:transparent; box-shadow:0 6px 22px rgba(12,65,196,.25), inset 0 0 0 1px rgba(255,255,255,.12);
+}
+
+/* ---------- Cabecera escena ---------- */
+.scene-head{
+  position:sticky; top:120px; /* debajo del buscador */
+  z-index:5; padding:10px 0 6px; margin-bottom:8px;
+  background:linear-gradient(180deg, rgba(11,18,40,.8), rgba(11,18,40,.4));
+  backdrop-filter: blur(3px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.title{ display:flex; align-items:center; gap:10px }
+.dot{ width:10px; height:10px; border-radius:50%; background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven)); box-shadow:0 0 0 6px rgba(12,65,196,.18) }
+h2{ margin:0; font-size:1.35rem }
+.subtitle{ margin:4px 0 0; color:var(--muted); font-size:.98rem }
+.chips{ display:flex; flex-wrap:wrap; gap:8px; padding-top:6px }
+.chip{
+  font-size:.9rem; padding:6px 10px; border-radius:999px;
+  border:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.05);
+}
+
+/* ---------- Tarjetas ---------- */
+.card{
+  background: var(--card);
+  border:1px solid var(--card-b);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin:12px 0;
+}
+.card .content{ padding:14px }
+.h3{ margin:0 0 8px; font-size:1.15rem }
+.h4{ margin:0 0 6px; font-size:1.05rem }
+.lead{ color:#e2e8f0 }
+
+/* Imagen escena */
+.hero{ margin:0 0 10px; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,.1) }
+.hero img{ width:100%; height:220px; object-fit:cover }
+
+/* ---------- Elenco ---------- */
+.cast-grid{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px }
+.person{
+  display:flex; align-items:center; gap:10px;
+  padding:10px; border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.04); color:#fff; cursor:pointer;
+}
+.person img{
+  width:60px; height:60px; object-fit:cover; border-radius:12px;
+  border:1px solid rgba(255,255,255,.18)
+}
+.person b{ display:block; font-weight:900 }
+.role{ font-size:.9rem; color:#d5dbea }
+
+/* ---------- Lista / utilidades ---------- */
+.bullets{ margin:0; padding-left:20px }
+.bullets li{ margin:6px 0 }
+
+/* ---------- Footer ---------- */
+.foot{ text-align:center; padding-bottom:32px }
+.muted{ color:var(--muted) }
+
+/* ---------- Dialog ---------- */
 dialog{
   border:none; border-radius:18px; padding:0;
   background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.92));
-  color:#0e1525;
-  max-width:680px; width:clamp(300px, 80vw, 680px);
+  color:#0e1525; width:min(92vw, 680px);
 }
 dialog::backdrop{ background:rgba(0,0,0,.6) }
 .modal-header{
@@ -203,18 +176,16 @@ dialog::backdrop{ background:rgba(0,0,0,.6) }
   padding:14px 16px; border-bottom:1px solid #e2e8f0
 }
 .modal-body{ padding:16px }
+.modal-flex{ display:flex; gap:16px; align-items:flex-start }
+dialog img{ width:96px; height:96px; object-fit:cover; border-radius:16px; border:1px solid #e2e8f0 }
 .btn{
-  display:inline-flex; align-items:center; gap:8px;
-  padding:10px 14px; border-radius:12px;
-  border:1px solid #e2e8f0; background:#fff; color:#0e1525;
-  cursor:pointer; font-weight:600;
+  display:inline-flex; align-items:center; gap:8px; padding:10px 14px;
+  border-radius:12px; border:1px solid #e2e8f0; background:#fff; color:#0e1525; font-weight:700; cursor:pointer;
 }
-.btn:hover{ background:#f8fafc }
 
-/* ---------- Focus (accesibilidad) ---------- */
+/* ---------- Focus ---------- */
 :focus-visible{
-  outline: 3px solid #fff;
-  outline-offset: 2px;
+  outline: 3px solid #fff; outline-offset: 2px;
 }
 .menu button:focus-visible,
 .person:focus-visible,
@@ -224,35 +195,23 @@ dialog::backdrop{ background:rgba(0,0,0,.6) }
   box-shadow: 0 0 0 4px rgba(206,0,113,.25);
 }
 
-/* ---------- Responsivo ---------- */
-@media (max-width: 1024px){
-  .app{ grid-template-columns: 1fr }
-  .sidebar{ position:relative; height:auto }
-  .grid.cols-4{ grid-template-columns: repeat(2, minmax(0,1fr)) }
-}
-@media (max-width: 640px){
-  .grid.cols-3{ grid-template-columns: repeat(2, minmax(0,1fr)) }
-  .grid.cols-2{ grid-template-columns: 1fr }
-  h2{ font-size:22px }
+/* ---------- Responsivo (tableta / escritorio) ---------- */
+@media (min-width: 900px){
+  .app{ display:grid; grid-template-columns: 420px 1fr; gap:0 }
+  .wrap{ padding:16px 20px }
+  .search{ position:sticky; top:70px }
+  .scene-head{ top:130px }
+  .hero img{ height:260px }
+  .cast-grid{ grid-template-columns: repeat(3, minmax(0,1fr)) }
 }
 
-/* ---------- Reduced motion ---------- */
-@media (prefers-reduced-motion: reduce){
-  *{ transition:none !important; animation:none !important }
-}
-
-/* ---------- Print (PDF/impresión) ---------- */
+/* ---------- Impresión ---------- */
 @media print{
-  body{ background:#fff; color:#111 }
-  .sidebar{ display:none }
-  .app{ display:block }
-  .main{ padding:0 }
+  body{ background:#fff; color:#111; font-size:14px }
+  .topbar, .search, .menu, .foot{ display:none }
+  .wrap{ padding:0 }
   .card{
-    border:1px solid #d1d5db;
-    box-shadow:none;
-    background:#fff;
-    break-inside: avoid;
-    margin-bottom:12px;
+    border:1px solid #d1d5db; box-shadow:none; background:#fff; break-inside: avoid; margin-bottom:12px;
   }
   a{ color:#111; text-decoration: underline }
 }
