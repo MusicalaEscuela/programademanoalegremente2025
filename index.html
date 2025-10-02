@@ -2,50 +2,49 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Programa de mano · AlegreMente 2025</title>
   <meta name="description" content="Programa de mano digital del evento AlegreMente 2025: escenas, elenco, fotos y sinopsis." />
   <link rel="icon" href="logo.png" />
-
-  <!-- Fuentes institucionales -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Estilos externos -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
-    <!-- Sidebar -->
-    <aside class="sidebar">
+    <!-- Barra superior (mobile-first) -->
+    <header class="topbar">
+      <button class="homebtn" aria-label="Inicio" title="Inicio">🏠</button>
       <div class="brand">
-        <img src="logo.png" alt="Logo Musicala" />
-        <div>
-          <h1>AlegreMente 2025</h1>
-          <small>Programa de mano digital</small>
+        <img src="logo.png" alt="" />
+        <div class="brand-text">
+          <strong>AlegreMente 2025</strong>
+          <small>Programa de mano</small>
         </div>
       </div>
-
-      <div class="search">
-        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" 
-                stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
-        </svg>
-        <label for="q" class="sr-only">Buscar</label>
-        <input id="q" type="search" placeholder="Busca escena, elenco, rol…" autocomplete="off" />
+      <div class="font-ctrl" aria-label="Tamaño de letra">
+        <button id="fzDown" class="btn-fz" aria-label="Reducir texto">Aa−</button>
+        <button id="fzUp" class="btn-fz" aria-label="Aumentar texto">Aa+</button>
       </div>
+    </header>
 
-      <nav class="menu" id="sceneMenu" aria-label="Menú de escenas"></nav>
+    <!-- Buscador -->
+    <div class="search wrap">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+              stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <label for="q" class="sr-only">Buscar escena, artista o rol</label>
+      <input id="q" type="search" placeholder="Buscar escena, artista o rol…" autocomplete="off" inputmode="search" />
+    </div>
 
-      <footer>
-        <p class="muted">Comparte este link con tus acompañantes ✨</p>
-      </footer>
-    </aside>
+    <!-- Menú de escenas -->
+    <nav class="menu wrap" id="sceneMenu" aria-label="Menú de escenas"></nav>
 
     <!-- Contenido principal -->
-    <main class="main" id="main" tabindex="-1">
-      <header class="header">
+    <main id="main" class="main wrap" tabindex="-1">
+      <header class="scene-head">
         <div class="title">
           <span class="dot" aria-hidden="true"></span>
           <div>
@@ -59,35 +58,32 @@
       <!-- Intro escena -->
       <section id="sceneIntro" class="card" hidden aria-labelledby="sceneTitle">
         <div class="content">
-          <div class="grid cols-2" style="align-items:start">
-            <div>
-              <h3 style="margin:0 0 8px">Sentido de la escena</h3>
-              <p id="sceneSense" style="margin:0; color:var(--gris-100)"></p>
-              <div style="margin-top:12px" class="chips" id="sceneMeta"></div>
-            </div>
-            <figure class="card" style="margin:0; border-radius:14px; overflow:hidden">
-              <img id="sceneImage" alt="Imagen de la escena seleccionada" 
-                   style="display:block; width:100%; height:260px; object-fit:cover">
-            </figure>
-          </div>
+          <figure class="hero">
+            <img id="sceneImage" alt="Imagen de la escena seleccionada">
+          </figure>
+          <h3 class="h3">Sentido de la escena</h3>
+          <p id="sceneSense" class="lead"></p>
         </div>
       </section>
 
       <!-- Elenco -->
-      <section id="sceneCast" class="card" hidden style="margin-top:18px">
+      <section id="sceneCast" class="card" hidden>
         <div class="content">
-          <h3 style="margin:0 0 12px">Quiénes actúan aquí</h3>
-          <div id="castGrid" class="grid cols-3"></div>
+          <h3 class="h3">Quiénes actúan aquí</h3>
+          <div id="castGrid" class="cast-grid"></div>
         </div>
       </section>
 
-      <!-- Notas -->
-      <section id="extras" class="card" style="margin-top:18px">
+      <!-- Notas útiles para el público -->
+      <section id="extras" class="card">
         <div class="content">
-          <h3 style="margin:0 0 8px">Notas para el público</h3>
+          <h3 class="h3">Notas para el público</h3>
           <ul class="bullets">
             <li>Duración estimada: 90–110 min. Intermedio opcional.</li>
-            <li>Por favor, mantén tu celular en silencio y evita el flash.</li>
+            <li>Respeta la experiencia: mantén el celular en silencio y evita el flash.</li>
+            <li>Accesibilidad: si necesitas apoyo para ubicación de puesto o movilidad, pide ayuda al personal de sala.</li>
+            <li>Salida: sigue las indicaciones del personal para entradas y salidas ordenadas.</li>
+            <li>Baños: señalizados en lobby. Evita entrar y salir durante números musicales.</li>
             <li>Versión accesible (solo texto): <a id="linkTextoLargo" href="#" rel="nofollow">próximamente</a></li>
           </ul>
           <div class="chips">
@@ -98,8 +94,8 @@
         </div>
       </section>
 
-      <footer style="margin:24px 0 10px; opacity:.9">
-        <small class="muted">© 2025 Musicala. Programa de mano digital · Hecho con cariño.</small>
+      <footer class="foot wrap">
+        <small class="muted">© 2025 Musicala · Hecho con cariño.</small>
       </footer>
     </main>
   </div>
@@ -111,11 +107,10 @@
       <button class="btn" id="pmClose" aria-label="Cerrar">Cerrar</button>
     </div>
     <div class="modal-body">
-      <div style="display:flex; gap:16px; align-items:flex-start">
-        <img id="pmPhoto" src="" alt="" 
-             style="width:96px; height:96px; object-fit:cover; border-radius:16px; border:1px solid #e2e8f0" />
+      <div class="modal-flex">
+        <img id="pmPhoto" src="" alt="" />
         <div>
-          <h3 id="pmRole">Rol</h3>
+          <h3 id="pmRole" class="h4">Rol</h3>
           <p id="pmBio"></p>
           <div class="chips" id="pmTags"></div>
         </div>
@@ -123,7 +118,6 @@
     </div>
   </dialog>
 
-  <!-- Lógica externa -->
   <script src="app.js" defer></script>
 </body>
 </html>
