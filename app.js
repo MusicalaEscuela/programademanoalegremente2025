@@ -1,8 +1,7 @@
 /* ===========================
    Musicala · Programa de mano
-   app.js
+   app.js (ligero y móvil-first)
    =========================== */
-
 'use strict';
 
 /* ---------- Utilidad rápida ---------- */
@@ -23,6 +22,7 @@ const castGrid  = $('castGrid');
 
 const q      = $('q');
 const main   = $('main');
+const home   = document.querySelector('.homebtn');
 
 /* Modal Persona */
 const pm      = $('personModal');
@@ -33,22 +33,18 @@ const pmBio   = $('pmBio');
 const pmTags  = $('pmTags');
 const pmClose = $('pmClose');
 
-/* Tamaño de letra */
-const fzUp   = $('fzUp');
-const fzDown = $('fzDown');
-
 /* ---------- Estado ---------- */
 let DATA = { info:{}, escenas:[] };
 let activeId = null;
 
-/* ---------- Fuentes ---------- */
+/* ---------- Carga de data ---------- */
 async function loadData() {
   const res = await fetch('data.json', { cache: 'no-store' });
   if (!res.ok) throw new Error(`No se pudo cargar data.json (${res.status})`);
   DATA = await res.json();
 }
 
-/* ---------- Render ---------- */
+/* ---------- Render menú ---------- */
 function renderMenu(list) {
   sceneMenu.innerHTML = '';
   list.forEach((sc, i) => {
@@ -57,6 +53,7 @@ function renderMenu(list) {
     btn.type = 'button';
     btn.dataset.id = sc.id;
     btn.innerHTML = `
+      <div class="thumb"><img src="${sc.imagen}" alt="" loading="lazy" decoding="async"></div>
       <div class="row">
         <span>${i + 1}. ${sc.titulo}</span>
         <span class="badge">${count} ${count === 1 ? 'artista' : 'artistas'}</span>
@@ -108,7 +105,7 @@ function selectScene(id) {
       el.type = 'button';
       el.className = 'person';
       el.innerHTML = `
-        <img src="${p.foto || 'placeholder.jpg'}" alt="Foto de ${p.nombre || 'Artista'}">
+        <img src="${p.foto || 'placeholder.jpg'}" alt="Foto de ${p.nombre || 'Artista'}" loading="lazy" decoding="async">
         <div>
           <b>${p.nombre || 'Artista'}</b>
           <span class="role">${p.rol || ''}</span>
@@ -164,24 +161,6 @@ function applySearch() {
   }
 }
 
-/* ---------- Tamaño de letra (persistente) ---------- */
-function setFz(px){
-  document.documentElement.style.setProperty('--fz', px + 'px');
-  localStorage.setItem('pmano.fz', String(px));
-}
-function initFz(){
-  const saved = Number(localStorage.getItem('pmano.fz'));
-  if (saved && saved >= 15 && saved <= 22) setFz(saved);
-}
-fzUp?.addEventListener('click', () => {
-  const cur = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--fz'));
-  setFz(Math.min(cur + 1, 22));
-});
-fzDown?.addEventListener('click', () => {
-  const cur = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--fz'));
-  setFz(Math.max(cur - 1, 15));
-});
-
 /* ---------- Eventos ---------- */
 pmClose.addEventListener('click', () => pm.close());
 pm.addEventListener('click', (e) => { if (e.target === pm) pm.close(); });
@@ -190,10 +169,16 @@ document.addEventListener('keydown', (e) => {
 });
 q.addEventListener('input', applySearch);
 
+home?.addEventListener('click', () => {
+  q.value = '';
+  renderMenu(DATA.escenas);
+  if (DATA.escenas.length) selectScene(DATA.escenas[0].id);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 /* ---------- Inicio ---------- */
 (async function init() {
   try {
-    initFz();
     await loadData();
     renderMenu(DATA.escenas);
     if (DATA.escenas.length) selectScene(DATA.escenas[0].id);
