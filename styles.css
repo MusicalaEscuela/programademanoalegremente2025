@@ -1,217 +1,130 @@
-/* ===========================
-   Musicala · Programa de mano
-   styles.css (mobile-first)
-   =========================== */
-
-/* ---------- Marca / tema oscuro ---------- */
 :root{
-  --azul-mozart:#0C41C4;
-  --violeta-beethoven:#680DBF;
-  --magenta-brahms:#CE0071;
-
-  --bg-1:#0a0f1f;
-  --bg-2:#0b1228;
-  --card: rgba(255,255,255,.06);
-  --card-b: rgba(255,255,255,.10);
-
-  --text:#fff;
-  --muted:#b6c0d4;
-
-  /* Tipografía base (controlable) */
-  --fz: 17px;          /* tamaño base mobile para personas mayores */
-  --lh: 1.55;
+  --bg: #0b1026;
+  --bg2: #1a1442;
+  --card: #11172e;
+  --ink: #e8ecff;
+  --muted: #a9b3d9;
+  --chip: rgba(255,255,255,.1);
+  --brand1:#5d7cff; /* Azul Mozart */
+  --brand2:#7a22ff; /* Violeta Beethoven */
+  --shadow: 0 10px 24px rgba(0,0,0,.35);
   --radius: 16px;
-  --shadow: 0 10px 30px rgba(0,0,0,.25);
+  --fz: 16px; /* fijo (quitamos controles) */
 }
 
-html,body{ height:100% }
+*{box-sizing:border-box}
+html,body{height:100%}
 body{
-  margin:0;
-  font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-  font-size: var(--fz);
-  line-height: var(--lh);
-  color: var(--text);
-  background:
-    radial-gradient(1000px 800px at 100% 0%, rgba(104,13,191,.10), transparent 60%),
-    radial-gradient(1200px 800px at 0% 0%, rgba(12,65,196,.10), transparent 60%),
-    linear-gradient(180deg, var(--bg-1), var(--bg-2));
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin:0; font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+  color:var(--ink); background:
+  radial-gradient(1200px 600px at 20% -10%, #1a1b4a 0%, transparent 60%) ,
+  linear-gradient(120deg, var(--brand1), var(--brand2)) fixed,
+  var(--bg);
+  background-blend-mode: screen, normal;
+  font-size:var(--fz); line-height:1.45;
 }
+img{max-width:100%; display:block}
 
-img{ display:block; max-width:100% }
-a{ color:#b2c7ff; text-decoration:none }
-a:hover{ text-decoration:underline }
-.sr-only{
-  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
-  overflow:hidden; clip:rect(0,0,0,0); border:0;
-}
+.wrap{max-width:980px; margin-inline:auto; padding:0 16px}
 
-/* ---------- Layout ---------- */
-.app{ display:block }
-.wrap{ padding:12px 16px }
 .topbar{
   position:sticky; top:0; z-index:10;
-  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  display:flex; align-items:center; gap:12px; justify-content:space-between;
   padding:10px 12px;
-  background:linear-gradient(180deg, rgba(12,65,196,.16), rgba(12,65,196,.04));
+  background:linear-gradient(90deg, rgba(12,65,196,.7), rgba(122,34,255,.6));
+  backdrop-filter: blur(8px);
   border-bottom:1px solid rgba(255,255,255,.08);
-  backdrop-filter: blur(6px);
 }
 .homebtn{
-  font-size:20px; line-height:1;
-  background:transparent; color:#fff; border:none; padding:8px;
+  font-size:20px; background:transparent; border:0; color:#fff; cursor:pointer;
 }
-.brand{ display:flex; align-items:center; gap:10px }
-.brand img{ width:36px; height:36px; border-radius:10px; box-shadow:0 4px 16px rgba(12,65,196,.35) }
-.brand-text strong{ display:block; font-size:18px; letter-spacing:.2px }
-.brand-text small{ color:var(--muted) }
+.brand{display:flex; align-items:center; gap:10px}
+.brand img{border-radius:10px; box-shadow:var(--shadow)}
+.brand-text strong{font-weight:900; letter-spacing:.2px}
+.brand-text small{display:block; color:var(--muted); margin-top:-2px}
 
-.font-ctrl{ display:flex; gap:6px }
-.btn-fz{
-  min-width:44px; padding:8px 10px; border-radius:12px;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.08); color:#fff; font-weight:700;
-}
+.partners{display:flex; align-items:center; gap:10px; opacity:.9}
+.partners img{filter: drop-shadow(0 2px 6px rgba(0,0,0,.25))}
 
-.search{ position:sticky; top:62px; z-index:9; background:transparent }
-.search input{
-  width:100%; padding:14px 14px 14px 44px;
-  font-size:1.05rem;
-  border-radius:14px; border:1px solid rgba(255,255,255,.15);
-  background:rgba(255,255,255,.06); color:#fff; outline:none;
-}
-.search svg{ position:absolute; left:26px; top:50%; transform:translate(-50%,-50%); opacity:.7 }
-.search input::placeholder{ color:rgba(255,255,255,.7) }
-
-/* ---------- Menú de escenas ---------- */
-.menu{ display:flex; flex-direction:column; gap:10px; padding-top:8px }
-.menu button{
-  appearance:none; cursor:pointer; text-align:left;
-  display:block; width:100%;
-  min-height:52px; /* dedo cómodo */
-  padding:12px;
-  border-radius:14px; border:1px solid rgba(255,255,255,.12);
-  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-  color:#fff; font-weight:700;
-}
-.menu button .row{ display:flex; justify-content:space-between; align-items:center; gap:8px }
-.badge{
-  display:inline-flex; align-items:center; gap:6px;
-  padding:6px 10px; border-radius:999px; font-size:.85rem; font-weight:800;
-  background:rgba(12,65,196,.18); border:1px solid rgba(255,255,255,.12);
-}
-.menu button.active{
-  background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven));
-  border-color:transparent; box-shadow:0 6px 22px rgba(12,65,196,.25), inset 0 0 0 1px rgba(255,255,255,.12);
-}
-
-/* ---------- Cabecera escena ---------- */
-.scene-head{
-  position:sticky; top:120px; /* debajo del buscador */
-  z-index:5; padding:10px 0 6px; margin-bottom:8px;
-  background:linear-gradient(180deg, rgba(11,18,40,.8), rgba(11,18,40,.4));
-  backdrop-filter: blur(3px);
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-.title{ display:flex; align-items:center; gap:10px }
-.dot{ width:10px; height:10px; border-radius:50%; background:linear-gradient(90deg, var(--azul-mozart), var(--violeta-beethoven)); box-shadow:0 0 0 6px rgba(12,65,196,.18) }
-h2{ margin:0; font-size:1.35rem }
-.subtitle{ margin:4px 0 0; color:var(--muted); font-size:.98rem }
-.chips{ display:flex; flex-wrap:wrap; gap:8px; padding-top:6px }
-.chip{
-  font-size:.9rem; padding:6px 10px; border-radius:999px;
-  border:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.05);
-}
-
-/* ---------- Tarjetas ---------- */
-.card{
-  background: var(--card);
-  border:1px solid var(--card-b);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  margin:12px 0;
-}
-.card .content{ padding:14px }
-.h3{ margin:0 0 8px; font-size:1.15rem }
-.h4{ margin:0 0 6px; font-size:1.05rem }
-.lead{ color:#e2e8f0 }
-
-/* Imagen escena */
-.hero{ margin:0 0 10px; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,.1) }
-.hero img{ width:100%; height:220px; object-fit:cover }
-
-/* ---------- Elenco ---------- */
-.cast-grid{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px }
-.person{
+.search{
   display:flex; align-items:center; gap:10px;
-  padding:10px; border-radius:14px;
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.04); color:#fff; cursor:pointer;
+  margin:14px auto 10px; padding:10px 12px; border-radius:999px;
+  background:rgba(255,255,255,.08); width:min(720px, 100% - 24px);
 }
-.person img{
-  width:60px; height:60px; object-fit:cover; border-radius:12px;
-  border:1px solid rgba(255,255,255,.18)
+.search input{
+  flex:1; border:0; outline:0; background:transparent; color:#fff;
+  font-size:16px;
 }
-.person b{ display:block; font-weight:900 }
-.role{ font-size:.9rem; color:#d5dbea }
 
-/* ---------- Lista / utilidades ---------- */
-.bullets{ margin:0; padding-left:20px }
-.bullets li{ margin:6px 0 }
+.menu{
+  display:grid; gap:10px; margin:8px 0 16px;
+}
+.menu button{
+  width:100%; text-align:left; background:var(--card); color:var(--ink);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:8px; display:flex; gap:12px; align-items:center;
+  box-shadow: var(--shadow);
+}
+.menu button .thumb{
+  width:64px; height:44px; border-radius:10px; overflow:hidden; flex:0 0 64px;
+}
+.menu button .thumb img{width:100%; height:100%; object-fit:cover}
+.menu button .row{display:flex; justify-content:space-between; align-items:center; gap:12px; width:100%}
+.menu .badge{
+  font-size:12px; color:var(--muted); background:var(--chip);
+  padding:4px 8px; border-radius:999px;
+}
+.menu button.active{outline:2px solid #8aa1ff}
 
-/* ---------- Footer ---------- */
-.foot{ text-align:center; padding-bottom:32px }
-.muted{ color:var(--muted) }
+.main{display:block}
+.scene-head .title{display:flex; align-items:center; gap:10px}
+.dot{width:10px; height:10px; border-radius:50%; background:#8aa1ff}
+.subtitle{color:var(--muted); margin:.2rem 0 .6rem}
 
-/* ---------- Dialog ---------- */
+.card{
+  background:var(--card); border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  margin:14px 0; overflow:hidden;
+}
+.card .content{padding:14px}
+.hero{margin:0; border-radius:12px; overflow:hidden}
+.hero img{width:100%; height:auto; display:block}
+
+.h3{margin:.4rem 0 .4rem}
+.lead{color:#dfe5ff}
+
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{background:var(--chip); padding:6px 10px; border-radius:999px; font-size:12px}
+
+.cast-grid{
+  display:grid; gap:10px;
+  grid-template-columns:repeat(2,1fr);
+}
+@media (min-width:600px){ .cast-grid{grid-template-columns:repeat(3,1fr)} }
+.person{
+  display:flex; gap:10px; align-items:center; background:#0f1630; color:inherit;
+  border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:8px; text-align:left;
+}
+.person img{width:56px; height:56px; border-radius:10px; object-fit:cover}
+
+.bullets{margin:0; padding-left:18px}
+.bullets li{margin:.4rem 0; color:#e8ecff}
+
+.foot{display:grid; gap:8px; place-items:center; text-align:center; padding:26px 0 42px}
+.ally-logos{display:flex; gap:14px; align-items:center; opacity:.8; filter:grayscale(100%)}
+
 dialog{
-  border:none; border-radius:18px; padding:0;
-  background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.92));
-  color:#0e1525; width:min(92vw, 680px);
+  border:0; padding:0; border-radius:16px; background:var(--card); color:var(--ink);
+  box-shadow:0 10px 40px rgba(0,0,0,.6);
+  max-width:min(680px, 92vw);
 }
-dialog::backdrop{ background:rgba(0,0,0,.6) }
-.modal-header{
-  display:flex; justify-content:space-between; align-items:center;
-  padding:14px 16px; border-bottom:1px solid #e2e8f0
-}
-.modal-body{ padding:16px }
-.modal-flex{ display:flex; gap:16px; align-items:flex-start }
-dialog img{ width:96px; height:96px; object-fit:cover; border-radius:16px; border:1px solid #e2e8f0 }
-.btn{
-  display:inline-flex; align-items:center; gap:8px; padding:10px 14px;
-  border-radius:12px; border:1px solid #e2e8f0; background:#fff; color:#0e1525; font-weight:700; cursor:pointer;
-}
+.modal-header{display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-bottom:1px solid rgba(255,255,255,.08)}
+.modal-body{padding:14px}
+.modal-flex{display:flex; gap:14px; align-items:flex-start}
+.modal-flex img{width:110px; height:110px; object-fit:cover; border-radius:12px}
+.btn{background:#2a3a8a; color:#fff; border:0; padding:8px 12px; border-radius:10px; cursor:pointer}
 
-/* ---------- Focus ---------- */
-:focus-visible{
-  outline: 3px solid #fff; outline-offset: 2px;
-}
-.menu button:focus-visible,
-.person:focus-visible,
-.btn:focus-visible,
-.search input:focus-visible{
-  outline: 2px solid var(--magenta-brahms);
-  box-shadow: 0 0 0 4px rgba(206,0,113,.25);
-}
-
-/* ---------- Responsivo (tableta / escritorio) ---------- */
-@media (min-width: 900px){
-  .app{ display:grid; grid-template-columns: 420px 1fr; gap:0 }
-  .wrap{ padding:16px 20px }
-  .search{ position:sticky; top:70px }
-  .scene-head{ top:130px }
-  .hero img{ height:260px }
-  .cast-grid{ grid-template-columns: repeat(3, minmax(0,1fr)) }
-}
-
-/* ---------- Impresión ---------- */
-@media print{
-  body{ background:#fff; color:#111; font-size:14px }
-  .topbar, .search, .menu, .foot{ display:none }
-  .wrap{ padding:0 }
-  .card{
-    border:1px solid #d1d5db; box-shadow:none; background:#fff; break-inside: avoid; margin-bottom:12px;
-  }
-  a{ color:#111; text-decoration: underline }
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0;
 }
