@@ -13,19 +13,21 @@
 </head>
 <body>
   <div class="app">
-    <!-- Barra superior (mobile-first) -->
+    <!-- Barra superior -->
     <header class="topbar">
       <button class="homebtn" aria-label="Inicio" title="Inicio">🏠</button>
+
       <div class="brand">
-        <img src="logo.png" alt="" />
+        <img src="logo.png" alt="Musicala" width="28" height="28" />
         <div class="brand-text">
           <strong>AlegreMente 2025</strong>
           <small>Programa de mano</small>
         </div>
       </div>
-      <div class="font-ctrl" aria-label="Tamaño de letra">
-        <button id="fzDown" class="btn-fz" aria-label="Reducir texto">Aa−</button>
-        <button id="fzUp" class="btn-fz" aria-label="Aumentar texto">Aa+</button>
+
+      <div class="partners" aria-label="Aliados">
+        <img src="LOGO%20FSA.png" alt="Fundación San Antonio" height="22" />
+        <img src="GMMMC%20Logo%20color.png" alt="GMMMC" height="22" />
       </div>
     </header>
 
@@ -59,7 +61,7 @@
       <section id="sceneIntro" class="card" hidden aria-labelledby="sceneTitle">
         <div class="content">
           <figure class="hero">
-            <img id="sceneImage" alt="Imagen de la escena seleccionada">
+            <img id="sceneImage" alt="Imagen de la escena seleccionada" loading="lazy" decoding="async">
           </figure>
           <h3 class="h3">Sentido de la escena</h3>
           <p id="sceneSense" class="lead"></p>
@@ -74,15 +76,14 @@
         </div>
       </section>
 
-      <!-- Notas útiles para el público -->
+      <!-- Notas para el público -->
       <section id="extras" class="card">
         <div class="content">
           <h3 class="h3">Notas para el público</h3>
           <ul class="bullets">
             <li>Duración estimada: 90–110 min. Intermedio opcional.</li>
-            <li>Respeta la experiencia: mantén el celular en silencio y evita el flash.</li>
-            <li>Accesibilidad: si necesitas apoyo para ubicación de puesto o movilidad, pide ayuda al personal de sala.</li>
-            <li>Salida: sigue las indicaciones del personal para entradas y salidas ordenadas.</li>
+            <li>Respeta la experiencia: silencia tu celular y evita el flash.</li>
+            <li>Accesibilidad: si requieres apoyo para movilidad o ubicación, habla con el personal de sala.</li>
             <li>Baños: señalizados en lobby. Evita entrar y salir durante números musicales.</li>
             <li>Versión accesible (solo texto): <a id="linkTextoLargo" href="#" rel="nofollow">próximamente</a></li>
           </ul>
@@ -95,6 +96,11 @@
       </section>
 
       <footer class="foot wrap">
+        <div class="ally-logos">
+          <img src="logo.png" alt="Musicala" height="22">
+          <img src="LOGO%20FSA.png" alt="Fundación San Antonio" height="22">
+          <img src="GMMMC%20Logo%20color.png" alt="GMMMC" height="22">
+        </div>
         <small class="muted">© 2025 Musicala · Hecho con cariño.</small>
       </footer>
     </main>
@@ -108,7 +114,7 @@
     </div>
     <div class="modal-body">
       <div class="modal-flex">
-        <img id="pmPhoto" src="" alt="" />
+        <img id="pmPhoto" src="" alt="" loading="lazy" decoding="async" />
         <div>
           <h3 id="pmRole" class="h4">Rol</h3>
           <p id="pmBio"></p>
