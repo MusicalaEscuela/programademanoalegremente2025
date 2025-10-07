@@ -1,13 +1,9 @@
-/* ===========================
-   Musicala · Programa de mano
-   app.js (ligero y móvil-first)
-   =========================== */
 'use strict';
 
-/* ---------- Utilidad rápida ---------- */
+/* Utilidad */
 const $ = (id) => document.getElementById(id);
 
-/* ---------- Referencias DOM ---------- */
+/* DOM */
 const sceneMenu     = $('sceneMenu');
 const sceneTitle    = $('sceneTitle');
 const sceneSubtitle = $('sceneSubtitle');
@@ -20,11 +16,9 @@ const sceneImage = $('sceneImage');
 const sceneCast = $('sceneCast');
 const castGrid  = $('castGrid');
 
-const q      = $('q');
-const main   = $('main');
-const home   = document.querySelector('.homebtn');
+const q    = $('q');
+const main = $('main');
 
-/* Modal Persona */
 const pm      = $('personModal');
 const pmName  = $('pmName');
 const pmPhoto = $('pmPhoto');
@@ -33,18 +27,18 @@ const pmBio   = $('pmBio');
 const pmTags  = $('pmTags');
 const pmClose = $('pmClose');
 
-/* ---------- Estado ---------- */
+/* Estado */
 let DATA = { info:{}, escenas:[] };
 let activeId = null;
 
-/* ---------- Carga de data ---------- */
+/* Data */
 async function loadData() {
   const res = await fetch('data.json', { cache: 'no-store' });
   if (!res.ok) throw new Error(`No se pudo cargar data.json (${res.status})`);
   DATA = await res.json();
 }
 
-/* ---------- Render menú ---------- */
+/* Menú (con miniatura) */
 function renderMenu(list) {
   sceneMenu.innerHTML = '';
   list.forEach((sc, i) => {
@@ -64,7 +58,7 @@ function renderMenu(list) {
   });
 }
 
-/* ---------- Selección de escena ---------- */
+/* Selección */
 function selectScene(id) {
   activeId = id;
   document.querySelectorAll('.menu button')
@@ -73,13 +67,11 @@ function selectScene(id) {
   const sc = DATA.escenas.find(e => e.id === id);
   if (!sc) return;
 
-  // Título y subtítulo
   sceneTitle.textContent = sc.titulo || 'Escena';
   sceneSubtitle.textContent = sc.musica
     ? `Música: ${sc.musica}${sc.ubicacionMusica ? ` · ${sc.ubicacionMusica}` : ''}`
     : '';
 
-  // Chips de centros
   sceneChips.innerHTML = '';
   (sc.centros || []).forEach(c => {
     const chip = document.createElement('span');
@@ -88,13 +80,11 @@ function selectScene(id) {
     sceneChips.appendChild(chip);
   });
 
-  // Sentido e imagen
   sceneSense.textContent = sc.sentido || '';
   sceneImage.src = sc.imagen || 'placeholder.jpg';
   sceneImage.alt = sc.titulo ? `Imagen alusiva: ${sc.titulo}` : 'Imagen de la escena';
   sceneIntro.hidden = false;
 
-  // Elenco
   castGrid.innerHTML = '';
   const cast = sc.participantes || [];
   if (!cast.length) {
@@ -117,11 +107,10 @@ function selectScene(id) {
     sceneCast.hidden = false;
   }
 
-  // Foco accesible
   main.focus({ preventScroll: false });
 }
 
-/* ---------- Modal de persona ---------- */
+/* Modal persona */
 function openPerson(p) {
   pmName.textContent  = p.nombre || 'Artista';
   pmPhoto.src         = p.foto || 'placeholder.jpg';
@@ -138,7 +127,7 @@ function openPerson(p) {
   pm.showModal();
 }
 
-/* ---------- Búsqueda ---------- */
+/* Búsqueda */
 function applySearch() {
   const term = (q.value || '').trim().toLowerCase();
   const items = DATA.escenas.map(sc => {
@@ -161,22 +150,13 @@ function applySearch() {
   }
 }
 
-/* ---------- Eventos ---------- */
+/* Eventos */
 pmClose.addEventListener('click', () => pm.close());
 pm.addEventListener('click', (e) => { if (e.target === pm) pm.close(); });
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && typeof pm.close === 'function') pm.close();
-});
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') pm.close(); });
 q.addEventListener('input', applySearch);
 
-home?.addEventListener('click', () => {
-  q.value = '';
-  renderMenu(DATA.escenas);
-  if (DATA.escenas.length) selectScene(DATA.escenas[0].id);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-/* ---------- Inicio ---------- */
+/* Init */
 (async function init() {
   try {
     await loadData();
