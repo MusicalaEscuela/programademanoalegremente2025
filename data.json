@@ -27,7 +27,7 @@
       "ubicacionMusica": "Mitad (Orquesta)",
       "centros": ["Teatro: Lucero", "Danza: Arroyo", "Plástico: Jerusalén"],
       "participantes": [
-        { "nombre": "Bailarines Tango Joven", "rol": "Danza", "foto": "placeholder.jpg", "bio": "Fusión lúdica de tango con contemporáneo.", "tags": ["Danza"] }
+        { "nombre": "Bailarines Tango Joven", "rol": "Danza contemporánea/tango", "foto": "placeholder.jpg", "bio": "Fusión lúdica de tango con contemporáneo.", "tags": ["Danza"] }
       ]
     },
     {
@@ -53,8 +53,8 @@
       "ubicacionMusica": "Mitad (Orquesta)",
       "centros": ["Teatro: Arroyo", "Danza: Jerusalén", "Plástico: Lucero"],
       "participantes": [
-        { "nombre": "Poetas Jóvenes", "rol": "Teatro", "foto": "poetas.jpg", "bio": "", "tags": ["Teatro"] },
-        { "nombre": "Bailarines Jazz", "rol": "Danza", "foto": "bailarinesjazz.jpg", "bio": "", "tags": ["Danza"] }
+        { "nombre": "Poetas Jóvenes", "rol": "Teatro de palabra", "foto": "poetas.jpg", "bio": "", "tags": ["Teatro"] },
+        { "nombre": "Bailarines Jazz", "rol": "Danza / Jazz", "foto": "bailarinesjazz.jpg", "bio": "", "tags": ["Danza"] }
       ]
     },
     {
@@ -66,8 +66,8 @@
       "ubicacionMusica": "Final (Orquesta + coro)",
       "centros": ["Teatro: Jerusalén", "Danza: Santo Domingo", "Plástico: Santo Domingo"],
       "participantes": [
-        { "nombre": "Trenzadoras", "rol": "Plástica", "foto": "trenzadoras.jpg", "bio": "", "tags": ["Plástico"] },
-        { "nombre": "Pareja Andina", "rol": "Danza", "foto": "andina.jpg", "bio": "", "tags": ["Danza"] }
+        { "nombre": "Trenzadoras", "rol": "Artes plásticas / peinados", "foto": "trenzadoras.jpg", "bio": "", "tags": ["Plástico"] },
+        { "nombre": "Pareja Andina", "rol": "Danza andina", "foto": "andina.jpg", "bio": "", "tags": ["Danza"] }
       ]
     },
     {
@@ -79,7 +79,7 @@
       "ubicacionMusica": "Inicio (Orquesta)",
       "centros": ["Teatro: Jerusalén", "Danza: Colegio", "Plástico: Arroyo"],
       "participantes": [
-        { "nombre": "Sombreros Locos", "rol": "Teatro", "foto": "sombreros.jpg", "bio": "", "tags": ["Teatro"] }
+        { "nombre": "Sombreros Locos", "rol": "Teatro gestual", "foto": "sombreros.jpg", "bio": "", "tags": ["Teatro"] }
       ]
     },
     {
@@ -91,7 +91,7 @@
       "ubicacionMusica": "Inicio (Orquesta + percusión caribeña)",
       "centros": ["Teatro: Padre Misericordioso B", "Danza: Padre Misericordioso B", "Plástico: Padre Misericordioso B"],
       "participantes": [
-        { "nombre": "Comparsa Caribe", "rol": "Danza", "foto": "comparsa.jpg", "bio": "", "tags": ["Danza"] }
+        { "nombre": "Comparsa Caribe", "rol": "Danza / comparsa", "foto": "comparsa.jpg", "bio": "", "tags": ["Danza"] }
       ]
     },
     {
@@ -103,8 +103,23 @@
       "ubicacionMusica": "Mitad → final (Orquesta)",
       "centros": ["Teatro: Padre Misericordioso B", "Danza: Santo Domingo", "Plástico: Lucero"],
       "participantes": [
-        { "nombre": "Todos los elencos", "rol": "Elenco completo", "foto": "todos.jpg", "bio": "", "tags": ["Final"] }
+        { "nombre": "Todos los elencos", "rol": "Elenco completo", "foto": "todos.jpg", "bio": "", "tags": ["Final"] },
+        { "nombre": "Coro general", "rol": "Coro y voces", "foto": "placeholder.jpg", "bio": "", "tags": ["Coro"] },
+        { "nombre": "Tambores", "rol": "Percusión / timbales", "foto": "placeholder.jpg", "bio": "", "tags": ["Música"] }
       ]
     }
-  ]
+  ],
+  "creditos": {
+    "Dirección artística": ["Nombre Dirección 1", "Nombre Dirección 2"],
+    "Dirección musical": ["Nombre Música 1"],
+    "Coreografía": ["Nombre Coreógrafa/e"],
+    "Producción": ["Nombre Producción 1", "Nombre Producción 2"],
+    "Coordinación general": ["Nombre Coordinación 1"],
+    "Escenografía y plástica": ["Equipo Artes Plásticas"],
+    "Docentes de teatro": ["Docente Teatro 1", "Docente Teatro 2"],
+    "Docentes de danza": ["Docente Danza 1", "Docente Danza 2"],
+    "Docentes de música/orquesta": ["Docente Música 1", "Docente Orquesta 2"],
+    "Coro": ["Dirección de Coro", "Preparación Vocal"],
+    "Agradecimientos": ["Familias", "Aliados", "Voluntariado"]
+  }
 }
