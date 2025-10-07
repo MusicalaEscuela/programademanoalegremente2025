@@ -1,10 +1,17 @@
 'use strict';
 
-/* Utilidad */
+/* Helper */
 const $ = (id) => document.getElementById(id);
 
 /* DOM */
+const menuBtn      = $('menuBtn');
+const closeDrawer  = $('closeDrawer');
+const drawer       = $('drawer');
+const scrim        = $('scrim');
+
 const sceneMenu     = $('sceneMenu');
+const tiles         = $('tiles');
+
 const sceneTitle    = $('sceneTitle');
 const sceneSubtitle = $('sceneSubtitle');
 const sceneChips    = $('sceneChips');
@@ -16,9 +23,16 @@ const sceneImage = $('sceneImage');
 const sceneCast = $('sceneCast');
 const castGrid  = $('castGrid');
 
-const q    = $('q');
-const main = $('main');
+const q        = $('q');
+const main     = $('main');
 
+/* Bienvenida */
+const welcome  = $('welcome');
+const wClose   = $('wClose');
+const wStart   = $('wStart');
+const wDont    = $('wDontShow');
+
+/* Modal Persona */
 const pm      = $('personModal');
 const pmName  = $('pmName');
 const pmPhoto = $('pmPhoto');
@@ -31,14 +45,35 @@ const pmClose = $('pmClose');
 let DATA = { info:{}, escenas:[] };
 let activeId = null;
 
-/* Data */
+/* ───── Menu drawer ───── */
+function openDrawer(){
+  drawer.classList.add('open');
+  scrim.hidden = false;
+  menuBtn?.setAttribute('aria-expanded','true');
+  drawer.setAttribute('aria-hidden','false');
+}
+function closeDrawerFn(){
+  drawer.classList.remove('open');
+  scrim.hidden = true;
+  menuBtn?.setAttribute('aria-expanded','false');
+  drawer.setAttribute('aria-hidden','true');
+}
+menuBtn?.addEventListener('click', openDrawer);
+closeDrawer?.addEventListener('click', closeDrawerFn);
+scrim?.addEventListener('click', closeDrawerFn);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeDrawerFn(); if (welcome?.open) welcome.close(); }
+});
+
+/* ───── Data ───── */
 async function loadData() {
   const res = await fetch('data.json', { cache: 'no-store' });
   if (!res.ok) throw new Error(`No se pudo cargar data.json (${res.status})`);
   DATA = await res.json();
+  console.log('Cargado data.json', DATA);
 }
 
-/* Menú (con miniatura) */
+/* ───── Render: menú ───── */
 function renderMenu(list) {
   sceneMenu.innerHTML = '';
   list.forEach((sc, i) => {
@@ -53,12 +88,31 @@ function renderMenu(list) {
         <span class="badge">${count} ${count === 1 ? 'artista' : 'artistas'}</span>
       </div>
     `;
-    btn.addEventListener('click', () => selectScene(sc.id));
+    btn.addEventListener('click', () => { selectScene(sc.id); closeDrawerFn(); });
     sceneMenu.appendChild(btn);
   });
 }
 
-/* Selección */
+/* ───── Render: mosaico ───── */
+function renderTiles(list){
+  tiles.innerHTML = '';
+  list.forEach((sc, i) => {
+    const card = document.createElement('article');
+    card.className = 'tile';
+    card.innerHTML = `
+      <span class="num">${i+1}</span>
+      <img src="${sc.imagen}" alt="" loading="lazy" decoding="async">
+      <div class="overlay"><div class="title">${sc.titulo}</div></div>
+    `;
+    card.addEventListener('click', () => {
+      selectScene(sc.id);
+      window.scrollTo({ top: document.querySelector('.main').offsetTop - 12, behavior:'smooth' });
+    });
+    tiles.appendChild(card);
+  });
+}
+
+/* ───── Selección de escena ───── */
 function selectScene(id) {
   activeId = id;
   document.querySelectorAll('.menu button')
@@ -110,8 +164,9 @@ function selectScene(id) {
   main.focus({ preventScroll: false });
 }
 
-/* Modal persona */
+/* ───── Modal persona ───── */
 function openPerson(p) {
+  if (!pm) return;
   pmName.textContent  = p.nombre || 'Artista';
   pmPhoto.src         = p.foto || 'placeholder.jpg';
   pmPhoto.alt         = `Foto de ${p.nombre || 'Artista'}`;
@@ -127,7 +182,10 @@ function openPerson(p) {
   pm.showModal();
 }
 
-/* Búsqueda */
+pmClose?.addEventListener('click', () => pm?.close());
+pm?.addEventListener('click', e => { if (e.target === pm) pm.close(); });
+
+/* ───── Búsqueda ───── */
 function applySearch() {
   const term = (q.value || '').trim().toLowerCase();
   const items = DATA.escenas.map(sc => {
@@ -139,32 +197,35 @@ function applySearch() {
   }).filter(x => x.show).map(x => x.sc);
 
   renderMenu(items);
-  if (items.length) {
-    const keep = items.find(s => s.id === activeId) ? activeId : items[0].id;
-    selectScene(keep);
-  } else {
-    sceneTitle.textContent = 'Sin resultados';
-    sceneSubtitle.textContent = '';
-    sceneIntro.hidden = true;
-    sceneCast.hidden = true;
-  }
+  renderTiles(items);
 }
+q?.addEventListener('input', applySearch);
 
-/* Eventos */
-pmClose.addEventListener('click', () => pm.close());
-pm.addEventListener('click', (e) => { if (e.target === pm) pm.close(); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') pm.close(); });
-q.addEventListener('input', applySearch);
+/* ───── Bienvenida ───── */
+function maybeShowWelcome(){
+  if (localStorage.getItem('pmano.welcomed') === '1') return;
+  welcome?.showModal();
+}
+wClose?.addEventListener('click', () => welcome?.close());
+wStart?.addEventListener('click', () => {
+  if (wDont?.checked) localStorage.setItem('pmano.welcomed','1');
+  welcome?.close();
+});
 
-/* Init */
+/* ───── Init ───── */
 (async function init() {
   try {
     await loadData();
     renderMenu(DATA.escenas);
-    if (DATA.escenas.length) selectScene(DATA.escenas[0].id);
+    renderTiles(DATA.escenas);
+    maybeShowWelcome();
   } catch (err) {
     console.error(err);
-    sceneTitle.textContent = 'Error cargando el programa';
-    sceneSubtitle.textContent = 'Revisa data.json';
+    // mensaje visible si el JSON falla
+    const box = document.createElement('div');
+    box.className = 'card wrap';
+    box.innerHTML = `<div class="content"><b>No pudimos cargar <code>data.json</code>.</b><br>
+    Asegúrate de que el archivo esté en la misma carpeta que <code>index.html</code> y que el JSON sea válido.</div>`;
+    document.body.prepend(box);
   }
 })();
