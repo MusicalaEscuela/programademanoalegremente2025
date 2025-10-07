@@ -41,6 +41,9 @@ const pmBio   = $('pmBio');
 const pmTags  = $('pmTags');
 const pmClose = $('pmClose');
 
+/* Créditos */
+const creditsGrid = $('creditsGrid');
+
 /* Estado */
 let DATA = { info:{}, escenas:[] };
 let activeId = null;
@@ -73,7 +76,7 @@ async function loadData() {
   console.log('Cargado data.json', DATA);
 }
 
-/* ───── Render: menú ───── */
+/* ───── Render: menú (drawer) ───── */
 function renderMenu(list) {
   sceneMenu.innerHTML = '';
   list.forEach((sc, i) => {
@@ -93,7 +96,7 @@ function renderMenu(list) {
   });
 }
 
-/* ───── Render: mosaico ───── */
+/* ───── Render: mosaico (home) ───── */
 function renderTiles(list){
   tiles.innerHTML = '';
   list.forEach((sc, i) => {
@@ -109,6 +112,65 @@ function renderTiles(list){
       window.scrollTo({ top: document.querySelector('.main').offsetTop - 12, behavior:'smooth' });
     });
     tiles.appendChild(card);
+  });
+}
+
+/* ───── Elenco: detección de área + grupos ───── */
+const AREA_ORDER = ['Teatro','Danza','Música','Orquesta','Artes plásticas','Coro','Elenco'];
+
+function detectArea(p){
+  const tag = (p.tags || [])[0] || '';
+  if (['Teatro','Danza','Música','Coro'].includes(tag)) return tag;
+  if (tag === 'Plástico') return 'Artes plásticas';
+
+  const r = (p.rol || '').toLowerCase();
+  // Orquesta por instrumentos (detectar varios nombres comunes)
+  if (/(violin|violín|viola|cello|contraba|contrabajo|flauta|clarinete|trompeta|trombón|saxo|saxofón|oboe|fagot|piano|teclado|guitarra|bajo|percusi|timbales|batería|marimba)/.test(r)) return 'Orquesta';
+  if (/(coro|voz|cantante)/.test(r)) return 'Coro';
+  if (/(danza|bailar)/.test(r)) return 'Danza';
+  if (/(teatr|actor|actriz|protagonista|antagonista|poeta)/.test(r)) return 'Teatro';
+  if (/(plást|máscaras|escenograf|trenzadoras|artes plásticas)/.test(r)) return 'Artes plásticas';
+  if (/(músic|tambores)/.test(r)) return 'Música';
+  return 'Elenco';
+}
+
+function groupCast(list){
+  const map = new Map();
+  list.forEach(p => {
+    const area = detectArea(p);
+    if(!map.has(area)) map.set(area, []);
+    map.get(area).push(p);
+  });
+  const ordered = Array.from(map.entries()).sort((a,b) => {
+    const ia = AREA_ORDER.indexOf(a[0]); const ib = AREA_ORDER.indexOf(b[0]);
+    return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+  });
+  return ordered;
+}
+
+function renderCastGroups(list){
+  castGrid.innerHTML = '';
+  const groups = groupCast(list);
+  groups.forEach(([area, people]) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'cast-group';
+    wrap.innerHTML = `<div class="group-title">${area}</div><div class="cast-rows"></div>`;
+    const rows = wrap.querySelector('.cast-rows');
+
+    people.forEach(p => {
+      const el = document.createElement('button');
+      el.type = 'button';
+      el.className = 'person';
+      el.innerHTML = `
+        <img src="${p.foto || 'placeholder.jpg'}" alt="Foto de ${p.nombre || 'Artista'}" loading="lazy" decoding="async">
+        <b>${p.nombre || 'Artista'}</b>
+        <span class="role">${p.rol || ''}</span>
+      `;
+      el.addEventListener('click', () => openPerson(p));
+      rows.appendChild(el);
+    });
+
+    castGrid.appendChild(wrap);
   });
 }
 
@@ -139,25 +201,12 @@ function selectScene(id) {
   sceneImage.alt = sc.titulo ? `Imagen alusiva: ${sc.titulo}` : 'Imagen de la escena';
   sceneIntro.hidden = false;
 
-  castGrid.innerHTML = '';
+  // Elenco por áreas (vertical)
   const cast = sc.participantes || [];
   if (!cast.length) {
     sceneCast.hidden = true;
   } else {
-    cast.forEach(p => {
-      const el = document.createElement('button');
-      el.type = 'button';
-      el.className = 'person';
-      el.innerHTML = `
-        <img src="${p.foto || 'placeholder.jpg'}" alt="Foto de ${p.nombre || 'Artista'}" loading="lazy" decoding="async">
-        <div>
-          <b>${p.nombre || 'Artista'}</b>
-          <span class="role">${p.rol || ''}</span>
-        </div>
-      `;
-      el.addEventListener('click', () => openPerson(p));
-      castGrid.appendChild(el);
-    });
+    renderCastGroups(cast);
     sceneCast.hidden = false;
   }
 
@@ -181,11 +230,10 @@ function openPerson(p) {
   });
   pm.showModal();
 }
-
 pmClose?.addEventListener('click', () => pm?.close());
 pm?.addEventListener('click', e => { if (e.target === pm) pm.close(); });
 
-/* ───── Búsqueda ───── */
+/* ───── Búsqueda (filtra menú + mosaico) ───── */
 function applySearch() {
   const term = (q.value || '').trim().toLowerCase();
   const items = DATA.escenas.map(sc => {
@@ -200,6 +248,29 @@ function applySearch() {
   renderTiles(items);
 }
 q?.addEventListener('input', applySearch);
+
+/* ───── Créditos ───── */
+function renderCredits(data){
+  if(!creditsGrid) return;
+  creditsGrid.innerHTML = '';
+  if(!data || !Object.keys(data).length){
+    creditsGrid.innerHTML = '<p class="muted">Pronto subiremos los créditos.</p>';
+    return;
+  }
+  Object.entries(data).forEach(([titulo, personas]) => {
+    const block = document.createElement('div');
+    block.className = 'credit-block';
+    block.innerHTML = `<div class="credit-title">${titulo}</div><div class="credit-list"></div>`;
+    const list = block.querySelector('.credit-list');
+    (personas || []).forEach(n => {
+      const chip = document.createElement('span');
+      chip.className = 'credit-chip';
+      chip.textContent = n;
+      list.appendChild(chip);
+    });
+    creditsGrid.appendChild(block);
+  });
+}
 
 /* ───── Bienvenida ───── */
 function maybeShowWelcome(){
@@ -218,6 +289,7 @@ wStart?.addEventListener('click', () => {
     await loadData();
     renderMenu(DATA.escenas);
     renderTiles(DATA.escenas);
+    renderCredits(DATA.creditos || DATA.info?.creditos);
     maybeShowWelcome();
   } catch (err) {
     console.error(err);
