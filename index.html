@@ -13,8 +13,14 @@
 </head>
 <body>
   <div class="app">
-    <!-- Barra superior (sin botón Home) -->
+    <!-- Topbar -->
     <header class="topbar">
+      <button id="menuBtn" class="icon-btn" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
       <div class="brand">
         <img src="logo.png" alt="Musicala" width="28" height="28" />
         <div class="brand-text">
@@ -23,31 +29,36 @@
         </div>
       </div>
 
-      <!-- Aliados con “badge” clara para que siempre se vean -->
       <div class="partners" aria-label="Aliados">
-        <span class="logo-badge">
-          <img src="LOGO FSA.png" alt="Fundación San Antonio" height="22" />
-        </span>
-        <span class="logo-badge">
-          <img src="GMMMC Logo color.png" alt="GMMMC" height="22" />
-        </span>
+        <span class="logo-badge"><img src="LOGO FSA.png" alt="Fundación San Antonio" height="22" /></span>
+        <span class="logo-badge"><img src="GMMMC Logo color.png" alt="GMMMC" height="22" /></span>
       </div>
     </header>
 
-    <!-- Buscador -->
-    <div class="search wrap">
-      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
-              stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
-      </svg>
-      <label for="q" class="sr-only">Buscar escena, artista o rol</label>
-      <input id="q" type="search" placeholder="Buscar escena, artista o rol…" autocomplete="off" inputmode="search" />
-    </div>
+    <!-- Drawer -->
+    <aside id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <strong>Escenas</strong>
+        <button id="closeDrawer" class="icon-btn" aria-label="Cerrar menú">✕</button>
+      </div>
+      <div class="drawer-body">
+        <div class="search">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+                  stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <label for="q" class="sr-only">Buscar escena, artista o rol</label>
+          <input id="q" type="search" placeholder="Buscar escena, artista o rol…" autocomplete="off" inputmode="search" />
+        </div>
+        <nav class="menu" id="sceneMenu" aria-label="Listado de escenas"></nav>
+      </div>
+    </aside>
+    <div id="scrim" class="scrim" hidden></div>
 
-    <!-- Menú de escenas -->
-    <nav class="menu wrap" id="sceneMenu" aria-label="Menú de escenas"></nav>
+    <!-- Grid de imágenes -->
+    <section id="tiles" class="tiles wrap" aria-label="Explora las escenas"></section>
 
-    <!-- Contenido principal -->
+    <!-- Detalle de escena -->
     <main id="main" class="main wrap" tabindex="-1">
       <header class="scene-head">
         <div class="title">
@@ -60,7 +71,6 @@
         <div class="chips" id="sceneChips" aria-live="polite"></div>
       </header>
 
-      <!-- Intro escena -->
       <section id="sceneIntro" class="card" hidden aria-labelledby="sceneTitle">
         <div class="content">
           <figure class="hero">
@@ -71,7 +81,6 @@
         </div>
       </section>
 
-      <!-- Elenco -->
       <section id="sceneCast" class="card" hidden>
         <div class="content">
           <h3 class="h3">Quiénes actúan aquí</h3>
@@ -79,7 +88,6 @@
         </div>
       </section>
 
-      <!-- Notas para el público -->
       <section id="extras" class="card">
         <div class="content">
           <h3 class="h3">Notas para el público</h3>
@@ -109,7 +117,28 @@
     </main>
   </div>
 
-  <!-- Modal Persona -->
+  <!-- Bienvenida -->
+  <dialog id="welcome" aria-modal="true">
+    <div class="modal-header">
+      <strong>¡Bienvenid@ a AlegreMente 2025! 🎭🎶</strong>
+      <button class="btn" id="wClose" aria-label="Cerrar">Cerrar</button>
+    </div>
+    <div class="modal-body">
+      <p>Explora las escenas desde el mosaico de imágenes o toca <b>☰</b> para abrir el menú con búsqueda.</p>
+      <ul class="bullets">
+        <li>Toca una escena para ver su <b>sentido</b> y <b>elenco</b>.</li>
+        <li>En el menú puedes <b>buscar</b> por artista, rol o título.</li>
+      </ul>
+      <label class="dontshow">
+        <input type="checkbox" id="wDontShow"> No volver a mostrar
+      </label>
+      <div style="margin-top:12px">
+        <button class="btn" id="wStart">¡Entendido!</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 🔧 Modal de Persona (faltaba) -->
   <dialog id="personModal" aria-modal="true">
     <div class="modal-header">
       <strong id="pmName">Nombre</strong>
