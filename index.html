@@ -13,10 +13,8 @@
 </head>
 <body>
   <div class="app">
-    <!-- Barra superior -->
+    <!-- Barra superior (sin botón Home) -->
     <header class="topbar">
-      <button class="homebtn" aria-label="Inicio" title="Inicio">🏠</button>
-
       <div class="brand">
         <img src="logo.png" alt="Musicala" width="28" height="28" />
         <div class="brand-text">
@@ -25,9 +23,14 @@
         </div>
       </div>
 
+      <!-- Aliados con “badge” clara para que siempre se vean -->
       <div class="partners" aria-label="Aliados">
-        <img src="LOGO%20FSA.png" alt="Fundación San Antonio" height="22" />
-        <img src="GMMMC%20Logo%20color.png" alt="GMMMC" height="22" />
+        <span class="logo-badge">
+          <img src="LOGO FSA.png" alt="Fundación San Antonio" height="22" />
+        </span>
+        <span class="logo-badge">
+          <img src="GMMMC Logo color.png" alt="GMMMC" height="22" />
+        </span>
       </div>
     </header>
 
@@ -97,9 +100,9 @@
 
       <footer class="foot wrap">
         <div class="ally-logos">
-          <img src="logo.png" alt="Musicala" height="22">
-          <img src="LOGO%20FSA.png" alt="Fundación San Antonio" height="22">
-          <img src="GMMMC%20Logo%20color.png" alt="GMMMC" height="22">
+          <span class="logo-badge"><img src="logo.png" alt="Musicala" height="22"></span>
+          <span class="logo-badge"><img src="LOGO FSA.png" alt="Fundación San Antonio" height="22"></span>
+          <span class="logo-badge"><img src="GMMMC Logo color.png" alt="GMMMC" height="22"></span>
         </div>
         <small class="muted">© 2025 Musicala · Hecho con cariño.</small>
       </footer>
