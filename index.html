@@ -55,7 +55,7 @@
     </aside>
     <div id="scrim" class="scrim" hidden></div>
 
-    <!-- Grid de imágenes -->
+    <!-- Grid de imágenes (home) -->
     <section id="tiles" class="tiles wrap" aria-label="Explora las escenas"></section>
 
     <!-- Detalle de escena -->
@@ -71,6 +71,7 @@
         <div class="chips" id="sceneChips" aria-live="polite"></div>
       </header>
 
+      <!-- Intro escena -->
       <section id="sceneIntro" class="card" hidden aria-labelledby="sceneTitle">
         <div class="content">
           <figure class="hero">
@@ -81,13 +82,15 @@
         </div>
       </section>
 
+      <!-- Elenco por área -->
       <section id="sceneCast" class="card" hidden>
         <div class="content">
-          <h3 class="h3">Quiénes actúan aquí</h3>
+          <h3 class="h3">Elenco por área</h3>
           <div id="castGrid" class="cast-grid"></div>
         </div>
       </section>
 
+      <!-- Notas para el público -->
       <section id="extras" class="card">
         <div class="content">
           <h3 class="h3">Notas para el público</h3>
@@ -103,6 +106,14 @@
             <span class="chip">#Musicala</span>
             <span class="chip">#ArteQueSana</span>
           </div>
+        </div>
+      </section>
+
+      <!-- Créditos -->
+      <section id="credits" class="card">
+        <div class="content">
+          <h3 class="h3">Créditos</h3>
+          <div id="creditsGrid" class="credits"></div>
         </div>
       </section>
 
@@ -138,7 +149,7 @@
     </div>
   </dialog>
 
-  <!-- 🔧 Modal de Persona (faltaba) -->
+  <!-- Modal de Persona -->
   <dialog id="personModal" aria-modal="true">
     <div class="modal-header">
       <strong id="pmName">Nombre</strong>
