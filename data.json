@@ -13,9 +13,9 @@
       "ubicacionMusica": "Inicio (Orquesta + coro)",
       "centros": ["Teatro: Lucero", "Danza: Padre Misericordioso A", "Plástico: Colegio"],
       "participantes": [
-        { "nombre": "Sofía", "rol": "Protagonista", "foto": "sofia.jpg", "bio": "La viajera de nuestra historia.", "tags": ["Teatro"] },
-        { "nombre": "Figura Sombría", "rol": "Antagonista simbólico", "foto": "placeholder.jpg", "bio": "Representa el no-consentimiento.", "tags": ["Teatro"] },
-        { "nombre": "Coro infantil", "rol": "Coro", "foto": "placeholder.jpg", "bio": "Voces que acompañan la escena.", "tags": ["Coro"] }
+        { "nombre": "Rousse Castañeda", "personaje": "Sofía", "foto": "sofia.jpg", "bio": "La viajera de nuestra historia.", "tags": ["Teatro"] },
+        { "nombre": "Figura Sombría", "personaje": "Antagonista simbólico", "foto": "placeholder.jpg", "bio": "Representa el no-consentimiento.", "tags": ["Teatro"] },
+        { "nombre": "Coro infantil", "personaje": "Coro", "foto": "placeholder.jpg", "bio": "Voces que acompañan la escena.", "tags": ["Coro"] }
       ]
     },
     {
@@ -27,7 +27,7 @@
       "ubicacionMusica": "Mitad (Orquesta)",
       "centros": ["Teatro: Lucero", "Danza: Arroyo", "Plástico: Jerusalén"],
       "participantes": [
-        { "nombre": "Bailarines Tango Joven", "rol": "Danza contemporánea/tango", "foto": "placeholder.jpg", "bio": "Fusión lúdica de tango con contemporáneo.", "tags": ["Danza"] }
+        { "nombre": "Bailarines Tango Joven", "personaje": "Elenco de danza", "foto": "placeholder.jpg", "bio": "Fusión lúdica de tango con contemporáneo.", "tags": ["Danza"] }
       ]
     },
     {
@@ -39,9 +39,60 @@
       "ubicacionMusica": "Final (Orquesta + tambores)",
       "centros": ["Teatro: Arroyo – Betania", "Danza: Betania", "Plástico: Colegio"],
       "participantes": [
-        { "nombre": "Tamborero", "rol": "Percusión", "foto": "tamborero.jpg", "bio": "Pulso del carnaval.", "tags": ["Música"] },
-        { "nombre": "Máscaras", "rol": "Comparsa", "foto": "mascaras.jpg", "bio": "Colores del pueblo.", "tags": ["Teatro"] },
-        { "nombre": "Sofía", "rol": "Protagonista", "foto": "sofia.jpg", "bio": "", "tags": ["Teatro"] }
+        {
+          "nombre": "Rousse Castañeda",
+          "personaje": "Sofía",
+          "tags": ["Teatro"],
+          "foto": "Escena 3 -- Rousse Castañeda Sofía.jpg"
+        },
+        {
+          "nombre": "Jenifer González",
+          "personaje": "Anciana",
+          "tags": ["Teatro"],
+          "foto": "Escena 3 - Jenifer González Anciana.jpg"
+        },
+        {
+          "nombre": "Alexander García",
+          "personaje": "Tambor viviente",
+          "tags": ["Música"],
+          "foto": "Escena 3 - Alexander García Tambor viviente.jpg"
+        },
+        {
+          "nombre": "Maicol Luna",
+          "personaje": "Tambor viviente",
+          "tags": ["Música"],
+          "foto": "Escena 3 - Maicol Luna Tambor viviente.jpg"
+        },
+        {
+          "nombre": "Daniela González",
+          "personaje": "Tambor viviente",
+          "tags": ["Música"],
+          "foto": "Escena 3 - Daniela González Tambor viviente.jpg"
+        },
+        {
+          "nombre": "Antonella García",
+          "personaje": "Niña carnaval",
+          "tags": ["Danza"],
+          "foto": "Escena 3 - Antonella García Niña carnaval.jpg"
+        },
+        {
+          "nombre": "Briannelys Sambrano",
+          "personaje": "Niña carnaval",
+          "tags": ["Danza"],
+          "foto": "Escena 3 - Briannelys Sambrano Niña carnaval.jpg"
+        },
+        {
+          "nombre": "Heydi Mar Ohep",
+          "personaje": "Niña carnaval",
+          "tags": ["Danza"],
+          "foto": "Escena 3 - Heydi Mar Ohep Niña carnaval.jpg"
+        },
+        {
+          "nombre": "Sara Morales",
+          "personaje": "Niña carnaval",
+          "tags": ["Danza"],
+          "foto": "Escena 3 - Sara Morales Niña carnaval.jpg"
+        }
       ]
     },
     {
@@ -53,8 +104,8 @@
       "ubicacionMusica": "Mitad (Orquesta)",
       "centros": ["Teatro: Arroyo", "Danza: Jerusalén", "Plástico: Lucero"],
       "participantes": [
-        { "nombre": "Poetas Jóvenes", "rol": "Teatro de palabra", "foto": "poetas.jpg", "bio": "", "tags": ["Teatro"] },
-        { "nombre": "Bailarines Jazz", "rol": "Danza / Jazz", "foto": "bailarinesjazz.jpg", "bio": "", "tags": ["Danza"] }
+        { "nombre": "Poetas Jóvenes", "personaje": "Poetas urbanos", "foto": "poetas.jpg", "tags": ["Teatro"] },
+        { "nombre": "Bailarines Jazz", "personaje": "Intérpretes de danza", "foto": "bailarinesjazz.jpg", "tags": ["Danza"] }
       ]
     },
     {
@@ -66,8 +117,8 @@
       "ubicacionMusica": "Final (Orquesta + coro)",
       "centros": ["Teatro: Jerusalén", "Danza: Santo Domingo", "Plástico: Santo Domingo"],
       "participantes": [
-        { "nombre": "Trenzadoras", "rol": "Artes plásticas / peinados", "foto": "trenzadoras.jpg", "bio": "", "tags": ["Plástico"] },
-        { "nombre": "Pareja Andina", "rol": "Danza andina", "foto": "andina.jpg", "bio": "", "tags": ["Danza"] }
+        { "nombre": "Trenzadoras", "personaje": "Artes plásticas / peinados", "foto": "trenzadoras.jpg", "tags": ["Plástico"] },
+        { "nombre": "Pareja Andina", "personaje": "Danza andina", "foto": "andina.jpg", "tags": ["Danza"] }
       ]
     },
     {
@@ -79,7 +130,7 @@
       "ubicacionMusica": "Inicio (Orquesta)",
       "centros": ["Teatro: Jerusalén", "Danza: Colegio", "Plástico: Arroyo"],
       "participantes": [
-        { "nombre": "Sombreros Locos", "rol": "Teatro gestual", "foto": "sombreros.jpg", "bio": "", "tags": ["Teatro"] }
+        { "nombre": "Sombreros Locos", "personaje": "Teatro gestual", "foto": "sombreros.jpg", "tags": ["Teatro"] }
       ]
     },
     {
@@ -91,7 +142,7 @@
       "ubicacionMusica": "Inicio (Orquesta + percusión caribeña)",
       "centros": ["Teatro: Padre Misericordioso B", "Danza: Padre Misericordioso B", "Plástico: Padre Misericordioso B"],
       "participantes": [
-        { "nombre": "Comparsa Caribe", "rol": "Danza / comparsa", "foto": "comparsa.jpg", "bio": "", "tags": ["Danza"] }
+        { "nombre": "Comparsa Caribe", "personaje": "Danza / comparsa", "foto": "comparsa.jpg", "tags": ["Danza"] }
       ]
     },
     {
@@ -103,9 +154,9 @@
       "ubicacionMusica": "Mitad → final (Orquesta)",
       "centros": ["Teatro: Padre Misericordioso B", "Danza: Santo Domingo", "Plástico: Lucero"],
       "participantes": [
-        { "nombre": "Todos los elencos", "rol": "Elenco completo", "foto": "todos.jpg", "bio": "", "tags": ["Final"] },
-        { "nombre": "Coro general", "rol": "Coro y voces", "foto": "placeholder.jpg", "bio": "", "tags": ["Coro"] },
-        { "nombre": "Tambores", "rol": "Percusión / timbales", "foto": "placeholder.jpg", "bio": "", "tags": ["Música"] }
+        { "nombre": "Todos los elencos", "personaje": "Elenco completo", "foto": "todos.jpg", "tags": ["Final"] },
+        { "nombre": "Coro general", "personaje": "Coro y voces", "foto": "placeholder.jpg", "tags": ["Coro"] },
+        { "nombre": "Tambores", "personaje": "Percusión / timbales", "foto": "placeholder.jpg", "tags": ["Música"] }
       ]
     }
   ],
