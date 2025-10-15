@@ -1,205 +1,301 @@
-{
-  "info": {
-    "titulo": "AlegreMente 2025",
-    "subtitulo": "Un viaje por el cuerpo, la memoria y la alegría"
-  },
-  "escenas": [
-    {
-      "id": "escena-1",
-      "titulo": "El sol no canta / Mi cuerpo es solo mío",
-      "sentido": "Sofía inicia el camino para recuperar su autonomía corporal y el derecho a decir ‘esto no está bien’.",
-      "imagen": "escena1.jpg",
-      "musica": "Mi cuerpo es solo mío",
-      "ubicacionMusica": "Inicio (Orquesta + coro)",
-      "centros": ["Teatro: Lucero", "Danza: Padre Misericordioso A", "Plástico: Colegio"],
-      "participantes": [
-        { "nombre": "Rousse Castañeda", "personaje": "Sofía", "foto": "sofia.jpg", "bio": "La viajera de nuestra historia.", "tags": ["Teatro"] },
-        { "nombre": "Figura Sombría", "personaje": "Antagonista simbólico", "foto": "placeholder.jpg", "bio": "Representa el no-consentimiento.", "tags": ["Teatro"] },
-        { "nombre": "Coro infantil", "personaje": "Coro", "foto": "placeholder.jpg", "bio": "Voces que acompañan la escena.", "tags": ["Coro"] }
-      ]
-    },
-    {
-      "id": "escena-2",
-      "titulo": "Buenos Aires del alma / Mango Tango",
-      "sentido": "Llega el aire, el ritmo y la risa que devuelven la alegría vital.",
-      "imagen": "escena2.jpg",
-      "musica": "Mango Tango",
-      "ubicacionMusica": "Mitad (Orquesta)",
-      "centros": ["Teatro: Lucero", "Danza: Arroyo", "Plástico: Jerusalén"],
-      "participantes": [
-        { "nombre": "Bailarines Tango Joven", "personaje": "Elenco de danza", "foto": "placeholder.jpg", "bio": "Fusión lúdica de tango con contemporáneo.", "tags": ["Danza"] }
-      ]
-    },
-    {
-      "id": "escena-3",
-      "titulo": "Carnaval / Pueblo Tambor / Siyahamba",
-      "sentido": "Sofía se reconoce en comunidad: donde hay tambor, hay camino.",
-      "imagen": "escena3.jpg",
-      "musica": "Siyahamba / Pueblo Tambor",
-      "ubicacionMusica": "Final (Orquesta + tambores)",
-      "centros": ["Teatro: Arroyo – Betania", "Danza: Betania", "Plástico: Colegio"],
-      "participantes": [
-        {
-          "nombre": "Rousse Castañeda",
-          "personaje": "Sofía",
-          "tags": ["Teatro"],
-          "foto": "Escena 3 -- Rousse Castañeda Sofía.jpg"
-        },
-        {
-          "nombre": "Jenifer González",
-          "personaje": "Anciana",
-          "tags": ["Teatro"],
-          "foto": "Escena 3 - Jenifer González Anciana.jpg"
-        },
-        {
-          "nombre": "Alexander García",
-          "personaje": "Tambor viviente",
-          "tags": ["Música"],
-          "foto": "Escena 3 - Alexander García Tambor viviente.jpg"
-        },
-        {
-          "nombre": "Maicol Luna",
-          "personaje": "Tambor viviente",
-          "tags": ["Música"],
-          "foto": "Escena 3 - Maicol Luna Tambor viviente.jpg"
-        },
-        {
-          "nombre": "Daniela González",
-          "personaje": "Tambor viviente",
-          "tags": ["Música"],
-          "foto": "Escena 3 - Daniela González Tambor viviente.jpg"
-        },
-        {
-          "nombre": "Antonella García",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Antonella García Niña carnaval.jpg"
-        },
-        {
-          "nombre": "Briannelys Sambrano",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Briannelys Sambrano Niña carnaval.jpg"
-        },
-        {
-          "nombre": "Heydi Mar Ohep",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Heydi Mar Ohep Niña carnaval.jpg"
-        },
-        {
-          "nombre": "Sara Morales",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Sara Morales Niña carnaval.jpg"
-        }
-      ]
-    },
-    {
-      "id": "escena-4",
-      "titulo": "Ciudad Rima / Happy Blues",
-      "sentido": "La tristeza se canta y se baila; la historia se dice con dignidad.",
-      "imagen": "escena4.jpg",
-      "musica": "Happy Blues",
-      "ubicacionMusica": "Mitad (Orquesta)",
-      "centros": ["Teatro: Arroyo", "Danza: Jerusalén", "Plástico: Lucero"],
-      "participantes": [
-        { "nombre": "Poetas Jóvenes", "personaje": "Poetas urbanos", "foto": "poetas.jpg", "tags": ["Teatro"] },
-        { "nombre": "Bailarines Jazz", "personaje": "Intérpretes de danza", "foto": "bailarinesjazz.jpg", "tags": ["Danza"] }
-      ]
-    },
-    {
-      "id": "escena-5",
-      "titulo": "Montaña Trenza / Vivo en un país",
-      "sentido": "Conecta con raíces, memoria y pertenencia.",
-      "imagen": "escena5.jpg",
-      "musica": "Vivo en un país",
-      "ubicacionMusica": "Final (Orquesta + coro)",
-      "centros": ["Teatro: Jerusalén", "Danza: Santo Domingo", "Plástico: Santo Domingo"],
-      "participantes": [
-        { "nombre": "Trenzadoras", "personaje": "Artes plásticas / peinados", "foto": "trenzadoras.jpg", "tags": ["Plástico"] },
-        { "nombre": "Pareja Andina", "personaje": "Danza andina", "foto": "andina.jpg", "tags": ["Danza"] }
-      ]
-    },
-    {
-      "id": "escena-6",
-      "titulo": "Tierra Imaginaria",
-      "sentido": "Imaginar es libertad y creación.",
-      "imagen": "escena6.jpg",
-      "musica": "Tierra Imaginaria",
-      "ubicacionMusica": "Inicio (Orquesta)",
-      "centros": ["Teatro: Jerusalén", "Danza: Colegio", "Plástico: Arroyo"],
-      "participantes": [
-        { "nombre": "Sombreros Locos", "personaje": "Teatro gestual", "foto": "sombreros.jpg", "tags": ["Teatro"] }
-      ]
-    },
-    {
-      "id": "escena-7",
-      "titulo": "Isla Alegría / Merengue del primer dedo",
-      "sentido": "El cuerpo merece gozo; el ritmo nace de un gesto mínimo.",
-      "imagen": "escena7.jpg",
-      "musica": "Merengue del primer dedo",
-      "ubicacionMusica": "Inicio (Orquesta + percusión caribeña)",
-      "centros": ["Teatro: Padre Misericordioso B", "Danza: Padre Misericordioso B", "Plástico: Padre Misericordioso B"],
-      "participantes": [
-        { "nombre": "Comparsa Caribe", "personaje": "Danza / comparsa", "foto": "comparsa.jpg", "tags": ["Danza"] }
-      ]
-    },
-    {
-      "id": "escena-8",
-      "titulo": "Colombia Tierra Querida",
-      "sentido": "Apoteosis: celebración de la vida, la voz y la tierra.",
-      "imagen": "escena8.jpg",
-      "musica": "Colombia Tierra Querida",
-      "ubicacionMusica": "Mitad → final (Orquesta)",
-      "centros": ["Teatro: Padre Misericordioso B", "Danza: Santo Domingo", "Plástico: Lucero"],
-      "participantes": [
-        { "nombre": "Todos los elencos", "personaje": "Elenco completo", "foto": "todos.jpg", "tags": ["Final"] },
-        { "nombre": "Coro general", "personaje": "Coro y voces", "foto": "placeholder.jpg", "tags": ["Coro"] },
-        { "nombre": "Tambores", "personaje": "Percusión / timbales", "foto": "placeholder.jpg", "tags": ["Música"] }
-      ]
-    }
-  ],
-  "creditos": {
-    "Dirección artística": [
-      "Catalina Medina Leal",
-      "Alexander Caballero Moreno",
-      "Jean Williams Casilimas"
-    ],
-    "Dirección musical": [
-      "Jean Williams Casilimas"
-    ],
-    "Coreografía": [
-      "Angie Natalia Nitola",
-      "Erika López",
-      "María Camila Pirajan"
-    ],
-    "Producción": [
-      "Alexander Caballero Moreno",
-      "Catalina Medina Leal",
-      "Jean Williams Casilimas",
-      "Mario Ujueta"
-    ],
-    "Coordinación general": [
-      "Fundación San Antonio",
-      "Musicala",
-      "Jean Williams Casilimas"
-    ],
-    "Escenografía y plástica": ["Pendiente"],
-    "Docentes de teatro": ["Pendiente"],
-    "Docentes de danza": ["Pendiente"],
-    "Docentes de música/orquesta": ["Pendiente"],
-    "Coro": ["Pendiente"],
-    "Agradecimientos": [
-      "Familias",
-      "Fundación San Antonio",
-      "Musicala",
-      "Profesoras y profesores",
-      "Niñas, niños y jóvenes participantes",
-      "Equipo de voluntariado",
-      "Aliados y donantes",
-      "Comunidades y parroquias",
-      "Equipo técnico y de sala"
-    ]
-  }
+'use strict';
+
+/* Helper */
+const $ = (id) => document.getElementById(id);
+
+/* DOM */
+const menuBtn      = $('menuBtn');
+const closeDrawer  = $('closeDrawer');
+const drawer       = $('drawer');
+const scrim        = $('scrim');
+
+const sceneMenu     = $('sceneMenu');
+const tiles         = $('tiles');
+
+const sceneTitle    = $('sceneTitle');
+const sceneSubtitle = $('sceneSubtitle');
+const sceneChips    = $('sceneChips');
+
+const sceneIntro = $('sceneIntro');
+const sceneSense = $('sceneSense');
+const sceneImage = $('sceneImage');
+
+const sceneCast = $('sceneCast');
+const castGrid  = $('castGrid');
+
+const q        = $('q');
+const main     = $('main');
+
+/* Bienvenida */
+const welcome  = $('welcome');
+const wClose   = $('wClose');
+const wStart   = $('wStart');
+const wDont    = $('wDontShow');
+
+/* Modal Persona */
+const pm      = $('personModal');
+const pmName  = $('pmName');
+const pmPhoto = $('pmPhoto');
+const pmRole  = $('pmRole');
+const pmBio   = $('pmBio');
+const pmTags  = $('pmTags');
+const pmClose = $('pmClose');
+
+/* Créditos */
+const creditsGrid = $('creditsGrid');
+
+/* Estado */
+let DATA = { info:{}, escenas:[] };
+let activeId = null;
+
+/* ───── Menu drawer ───── */
+function openDrawer(){
+  drawer.classList.add('open');
+  scrim.hidden = false;
+  menuBtn?.setAttribute('aria-expanded','true');
+  drawer.setAttribute('aria-hidden','false');
 }
+function closeDrawerFn(){
+  drawer.classList.remove('open');
+  scrim.hidden = true;
+  menuBtn?.setAttribute('aria-expanded','false');
+  drawer.setAttribute('aria-hidden','true');
+}
+menuBtn?.addEventListener('click', openDrawer);
+closeDrawer?.addEventListener('click', closeDrawerFn);
+scrim?.addEventListener('click', closeDrawerFn);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeDrawerFn(); if (welcome?.open) welcome.close(); }
+});
+
+/* ───── Data ───── */
+async function loadData() {
+  const res = await fetch('data.json', { cache: 'no-store' });
+  if (!res.ok) throw new Error(`No se pudo cargar data.json (${res.status})`);
+  DATA = await res.json();
+  console.log('Cargado data.json', DATA);
+}
+
+/* ───── Render: menú (drawer) ───── */
+function renderMenu(list) {
+  sceneMenu.innerHTML = '';
+  list.forEach((sc, i) => {
+    const count = sc.participantes?.length || 0;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.dataset.id = sc.id;
+    btn.innerHTML = `
+      <div class="thumb"><img src="${sc.imagen}" alt="" loading="lazy" decoding="async"></div>
+      <div class="row">
+        <span>${i + 1}. ${sc.titulo}</span>
+        <span class="badge">${count} ${count === 1 ? 'artista' : 'artistas'}</span>
+      </div>
+    `;
+    btn.addEventListener('click', () => { selectScene(sc.id); closeDrawerFn(); });
+    sceneMenu.appendChild(btn);
+  });
+}
+
+/* ───── Render: mosaico (home) ───── */
+function renderTiles(list){
+  tiles.innerHTML = '';
+  list.forEach((sc, i) => {
+    const card = document.createElement('article');
+    card.className = 'tile';
+    card.innerHTML = `
+      <span class="num">${i+1}</span>
+      <img src="${sc.imagen}" alt="" loading="lazy" decoding="async">
+      <div class="overlay"><div class="title">${sc.titulo}</div></div>
+    `;
+    card.addEventListener('click', () => {
+      selectScene(sc.id);
+      window.scrollTo({ top: document.querySelector('.main').offsetTop - 12, behavior:'smooth' });
+    });
+    tiles.appendChild(card);
+  });
+}
+
+/* ───── Elenco: detección de área + grupos ───── */
+const AREA_ORDER = ['Teatro','Danza','Música','Orquesta','Artes plásticas','Coro','Elenco'];
+
+function detectArea(p){
+  const tag = (p.tags || [])[0] || '';
+  if (['Teatro','Danza','Música','Coro'].includes(tag)) return tag;
+  if (tag === 'Plástico') return 'Artes plásticas';
+
+  const r = (p.rol || '').toLowerCase();
+  if (/(violin|violín|viola|cello|contraba|flauta|clarinete|trompeta|trombón|saxo|oboe|fagot|piano|teclado|guitarra|bajo|percusi|timbales|batería|marimba)/.test(r)) return 'Orquesta';
+  if (/(coro|voz|cantante)/.test(r)) return 'Coro';
+  if (/(danza|bailar)/.test(r)) return 'Danza';
+  if (/(teatr|actor|actriz|protagonista|antagonista|poeta)/.test(r)) return 'Teatro';
+  if (/(plást|máscaras|escenograf|trenzadoras|artes plásticas)/.test(r)) return 'Artes plásticas';
+  if (/(músic|tambores)/.test(r)) return 'Música';
+  return 'Elenco';
+}
+
+function groupCast(list){
+  const map = new Map();
+  list.forEach(p => {
+    const area = detectArea(p);
+    if(!map.has(area)) map.set(area, []);
+    map.get(area).push(p);
+  });
+  const ordered = Array.from(map.entries()).sort((a,b) => {
+    const ia = AREA_ORDER.indexOf(a[0]); const ib = AREA_ORDER.indexOf(b[0]);
+    return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+  });
+  return ordered;
+}
+
+/* ───── Render elenco por grupos ───── */
+function renderCastGroups(list){
+  castGrid.innerHTML = '';
+  const groups = groupCast(list);
+  groups.forEach(([area, people]) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'cast-group';
+    wrap.innerHTML = `<div class="group-title">${area}</div><div class="cast-rows"></div>`;
+    const rows = wrap.querySelector('.cast-rows');
+
+    people.forEach(p => {
+      const el = document.createElement('button');
+      el.type = 'button';
+      el.className = 'person';
+      el.innerHTML = `
+        <img src="${p.foto || 'placeholder.jpg'}" alt="Foto de ${p.nombre || 'Artista'}" loading="lazy" decoding="async">
+        <b class="nombre-real">${p.nombre || 'Artista'}</b>
+        <span class="personaje">${p.personaje || ''}</span>
+      `;
+      el.addEventListener('click', () => openPerson(p));
+      rows.appendChild(el);
+    });
+
+    castGrid.appendChild(wrap);
+  });
+}
+
+/* ───── Selección de escena ───── */
+function selectScene(id) {
+  activeId = id;
+  document.querySelectorAll('.menu button')
+    .forEach(b => b.classList.toggle('active', b.dataset.id === id));
+
+  const sc = DATA.escenas.find(e => e.id === id);
+  if (!sc) return;
+
+  sceneTitle.textContent = sc.titulo || 'Escena';
+  sceneSubtitle.textContent = sc.musica
+    ? `Música: ${sc.musica}${sc.ubicacionMusica ? ` · ${sc.ubicacionMusica}` : ''}`
+    : '';
+
+  sceneChips.innerHTML = '';
+  (sc.centros || []).forEach(c => {
+    const chip = document.createElement('span');
+    chip.className = 'chip';
+    chip.textContent = c;
+    sceneChips.appendChild(chip);
+  });
+
+  sceneSense.textContent = sc.sentido || '';
+  sceneImage.src = sc.imagen || 'placeholder.jpg';
+  sceneImage.alt = sc.titulo ? `Imagen alusiva: ${sc.titulo}` : 'Imagen de la escena';
+  sceneIntro.hidden = false;
+
+  const cast = sc.participantes || [];
+  if (!cast.length) {
+    sceneCast.hidden = true;
+  } else {
+    renderCastGroups(cast);
+    sceneCast.hidden = false;
+  }
+
+  main.focus({ preventScroll: false });
+}
+
+/* ───── Modal persona ───── */
+function openPerson(p) {
+  if (!pm) return;
+  pmName.textContent  = p.nombre || 'Artista';
+  pmPhoto.src         = p.foto || 'placeholder.jpg';
+  pmPhoto.alt         = `Foto de ${p.nombre || 'Artista'}`;
+  pmRole.textContent  = p.personaje || '';
+  pmBio.textContent   = p.bio || '';
+  pmTags.innerHTML    = '';
+  (p.tags || []).forEach(t => {
+    const s = document.createElement('span');
+    s.className = 'chip';
+    s.textContent = t;
+    pmTags.appendChild(s);
+  });
+  pm.showModal();
+}
+pmClose?.addEventListener('click', () => pm?.close());
+pm?.addEventListener('click', e => { if (e.target === pm) pm.close(); });
+
+/* ───── Búsqueda ───── */
+function applySearch() {
+  const term = (q.value || '').trim().toLowerCase();
+  const items = DATA.escenas.map(sc => {
+    const inScene = [sc.titulo, sc.sentido, sc.musica].filter(Boolean).join(' ').toLowerCase().includes(term);
+    const inCast = (sc.participantes || []).some(p =>
+      [p.nombre, p.personaje, ...(p.tags || [])].filter(Boolean).join(' ').toLowerCase().includes(term)
+    );
+    return { sc, show: !term || inScene || inCast };
+  }).filter(x => x.show).map(x => x.sc);
+
+  renderMenu(items);
+  renderTiles(items);
+}
+q?.addEventListener('input', applySearch);
+
+/* ───── Créditos ───── */
+function renderCredits(data){
+  if(!creditsGrid) return;
+  creditsGrid.innerHTML = '';
+  if(!data || !Object.keys(data).length){
+    creditsGrid.innerHTML = '<p class="muted">Pronto subiremos los créditos.</p>';
+    return;
+  }
+  Object.entries(data).forEach(([titulo, personas]) => {
+    const block = document.createElement('div');
+    block.className = 'credit-block';
+    block.innerHTML = `<div class="credit-title">${titulo}</div><div class="credit-list"></div>`;
+    const list = block.querySelector('.credit-list');
+    (personas || []).forEach(n => {
+      const chip = document.createElement('span');
+      chip.className = 'credit-chip';
+      chip.textContent = n;
+      list.appendChild(chip);
+    });
+    creditsGrid.appendChild(block);
+  });
+}
+
+/* ───── Bienvenida ───── */
+function maybeShowWelcome(){
+  if (localStorage.getItem('pmano.welcomed') === '1') return;
+  welcome?.showModal();
+}
+wClose?.addEventListener('click', () => welcome?.close());
+wStart?.addEventListener('click', () => {
+  if (wDont?.checked) localStorage.setItem('pmano.welcomed','1');
+  welcome?.close();
+});
+
+/* ───── Init ───── */
+(async function init() {
+  try {
+    await loadData();
+    renderMenu(DATA.escenas);
+    renderTiles(DATA.escenas);
+    renderCredits(DATA.creditos || DATA.info?.creditos);
+    maybeShowWelcome();
+  } catch (err) {
+    console.error(err);
+    const box = document.createElement('div');
+    box.className = 'card wrap';
+    box.innerHTML = `<div class="content"><b>No pudimos cargar <code>data.json</code>.</b><br>
+    Asegúrate de que el archivo esté en la misma carpeta que <code>index.html</code> y que el JSON sea válido.</div>`;
+    document.body.prepend(box);
+  }
+})();
