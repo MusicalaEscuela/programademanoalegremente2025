@@ -4,13 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Programa de mano · AlegreMente 2025</title>
-  <meta name="description" content="Programa de mano digital del evento AlegreMente 2025: escenas, elenco, fotos y sinopsis." />
   <link rel="icon" href="logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="theme-midnight">
   <div class="app">
     <!-- Topbar -->
@@ -65,46 +62,40 @@
           <span class="dot" aria-hidden="true"></span>
           <div>
             <h2 id="sceneTitle">Selecciona una escena</h2>
-            <p id="sceneSubtitle" class="subtitle"></p>
+            <p id="sceneSubtitle" class="muted">Toca una escena para ver sinopsis y elenco.</p>
           </div>
         </div>
-        <div class="chips" id="sceneChips" aria-live="polite"></div>
+        <div class="head-actions">
+          <button id="shareBtn" class="btn-ghost" hidden>Compartir</button>
+          <button id="backBtn" class="btn-ghost" hidden>Volver</button>
+        </div>
       </header>
 
-      <!-- Intro escena -->
-      <section id="sceneIntro" class="card" hidden aria-labelledby="sceneTitle">
+      <figure class="scene-media">
+        <img id="sceneImage" src="" alt="" loading="lazy" decoding="async" />
+        <figcaption id="sceneCaption" class="sr-only"></figcaption>
+      </figure>
+
+      <!-- Info de escena (IDs que usa app.js) -->
+      <section id="sceneIntro" class="info-card" hidden>
         <div class="content">
-          <figure class="hero">
-            <img id="sceneImage" alt="Imagen de la escena seleccionada" loading="lazy" decoding="async">
-          </figure>
-          <h3 class="h3">Sentido de la escena</h3>
-          <p id="sceneSense" class="lead"></p>
+          <h3 class="h3">Sinopsis</h3>
+          <p id="sceneSense"></p>
+          <div class="chips" id="sceneChips"></div>
         </div>
       </section>
 
-      <!-- Elenco por área -->
       <section id="sceneCast" class="card" hidden>
         <div class="content">
-          <h3 class="h3">Elenco por área</h3>
-          <div id="castGrid" class="cast-grid"></div>
+          <h3 class="h3">Elenco</h3>
+          <div id="castGrid" class="grid"></div>
         </div>
       </section>
 
-      <!-- Notas para el público -->
-      <section id="extras" class="card">
+      <section id="crew" class="card">
         <div class="content">
-          <h3 class="h3">Notas para el público</h3>
-          <ul class="bullets">
-            <li>Duración: 90 minutos.</li>
-            <li>Respeta la experiencia: silencia tu celular y evita el flash.</li>
-            <li>Accesibilidad: si requieres apoyo para movilidad o ubicación, habla con el personal de sala.</li>
-            <li>Baños: señalizados en lobby. Evita entrar y salir durante números musicales.</li>
-          </ul>
-          <div class="chips">
-            <span class="chip">#AlegreMente2025</span>
-            <span class="chip">#Musicala</span>
-            <span class="chip">#ArteQueSana</span>
-          </div>
+          <h3 class="h3">Equipo</h3>
+          <div id="crewGrid" class="grid"></div>
         </div>
       </section>
 
@@ -130,29 +121,20 @@
   <!-- Bienvenida -->
   <dialog id="welcome" aria-modal="true">
     <div class="modal-header">
-      <strong>¡Bienvenid@ a AlegreMente 2025! 🎭🎶</strong>
-      <button class="btn" id="wClose" aria-label="Cerrar">Cerrar</button>
+      <strong>Bienvenid@s</strong>
+      <button class="icon-btn" id="wClose" data-close>✕</button>
     </div>
     <div class="modal-body">
-      <p>Explora las escenas desde el mosaico de imágenes o toca <b>☰</b> para abrir el menú con búsqueda.</p>
-      <ul class="bullets">
-        <li>Toca una escena para ver su <b>sentido</b> y <b>elenco</b>.</li>
-        <li>En el menú puedes <b>buscar</b> por artista, rol o título.</li>
-      </ul>
-      <label class="dontshow">
-        <input type="checkbox" id="wDontShow"> No volver a mostrar
-      </label>
-      <div style="margin-top:12px">
-        <button class="btn" id="wStart">¡Entendido!</button>
-      </div>
+      <p>Este es el programa de mano digital del evento <b>AlegreMente 2025</b>. Explora las escenas, mira el elenco y conoce más del proyecto.</p>
+      <button class="btn" id="wStart" data-close>Empezar</button>
     </div>
   </dialog>
 
-  <!-- Modal de Persona -->
+  <!-- Modal persona -->
   <dialog id="personModal" aria-modal="true">
     <div class="modal-header">
       <strong id="pmName">Nombre</strong>
-      <button class="btn" id="pmClose" aria-label="Cerrar">Cerrar</button>
+      <button class="icon-btn" id="pmClose" data-close>✕</button>
     </div>
     <div class="modal-body">
       <div class="modal-flex">
@@ -165,6 +147,12 @@
       </div>
     </div>
   </dialog>
+
+  <!-- Botón flotante PQRS -->
+  <button id="pqrsBtn" onclick="window.open('https://tulink-de-pqrs.com', '_blank')">
+    <svg viewBox="0 0 24 24"><path d="M12 22c5.5 0 10-4 10-9s-4.5-9-10-9S2 8 2 13c0 2.1.8 4 2.2 5.5-.4 1.3-1 2.6-1.8 3.8 1.8-.2 3.5-.8 5-1.6 1.5.5 3.1.8 4.6.8z"/></svg>
+    Dejar comentario
+  </button>
 
   <script src="app.js" defer></script>
 </body>
