@@ -9,6 +9,11 @@
   --shadow: 0 10px 24px rgba(0,0,0,.35);
   --radius: 16px;
   --fz: 16px;
+
+  /* Animaciones (duraciones suaves) */
+  --t-fast: .18s;
+  --t-med: .28s;
+  --t-slow: .45s;
 }
 
 *{box-sizing:border-box}
@@ -34,7 +39,7 @@ img{max-width:100%; display:block}
   backdrop-filter: blur(8px);
   border-bottom:1px solid rgba(255,255,255,.08);
 }
-.icon-btn{background:transparent;border:0;color:#fff;cursor:pointer;padding:6px;border-radius:10px}
+.icon-btn{background:transparent;border:0;color:#fff;cursor:pointer;padding:6px;border-radius:10px;transition:transform var(--t-fast) ease}
 .icon-btn:active{transform:scale(.98)}
 .brand{display:flex; align-items:center; gap:10px}
 .brand img{border-radius:10px; box-shadow:var(--shadow)}
@@ -54,7 +59,7 @@ img{max-width:100%; display:block}
 .drawer{
   position:fixed; inset:0 auto 0 0; width:min(360px, 86vw);
   background:var(--card); color:var(--ink); transform:translateX(-100%);
-  transition:transform .28s ease; z-index:30; box-shadow:0 0 40px rgba(0,0,0,.45);
+  transition:transform var(--t-med) ease; z-index:30; box-shadow:0 0 40px rgba(0,0,0,.45);
   display:flex; flex-direction:column;
 }
 .drawer.open{ transform:translateX(0) }
@@ -66,7 +71,10 @@ img{max-width:100%; display:block}
 .scrim{
   position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:25;
   backdrop-filter: blur(1.5px);
+  opacity:0; transition:opacity var(--t-med) ease;
 }
+.scrim[hidden]{display:none}
+.drawer.open + .scrim{ opacity:1 }
 
 /* Buscador */
 .search{
@@ -82,7 +90,9 @@ img{max-width:100%; display:block}
   width:100%; text-align:left; background:#0f1630; color:var(--ink);
   border:1px solid rgba(255,255,255,.08);
   border-radius:14px; padding:8px; display:flex; gap:12px; align-items:center;
+  transition:outline var(--t-fast) ease, transform var(--t-fast) ease;
 }
+.menu button:hover{ transform:translateY(-1px) }
 .menu .thumb{ width:54px; height:38px; border-radius:10px; overflow:hidden; flex:0 0 54px }
 .menu .thumb img{ width:100%; height:100%; object-fit:cover }
 .menu .row{ display:flex; justify-content:space-between; align-items:center; gap:12px; width:100% }
@@ -99,7 +109,10 @@ img{max-width:100%; display:block}
 .tile{
   position:relative; border-radius:14px; overflow:hidden; cursor:pointer;
   box-shadow: var(--shadow); border:1px solid rgba(255,255,255,.08);
+  transform:translateY(0); transition:transform var(--t-fast) ease, box-shadow var(--t-fast) ease;
+  animation: fade-up var(--t-slow) ease both;
 }
+.tile:hover{ transform:translateY(-2px) }
 .tile img{ width:100%; height:140px; object-fit:cover; display:block }
 @media (min-width:720px){ .tile img{ height:160px } }
 .tile .overlay{
@@ -120,6 +133,7 @@ img{max-width:100%; display:block}
   background:var(--card); border:1px solid rgba(255,255,255,.08);
   border-radius:var(--radius); box-shadow:var(--shadow);
   margin:14px 0; overflow:hidden;
+  animation: fade-up var(--t-slow) ease both;
 }
 .card .content{padding:14px}
 .hero{margin:0; border-radius:12px; overflow:hidden}
@@ -143,7 +157,10 @@ img{max-width:100%; display:block}
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap:8px; background:#0f1630; color:inherit;
   border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:10px; text-align:center;
+  transition:transform var(--t-fast) ease, box-shadow var(--t-fast) ease;
+  animation: fade-up var(--t-slow) ease both;
 }
+.person:hover{ transform:translateY(-2px) }
 .person img{ width:76px; height:76px; object-fit:cover; border-radius:12px }
 .person b{ font-weight:800 }
 .person .role{ display:block; color:var(--muted); font-size:12px; margin-top:-2px }
@@ -180,6 +197,11 @@ dialog{
   position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
   clip:rect(0,0,0,0);white-space:nowrap;border:0;
 }
+:focus-visible{
+  outline:2px solid #8aa1ff;
+  outline-offset:2px;
+  border-radius:10px;
+}
 
 /* Blur detrás de los diálogos */
 #welcome::backdrop{ 
@@ -189,4 +211,62 @@ dialog{
 #personModal::backdrop{
   background: rgba(0,0,0,.45);
   backdrop-filter: blur(4px);
+}
+
+/* ===========================
+   Mejoras de performance
+=========================== */
+/* Lazy blur helpers (cuando uses IntersectionObserver y data-src) */
+.lazy.blur { filter: blur(8px); transform: translateZ(0) scale(1.01); transition: filter var(--t-med) ease, transform var(--t-med) ease; }
+.lazy:not(.blur) { filter: none; transform: none; }
+
+/* content-visibility para evitar pintar fuera de viewport */
+.tile, .person, .menu button { content-visibility:auto; contain-intrinsic-size: 200px 160px; }
+.menu .thumb, .person img, .tiles .img-wrap { overflow:hidden }
+
+/* ===========================
+   Botón flotante PQRS
+=========================== */
+#pqrsBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #CE0071; /* Magenta Brahms vibes */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 22px;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform var(--t-fast) ease, box-shadow var(--t-fast) ease, background var(--t-fast) ease;
+  animation: float-in .35s ease-out both;
+}
+#pqrsBtn:hover{ background:#ff1b8c; transform: translateY(-2px) }
+#pqrsBtn:active{ transform: translateY(0) scale(.98) }
+#pqrsBtn svg{ width:18px; height:18px; fill:#fff }
+@media (max-width:480px){
+  #pqrsBtn{ bottom:15px; right:15px; padding:12px 18px; font-size:13px }
+}
+
+/* ===========================
+   Animaciones sutiles
+=========================== */
+@keyframes fade-up{
+  from{ opacity:0; transform: translateY(6px) }
+  to{ opacity:1; transform: translateY(0) }
+}
+@keyframes float-in{
+  from{ opacity:0; transform: translateY(8px) scale(.98) }
+  to{ opacity:1; transform: translateY(0) scale(1) }
+}
+
+/* Reduce motion: respeta preferencias del sistema */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
