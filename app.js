@@ -48,16 +48,52 @@ const creditsGrid = $('creditsGrid');
 let DATA = { info:{}, escenas:[] };
 let activeId = null;
 
+/* ──────────────────────────────────────────────
+   Lazy loading real para imágenes (IntersectionObserver)
+   ────────────────────────────────────────────── */
+const LAZY_PLH = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="24"><rect width="100%" height="100%" fill="%2310182d"/></svg>';
+
+const io = new IntersectionObserver((entries, obs)=>{
+  entries.forEach(entry=>{
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const real = el.dataset.src;
+    if (real) {
+      el.src = real;
+      el.onload = () => el.classList.remove('blur');
+      el.removeAttribute('data-src');
+    }
+    obs.unobserve(el);
+  });
+}, { rootMargin: '200px 0px', threshold: 0.01 });
+
+function makeLazyImg({ src, alt = '', cls = '' }) {
+  const img = document.createElement('img');
+  img.src = LAZY_PLH;
+  img.dataset.src = src;
+  img.alt = alt;
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.fetchPriority = 'low';
+  if (cls) img.className = cls;
+  img.classList.add('lazy','blur');
+  // Observa apenas se inserta en el DOM
+  queueMicrotask(()=> io.observe(img));
+  return img;
+}
+
 /* ───── Menu drawer ───── */
 function openDrawer(){
+  if (!drawer) return;
   drawer.classList.add('open');
-  scrim.hidden = false;
+  if (scrim) scrim.hidden = false;
   menuBtn?.setAttribute('aria-expanded','true');
   drawer.setAttribute('aria-hidden','false');
 }
 function closeDrawerFn(){
+  if (!drawer) return;
   drawer.classList.remove('open');
-  scrim.hidden = true;
+  if (scrim) scrim.hidden = true;
   menuBtn?.setAttribute('aria-expanded','false');
   drawer.setAttribute('aria-hidden','true');
 }
@@ -65,7 +101,10 @@ menuBtn?.addEventListener('click', openDrawer);
 closeDrawer?.addEventListener('click', closeDrawerFn);
 scrim?.addEventListener('click', closeDrawerFn);
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeDrawerFn(); if (welcome?.open) welcome.close(); }
+  if (e.key === 'Escape') { 
+    closeDrawerFn(); 
+    if (welcome?.open) welcome.close(); 
+  }
 });
 
 /* ───── Data ───── */
@@ -78,6 +117,7 @@ async function loadData() {
 
 /* ───── Render: menú (drawer) ───── */
 function renderMenu(list) {
+  if (!sceneMenu) return;
   sceneMenu.innerHTML = '';
   list.forEach((sc, i) => {
     const count = sc.participantes?.length || 0;
@@ -85,12 +125,17 @@ function renderMenu(list) {
     btn.type = 'button';
     btn.dataset.id = sc.id;
     btn.innerHTML = `
-      <div class="thumb"><img src="${sc.imagen}" alt="" loading="lazy" decoding="async"></div>
+      <div class="thumb"></div>
       <div class="row">
         <span>${i + 1}. ${sc.titulo}</span>
         <span class="badge">${count} ${count === 1 ? 'artista' : 'artistas'}</span>
       </div>
     `;
+    // inserta imagen lazy dentro del contenedor .thumb
+    const thumb = btn.querySelector('.thumb');
+    if (thumb) {
+      thumb.appendChild(makeLazyImg({ src: sc.imagen, alt: '', cls: '' }));
+    }
     btn.addEventListener('click', () => { selectScene(sc.id); closeDrawerFn(); });
     sceneMenu.appendChild(btn);
   });
@@ -98,18 +143,24 @@ function renderMenu(list) {
 
 /* ───── Render: mosaico (home) ───── */
 function renderTiles(list){
+  if (!tiles) return;
   tiles.innerHTML = '';
   list.forEach((sc, i) => {
     const card = document.createElement('article');
     card.className = 'tile';
     card.innerHTML = `
       <span class="num">${i+1}</span>
-      <img src="${sc.imagen}" alt="" loading="lazy" decoding="async">
+      <div class="img-wrap"></div>
       <div class="overlay"><div class="title">${sc.titulo}</div></div>
     `;
+    const wrap = card.querySelector('.img-wrap');
+    if (wrap) {
+      wrap.appendChild(makeLazyImg({ src: sc.imagen, alt: '', cls: '' }));
+    }
     card.addEventListener('click', () => {
       selectScene(sc.id);
-      window.scrollTo({ top: document.querySelector('.main').offsetTop - 12, behavior:'smooth' });
+      const target = document.querySelector('.main');
+      if (target) window.scrollTo({ top: target.offsetTop - 12, behavior:'smooth' });
     });
     tiles.appendChild(card);
   });
@@ -149,6 +200,7 @@ function groupCast(list){
 
 /* ───── Render elenco por grupos ───── */
 function renderCastGroups(list){
+  if (!castGrid) return;
   castGrid.innerHTML = '';
   const groups = groupCast(list);
   groups.forEach(([area, people]) => {
@@ -162,10 +214,18 @@ function renderCastGroups(list){
       el.type = 'button';
       el.className = 'person';
       el.innerHTML = `
-        <img src="${p.foto || 'placeholder.jpg'}" alt="Foto de ${p.nombre || 'Artista'}" loading="lazy" decoding="async">
+        <div class="ph"></div>
         <b class="nombre-real">${p.nombre || 'Artista'}</b>
         <span class="personaje">${p.personaje || ''}</span>
       `;
+      const ph = el.querySelector('.ph');
+      if (ph) {
+        ph.appendChild(makeLazyImg({ 
+          src: p.foto || 'placeholder.jpg', 
+          alt: `Foto de ${p.nombre || 'Artista'}`, 
+          cls: '' 
+        }));
+      }
       el.addEventListener('click', () => openPerson(p));
       rows.appendChild(el);
     });
@@ -183,50 +243,66 @@ function selectScene(id) {
   const sc = DATA.escenas.find(e => e.id === id);
   if (!sc) return;
 
-  sceneTitle.textContent = sc.titulo || 'Escena';
-  sceneSubtitle.textContent = sc.musica
-    ? `Música: ${sc.musica}${sc.ubicacionMusica ? ` · ${sc.ubicacionMusica}` : ''}`
-    : '';
+  if (sceneTitle) sceneTitle.textContent = sc.titulo || 'Escena';
+  if (sceneSubtitle) {
+    sceneSubtitle.textContent = sc.musica
+      ? `Música: ${sc.musica}${sc.ubicacionMusica ? ` · ${sc.ubicacionMusica}` : ''}`
+      : '';
+  }
 
-  sceneChips.innerHTML = '';
-  (sc.centros || []).forEach(c => {
-    const chip = document.createElement('span');
-    chip.className = 'chip';
-    chip.textContent = c;
-    sceneChips.appendChild(chip);
-  });
+  if (sceneChips) {
+    sceneChips.innerHTML = '';
+    (sc.centros || []).forEach(c => {
+      const chip = document.createElement('span');
+      chip.className = 'chip';
+      chip.textContent = c;
+      sceneChips.appendChild(chip);
+    });
+  }
 
-  sceneSense.textContent = sc.sentido || '';
-  sceneImage.src = sc.imagen || 'placeholder.jpg';
-  sceneImage.alt = sc.titulo ? `Imagen alusiva: ${sc.titulo}` : 'Imagen de la escena';
-  sceneIntro.hidden = false;
+  if (sceneSense) sceneSense.textContent = sc.sentido || '';
+
+  // Imagen principal con lazy real
+  if (sceneImage) {
+    sceneImage.src = LAZY_PLH;
+    sceneImage.dataset.src = sc.imagen || 'placeholder.jpg';
+    sceneImage.alt = sc.titulo ? `Imagen alusiva: ${sc.titulo}` : 'Imagen de la escena';
+    sceneImage.classList.add('lazy','blur');
+    queueMicrotask(()=> io.observe(sceneImage));
+  }
+
+  if (sceneIntro) sceneIntro.hidden = false;
 
   const cast = sc.participantes || [];
   if (!cast.length) {
-    sceneCast.hidden = true;
+    if (sceneCast) sceneCast.hidden = true;
   } else {
     renderCastGroups(cast);
-    sceneCast.hidden = false;
+    if (sceneCast) sceneCast.hidden = false;
   }
 
-  main.focus({ preventScroll: false });
+  main?.focus({ preventScroll: false });
 }
 
 /* ───── Modal persona ───── */
 function openPerson(p) {
   if (!pm) return;
-  pmName.textContent  = p.nombre || 'Artista';
-  pmPhoto.src         = p.foto || 'placeholder.jpg';
-  pmPhoto.alt         = `Foto de ${p.nombre || 'Artista'}`;
-  pmRole.textContent  = p.personaje || '';
-  pmBio.textContent   = p.bio || '';
-  pmTags.innerHTML    = '';
-  (p.tags || []).forEach(t => {
-    const s = document.createElement('span');
-    s.className = 'chip';
-    s.textContent = t;
-    pmTags.appendChild(s);
-  });
+  if (pmName)  pmName.textContent  = p.nombre || 'Artista';
+  if (pmPhoto) {
+    pmPhoto.src         = p.foto || 'placeholder.jpg';
+    pmPhoto.alt         = `Foto de ${p.nombre || 'Artista'}`;
+  }
+  if (pmRole)  pmRole.textContent  = p.personaje || '';
+  if (pmBio)   pmBio.textContent   = p.bio || '';
+  if (pmTags) {
+    pmTags.innerHTML    = '';
+    (p.tags || []).forEach(t => {
+      const s = document.createElement('span');
+      s.className = 'chip';
+      s.textContent = t;
+      pmTags.appendChild(s);
+    });
+  }
   pm.showModal();
 }
 pmClose?.addEventListener('click', () => pm?.close());
@@ -234,7 +310,7 @@ pm?.addEventListener('click', e => { if (e.target === pm) pm.close(); });
 
 /* ───── Búsqueda ───── */
 function applySearch() {
-  const term = (q.value || '').trim().toLowerCase();
+  const term = (q?.value || '').trim().toLowerCase();
   const items = DATA.escenas.map(sc => {
     const inScene = [sc.titulo, sc.sentido, sc.musica].filter(Boolean).join(' ').toLowerCase().includes(term);
     const inCast = (sc.participantes || []).some(p =>
