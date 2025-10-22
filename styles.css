@@ -12,9 +12,9 @@
   --card:#ffffff;
   --border:#e7eaf3;
 
-  --azul:#0C41C4;      /* Azul Mozart */
-  --violeta:#680DBF;   /* Violeta Beethoven */
-  --magenta:#CE0071;   /* Magenta Brahms */
+  --azul:#0C41C4;
+  --violeta:#680DBF;
+  --magenta:#CE0071;
 
   --chip:rgba(17,24,39,.06);
 
@@ -43,9 +43,7 @@ body{
 img{max-width:100%;display:block;border-radius:12px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
 
-/* =============================
-   TOPBAR
-============================= */
+/* ============================= TOPBAR */
 .topbar{
   position:sticky;top:0;z-index:10;
   display:flex;align-items:center;justify-content:space-between;gap:14px;
@@ -59,8 +57,6 @@ img{max-width:100%;display:block;border-radius:12px}
 .brand img{border-radius:12px;box-shadow:0 0 10px rgba(255,255,255,.15)}
 .brand-text strong{color:#fff;font-weight:900;letter-spacing:.2px}
 .brand-text small{display:block;color:#e5e7ff;margin-top:-2px}
-
-/* Logos aliados */
 .partners{display:flex;align-items:center;gap:12px}
 .logo-badge{
   display:inline-flex;align-items:center;justify-content:center;
@@ -69,9 +65,7 @@ img{max-width:100%;display:block;border-radius:12px}
   box-shadow:0 2px 8px rgba(0,0,0,.18);
 }
 
-/* =============================
-   DRAWER / MENÚ
-============================= */
+/* ============================= DRAWER / MENÚ */
 .drawer{
   position:fixed; inset:0 auto 0 0; width:min(360px, 90vw);
   background:#101631; color:#fff; transform:translateX(-100%);
@@ -97,13 +91,13 @@ img{max-width:100%;display:block;border-radius:12px}
 .search input{flex:1;border:0;outline:0;background:transparent;color:#fff;font-size:15px}
 .search input::placeholder{color:rgba(255,255,255,.75)}
 
-/* Menú de escenas */
+/* Menú de escenas – legibilidad mejorada */
 .menu{display:grid;gap:12px}
 .menu button{
   width:100%; text-align:left;
   background:rgba(255,255,255,.04); color:#fff;
   border:1px solid rgba(255,255,255,.12);
-  border-radius:16px; padding:12px;
+  border-radius:16px; padding:14px;
   display:flex; gap:12px; align-items:center; cursor:pointer;
   transition:transform var(--t-fast) ease, box-shadow var(--t-fast) ease, outline var(--t-fast);
 }
@@ -113,20 +107,26 @@ img{max-width:100%;display:block;border-radius:12px}
 .menu .thumb{width:60px;height:42px;border-radius:10px;overflow:hidden;flex:0 0 60px}
 .menu .thumb img{width:100%;height:100%;object-fit:cover}
 
-.menu .meta{width:100%}
+.menu .meta{width:100%;display:grid;gap:6px}
 .menu .tit{
   display:grid;
   grid-template-columns:auto 1fr;
-  align-items:center;
+  align-items:baseline;
   column-gap:10px;
   font-weight:800;
-  line-height:1.25;
+  font-size:16.5px;
+  line-height:1.35;
+  letter-spacing:.1px;
   color:#fff;
+  text-wrap:balance;
+  hyphens:auto;
   overflow:hidden;
   display:-webkit-box;
   -webkit-line-clamp:2;
   -webkit-box-orient:vertical;
 }
+@media (min-width:420px){ .menu .tit{ font-size:17.5px } }
+
 .menu .tit .num{
   justify-self:start;
   display:inline-grid;place-items:center;
@@ -138,16 +138,17 @@ img{max-width:100%;display:block;border-radius:12px}
   box-shadow:0 2px 6px rgba(0,0,0,.25);
   margin-right:6px;
 }
-.menu .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.menu .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
 .menu .chip{
   background:rgba(255,255,255,.16);
-  padding:5px 10px;border-radius:999px;font-size:12px;color:#e8ecff;
+  padding:5px 10px;border-radius:999px;font-size:12.5px;color:#e8ecff;
 }
-.menu .muted,.menu .small{color:rgba(232,236,255,.8)}
+.menu .muted,.menu .small{
+  color:rgba(232,236,255,.85);
+  font-size:13px;
+}
 
-/* =============================
-   MOSAICO DE ESCENAS
-============================= */
+/* ============================= MOSAICO */
 .tiles{
   padding:20px 18px 8px;
   display:grid; gap:18px;
@@ -176,12 +177,10 @@ img{max-width:100%;display:block;border-radius:12px}
   box-shadow:0 2px 6px rgba(0,0,0,.28);
 }
 
-/* =============================
-   DETALLE DE ESCENA
-============================= */
+/* ============================= DETALLE */
 .main{display:block}
 
-/* Encabezado de escena */
+/* Encabezado */
 .scene-head{
   background:#ffffff;
   border:1px solid var(--border);
@@ -190,16 +189,11 @@ img{max-width:100%;display:block;border-radius:12px}
   padding:18px;
   margin:22px 0 14px;
 }
-.scene-head .title{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-/* Eliminamos el puntico */
-.dot{ display:none; }
+.scene-head .title{display:flex;align-items:center;gap:12px}
+.dot{display:none}
 #sceneSubtitle{color:var(--muted);margin:.35rem 0 .5rem}
 
-/* Tarjetas unificadas */
+/* Tarjetas */
 .card{
   background:#ffffff;
   border:1px solid var(--border);
@@ -217,7 +211,7 @@ img{max-width:100%;display:block;border-radius:12px}
   -webkit-text-fill-color:transparent;
 }
 
-/* Sinopsis ahora con su contenedor */
+/* Sinopsis con su contenedor */
 #sceneIntro{
   background:#ffffff;
   border:1px solid var(--border);
@@ -226,7 +220,7 @@ img{max-width:100%;display:block;border-radius:12px}
   margin:22px 0;
   overflow:hidden;
 }
-#sceneIntro .content{padding:18px;}
+#sceneIntro .content{padding:18px}
 #sceneIntro .h3{
   margin:0 0 12px;
   font-weight:900;
@@ -235,18 +229,15 @@ img{max-width:100%;display:block;border-radius:12px}
   -webkit-text-fill-color:transparent;
 }
 #sceneSense{color:#1f2937}
-/* Oculta el h3 duplicado que inyecta app.js */
-#sceneSense > h3{ display:none }
+#sceneSense > h3{ display:none } /* app.js agrega un h3 extra: lo escondemos */
 
-/* Chips genéricas */
+/* Chips */
 .h3{margin:.4rem 0 .6rem;font-weight:900}
 .lead{color:#1f2937}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{background:var(--chip);padding:6px 10px;border-radius:999px;font-size:12px}
 
-/* =============================
-   ELENCO por centro
-============================= */
+/* ============================= ELENCO */
 .cast-grid{display:block}
 .cast-group{margin:14px 0 22px}
 .group-title{
@@ -265,9 +256,7 @@ img{max-width:100%;display:block;border-radius:12px}
 .person b{font-weight:800}
 .person .role{display:block;color:var(--muted);font-size:12px;margin-top:-2px}
 
-/* =============================
-   CRÉDITOS + FOOTER
-============================= */
+/* ============================= CRÉDITOS + FOOTER */
 .credits{display:grid;gap:14px}
 .credit-block{
   background:#fafbff; border:1px solid var(--border);
@@ -286,9 +275,7 @@ img{max-width:100%;display:block;border-radius:12px}
 .ally-logos .logo-badge{background:#fff;border:1px solid var(--border);box-shadow:var(--shadow)}
 .muted{color:var(--muted)}
 
-/* =============================
-   MODALES + BOTÓN PQRS
-============================= */
+/* ============================= MODALES + PQRS */
 dialog{
   border:0;padding:0;border-radius:18px;background:var(--card);color:var(--ink);
   box-shadow:0 12px 40px rgba(0,0,0,.25);max-width:min(680px,92vw)
@@ -312,16 +299,12 @@ dialog{
 #pqrsBtn:hover{transform:translateY(-2px);filter:brightness(1.05)}
 #pqrsBtn svg{width:18px;height:18px;fill:#fff}
 
-/* =============================
-   Accesibilidad + Animaciones
-============================= */
+/* ============================= Accesibilidad + Animaciones */
 :focus-visible{outline:2px solid #94a3ff; outline-offset:3px; border-radius:10px}
 @keyframes fade-up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .tile,.person,.menu button{animation:fade-up var(--t-slow) ease both}
 
-/* =============================
-   Responsive tweaks
-============================= */
+/* ============================= Responsive tweaks */
 @media (max-width:640px){
   .tile .img-wrap{height:160px}
   .brand-text strong{font-size:1rem}
