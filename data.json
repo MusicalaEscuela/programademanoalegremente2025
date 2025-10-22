@@ -3,6 +3,65 @@
     "titulo": "AlegreMente 2025",
     "subtitulo": "Un viaje por el cuerpo, la memoria y la alegría"
   },
+
+  "repositorio_fotos": {
+    "arroyo": [
+      { "nombre": "Ariany Mosquera", "foto": "Arroyo Ariany Mosquera.jpg" },
+      { "nombre": "David López", "foto": "Arroyo David Lopez.jpg" },
+      { "nombre": "Heleny Mosquera", "foto": "Arroyo Heleny Mosquera.jpg" },
+      { "nombre": "Joel Marín", "foto": "Arroyo Joel Marin.jpg" },
+      { "nombre": "Joiner Mejía", "foto": "Arroyo Joiner Mejia.jpg" },
+      { "nombre": "Kimberly Parra", "foto": "Arroyo Kimberly Parra.jpg" },
+      { "nombre": "Leonardo Moreno", "foto": "Arroyo Leonardo Moreno.jpg" },
+      { "nombre": "Liseth Cadena", "foto": "Arroyo Liseth Cadena.jpg" },
+      { "nombre": "Nicol Salgado", "foto": "Arroyo Nicol Salgado.jpg" }
+    ],
+    "betania": [
+      { "nombre": "Antonella García", "foto": "Betania - Antonella García Niña carnaval.jpg" },
+      { "nombre": "Briannelys Sambrano", "foto": "Betania - Briannelys Sambrano Niña carnaval.jpg" },
+      { "nombre": "Daniela González", "foto": "Betania - Daniela González Tambor viviente.jpg" },
+      { "nombre": "Heydi Mar Ohep", "foto": "Betania - Heydi Mar Ohep Niña carnaval.jpg" },
+      { "nombre": "Jenifer González", "foto": "Betania - Jenifer González Anciana.jpg" },
+      { "nombre": "Maicol Luna", "foto": "Betania - Maicol Luna Tambor viviente.jpg" },
+      { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
+      { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" }
+    ],
+    "jerusalen": [
+      { "nombre": "Ángel David Vanegas", "foto": "Jerusalen Angel David Vanegas.jpg" },
+      { "nombre": "Daviana Salomé Robles", "foto": "Jerusalen Daviana Salome Robles.jpg" },
+      { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
+      { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" }
+    ],
+    "padre": [
+      { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
+      { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
+      { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
+      { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
+      { "nombre": "Josselin", "foto": "Padre Josselin.jpg" },
+      { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
+      { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
+      { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
+      { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
+      { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" }
+    ],
+    "santo": [
+      { "nombre": "Alejandra Mercado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+      { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
+      { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
+      { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
+      { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" }
+    ],
+    "gmmmc": [
+      { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
+      { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
+      { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
+      { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+      { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
+      { "nombre": "Sara Michelle", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+      { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
+    ]
+  },
+
   "escenas": [
     {
       "id": "escena-1",
@@ -11,89 +70,61 @@
       "imagen": "escena1.jpg",
       "musica": "Mi cuerpo es solo mío",
       "ubicacionMusica": "Inicio (Orquesta + coro)",
-      "centros": ["Teatro: Lucero", "Danza: Padre Misericordioso A", "Plástico: Colegio"],
-      "participantes": [
-        { "nombre": "Rousse Castañeda", "personaje": "Sofía", "foto": "sofia.jpg", "bio": "La viajera de nuestra historia.", "tags": ["Teatro"] },
-        { "nombre": "Figura Sombría", "personaje": "Antagonista simbólico", "foto": "placeholder.jpg", "bio": "Representa el no-consentimiento.", "tags": ["Teatro"] },
-        { "nombre": "Coro infantil", "personaje": "Coro", "foto": "placeholder.jpg", "bio": "Voces que acompañan la escena.", "tags": ["Coro"] }
-      ]
+      "centros": ["Lucero", "GMMMC"],
+      "galeria": {
+        "gmmmc": [
+          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
+          { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
+          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
+          { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
+          { "nombre": "Sara Michelle", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-2",
-      "titulo": "Buenos Aires del alma / Mango Tango",
+      "titulo": "Buenos Aires del Alma / Mango Tango",
       "sentido": "Llega el aire, el ritmo y la risa que devuelven la alegría vital.",
       "imagen": "escena2.jpg",
       "musica": "Mango Tango",
       "ubicacionMusica": "Mitad (Orquesta)",
-      "centros": ["Teatro: Lucero", "Danza: Arroyo", "Plástico: Jerusalén"],
-      "participantes": [
-        { "nombre": "Bailarines Tango Joven", "personaje": "Elenco de danza", "foto": "placeholder.jpg", "bio": "Fusión lúdica de tango con contemporáneo.", "tags": ["Danza"] }
-      ]
+      "centros": ["Arroyo"],
+      "galeria": {
+        "arroyo": [
+          { "nombre": "Ariany Mosquera", "foto": "Arroyo Ariany Mosquera.jpg" },
+          { "nombre": "David López", "foto": "Arroyo David Lopez.jpg" },
+          { "nombre": "Heleny Mosquera", "foto": "Arroyo Heleny Mosquera.jpg" },
+          { "nombre": "Joel Marín", "foto": "Arroyo Joel Marin.jpg" },
+          { "nombre": "Joiner Mejía", "foto": "Arroyo Joiner Mejia.jpg" },
+          { "nombre": "Kimberly Parra", "foto": "Arroyo Kimberly Parra.jpg" },
+          { "nombre": "Leonardo Moreno", "foto": "Arroyo Leonardo Moreno.jpg" },
+          { "nombre": "Liseth Cadena", "foto": "Arroyo Liseth Cadena.jpg" },
+          { "nombre": "Nicol Salgado", "foto": "Arroyo Nicol Salgado.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-3",
-      "titulo": "Carnaval / Pueblo Tambor / Siyahamba",
+      "titulo": "Pueblo Tambor / Siyahamba",
       "sentido": "Sofía se reconoce en comunidad: donde hay tambor, hay camino.",
       "imagen": "escena3.jpg",
       "musica": "Siyahamba / Pueblo Tambor",
       "ubicacionMusica": "Final (Orquesta + tambores)",
-      "centros": ["Teatro: Arroyo – Betania", "Danza: Betania", "Plástico: Colegio"],
-      "participantes": [
-        {
-          "nombre": "Rousse Castañeda",
-          "personaje": "Sofía",
-          "tags": ["Teatro"],
-          "foto": "Escena 3 -- Rousse Castañeda Sofía.jpg"
-        },
-        {
-          "nombre": "Jenifer González",
-          "personaje": "Anciana",
-          "tags": ["Teatro"],
-          "foto": "Escena 3 - Jenifer González Anciana.jpg"
-        },
-        {
-          "nombre": "Alexander García",
-          "personaje": "Tambor viviente",
-          "tags": ["Música"],
-          "foto": "Escena 3 - Alexander García Tambor viviente.jpg"
-        },
-        {
-          "nombre": "Maicol Luna",
-          "personaje": "Tambor viviente",
-          "tags": ["Música"],
-          "foto": "Escena 3 - Maicol Luna Tambor viviente.jpg"
-        },
-        {
-          "nombre": "Daniela González",
-          "personaje": "Tambor viviente",
-          "tags": ["Música"],
-          "foto": "Escena 3 - Daniela González Tambor viviente.jpg"
-        },
-        {
-          "nombre": "Antonella García",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Antonella García Niña carnaval.jpg"
-        },
-        {
-          "nombre": "Briannelys Sambrano",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Briannelys Sambrano Niña carnaval.jpg"
-        },
-        {
-          "nombre": "Heydi Mar Ohep",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Heydi Mar Ohep Niña carnaval.jpg"
-        },
-        {
-          "nombre": "Sara Morales",
-          "personaje": "Niña carnaval",
-          "tags": ["Danza"],
-          "foto": "Escena 3 - Sara Morales Niña carnaval.jpg"
-        }
-      ]
+      "centros": ["Betania"],
+      "galeria": {
+        "betania": [
+          { "nombre": "Antonella García", "foto": "Betania - Antonella García Niña carnaval.jpg" },
+          { "nombre": "Briannelys Sambrano", "foto": "Betania - Briannelys Sambrano Niña carnaval.jpg" },
+          { "nombre": "Daniela González", "foto": "Betania - Daniela González Tambor viviente.jpg" },
+          { "nombre": "Heydi Mar Ohep", "foto": "Betania - Heydi Mar Ohep Niña carnaval.jpg" },
+          { "nombre": "Jenifer González", "foto": "Betania - Jenifer González Anciana.jpg" },
+          { "nombre": "Maicol Luna", "foto": "Betania - Maicol Luna Tambor viviente.jpg" },
+          { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
+          { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-4",
@@ -102,48 +133,76 @@
       "imagen": "escena4.jpg",
       "musica": "Happy Blues",
       "ubicacionMusica": "Mitad (Orquesta)",
-      "centros": ["Teatro: Arroyo", "Danza: Jerusalén", "Plástico: Lucero"],
-      "participantes": [
-        { "nombre": "Poetas Jóvenes", "personaje": "Poetas urbanos", "foto": "poetas.jpg", "tags": ["Teatro"] },
-        { "nombre": "Bailarines Jazz", "personaje": "Intérpretes de danza", "foto": "bailarinesjazz.jpg", "tags": ["Danza"] }
-      ]
+      "centros": ["Jerusalén"],
+      "galeria": {
+        "jerusalen": [
+          { "nombre": "Ángel David Vanegas", "foto": "Jerusalen Angel David Vanegas.jpg" },
+          { "nombre": "Daviana Salomé Robles", "foto": "Jerusalen Daviana Salome Robles.jpg" },
+          { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
+          { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" }
+        ]
+        }
     },
     {
       "id": "escena-5",
-      "titulo": "Montaña Trenza / Vivo en un país",
+      "titulo": "Montaña Trenza / Vivo en un País",
       "sentido": "Conecta con raíces, memoria y pertenencia.",
       "imagen": "escena5.jpg",
       "musica": "Vivo en un país",
       "ubicacionMusica": "Final (Orquesta + coro)",
-      "centros": ["Teatro: Jerusalén", "Danza: Santo Domingo", "Plástico: Santo Domingo"],
-      "participantes": [
-        { "nombre": "Trenzadoras", "personaje": "Artes plásticas / peinados", "foto": "trenzadoras.jpg", "tags": ["Plástico"] },
-        { "nombre": "Pareja Andina", "personaje": "Danza andina", "foto": "andina.jpg", "tags": ["Danza"] }
-      ]
+      "centros": ["Lucero", "Santo Domingo"],
+      "galeria": {
+        "santo": [
+          { "nombre": "Alejandra Mercado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+          { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
+          { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
+          { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
+          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-6",
-      "titulo": "Tierra Imaginaria",
+      "titulo": "Tierra Imaginaria / La vida es un carnaval",
       "sentido": "Imaginar es libertad y creación.",
       "imagen": "escena6.jpg",
       "musica": "Tierra Imaginaria",
       "ubicacionMusica": "Inicio (Orquesta)",
-      "centros": ["Teatro: Jerusalén", "Danza: Colegio", "Plástico: Arroyo"],
-      "participantes": [
-        { "nombre": "Sombreros Locos", "personaje": "Teatro gestual", "foto": "sombreros.jpg", "tags": ["Teatro"] }
-      ]
+      "centros": ["Lucero", "GMMMC"],
+      "galeria": {
+        "gmmmc": [
+          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
+          { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
+          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
+          { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
+          { "nombre": "Sara Michelle", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-7",
-      "titulo": "Isla Alegría / Merengue del primer dedo",
+      "titulo": "Isla Alegría / Merengue del Primer Dedo",
       "sentido": "El cuerpo merece gozo; el ritmo nace de un gesto mínimo.",
       "imagen": "escena7.jpg",
       "musica": "Merengue del primer dedo",
       "ubicacionMusica": "Inicio (Orquesta + percusión caribeña)",
-      "centros": ["Teatro: Padre Misericordioso B", "Danza: Padre Misericordioso B", "Plástico: Padre Misericordioso B"],
-      "participantes": [
-        { "nombre": "Comparsa Caribe", "personaje": "Danza / comparsa", "foto": "comparsa.jpg", "tags": ["Danza"] }
-      ]
+      "centros": ["Padre Misericordioso B"],
+      "galeria": {
+        "padre": [
+          { "nombre": "Breiner Mejia", "foto": "Padre Breiner Mejia.jpg" },
+          { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
+          { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
+          { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
+          { "nombre": "Josselin", "foto": "Padre Josselin.jpg" },
+          { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
+          { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
+          { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
+          { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
+          { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-8",
@@ -152,39 +211,34 @@
       "imagen": "escena8.jpg",
       "musica": "Colombia Tierra Querida",
       "ubicacionMusica": "Mitad → final (Orquesta)",
-      "centros": ["Teatro: Padre Misericordioso B", "Danza: Santo Domingo", "Plástico: Lucero"],
-      "participantes": [
-        { "nombre": "Todos los elencos", "personaje": "Elenco completo", "foto": "todos.jpg", "tags": ["Final"] },
-        { "nombre": "Coro general", "personaje": "Coro y voces", "foto": "placeholder.jpg", "tags": ["Coro"] },
-        { "nombre": "Tambores", "personaje": "Percusión / timbales", "foto": "placeholder.jpg", "tags": ["Música"] }
-      ]
+      "centros": ["Santo Domingo", "Lucero"],
+      "galeria": {
+        "santo": [
+          { "nombre": "Alejandra Mercado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+          { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
+          { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
+          { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
+          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" }
+        ]
+      }
     }
   ],
+
   "creditos": {
     "Dirección artística": [
       "Catalina Medina Leal",
       "Alexander Caballero Moreno",
       "Jean Williams Casilimas"
     ],
-    "Dirección musical": [
-      "Jean Williams Casilimas"
-    ],
-    "Coreografía": [
-      "Angie Natalia Nitola",
-      "Erika López",
-      "María Camila Pirajan"
-    ],
+    "Dirección musical": ["Jean Williams Casilimas"],
+    "Coreografía": ["Angie Natalia Nitola", "Erika López", "María Camila Pirajan"],
     "Producción": [
       "Alexander Caballero Moreno",
       "Catalina Medina Leal",
       "Jean Williams Casilimas",
       "Mario Ujueta"
     ],
-    "Coordinación general": [
-      "Fundación San Antonio",
-      "Musicala",
-      "Jean Williams Casilimas"
-    ],
+    "Coordinación general": ["Fundación San Antonio", "Musicala", "Jean Williams Casilimas"],
     "Escenografía y plástica": ["Pendiente"],
     "Docentes de teatro": ["Pendiente"],
     "Docentes de danza": ["Pendiente"],
