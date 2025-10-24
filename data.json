@@ -228,22 +228,80 @@
     "Dirección artística": [
       "Catalina Medina Leal",
       "Alexander Caballero Moreno",
-      "Jean Williams Casilimas"
+      "Jean W. Casilimas"
     ],
-    "Dirección musical": ["Jean Williams Casilimas"],
-    "Coreografía": ["Angie Natalia Nitola", "Erika López", "María Camila Pirajan"],
+    "Coordinación general": [
+      "María Mercedes Copello Vergara",
+      "Diana Patricia Molina Cobaleda",
+      "Mario Esteban Ujueta Marín",     
+      "Catalina Medina Leal",
+      "Alexander Caballero Moreno",
+      "Jean W. Casilimas"
+    ],
     "Producción": [
       "Alexander Caballero Moreno",
       "Catalina Medina Leal",
-      "Jean Williams Casilimas",
-      "Mario Ujueta"
+      "Jean W. Casilimas"
     ],
-    "Coordinación general": ["Fundación San Antonio", "Musicala", "Jean Williams Casilimas"],
-    "Escenografía y plástica": ["Pendiente"],
-    "Docentes de teatro": ["Pendiente"],
-    "Docentes de danza": ["Pendiente"],
-    "Docentes de música/orquesta": ["Pendiente"],
-    "Coro": ["Pendiente"],
+    "Stage Manager": [
+      "Carlos Valencia"
+    ],
+    "Sonido e iluminación": [
+      "Leidy Tatiana Parra Calderón",
+      "Edwin Estepa Durán"
+    ],
+    "Formadores · Teatro": [
+      "Eryck Santiago Martínez",
+      "Leydy Jhoana Díaz",
+      "Angie Natalia Nitola"
+    ],
+    "Formadores · Danza": [
+      "Angie Natalia Nitola",
+      "María Camila Piraján",
+      "Erika Tatiana López"
+    ],
+    "Formadores · Artes plásticas": [
+      "Santiago Gutiérrez Fonseca",
+      "Angie Natalia Nitola",
+      "Leydy Jhoana Díaz"
+    ],
+    "Escenografía y plástica": [
+      "Santiago Gutiérrez Fonseca",
+      "Angie Natalia Nitola",
+      "Leydy Jhoana Díaz",
+      "NNA de los Centros Redes de la FSA"
+    ],
+    "Director Orquestal y Coral": [
+      "Jean W. Casilimas"
+    ],
+    "Maestros de Cátedra · Violín/Viola": [
+      "Steven Barbosa"
+    ],
+    "Maestros de Cátedra · Violonchelo/Contrabajo": [
+      "Juan Diego González"
+    ],
+    "Maestros de Cátedra · Clarinete": [
+      "Boderek Triviño"
+    ],
+    "Maestros de Cátedra · Flauta": [
+      "Adriana Hernández"
+    ],
+    "Maestros de Cátedra · Guitarra/Percusión": [
+      "Daniel Martínez",
+      "Julian Andrés Cubides"
+    ],
+    "Talleristas · Asistente Coral": [
+      "María Camila Molina Valero"
+    ],
+    "Talleristas · Violín": [
+      "David Felipe Lindo Parada"
+    ],
+    "Talleristas · Viola": [
+      "Marcelo Cárdenas Vásquez"
+    ],
+    "Talleristas · Violoncello": [
+      "Camilo Ahumada"
+    ],
     "Agradecimientos": [
       "Familias",
       "Fundación San Antonio",
