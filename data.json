@@ -115,7 +115,7 @@
           { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
           { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler" }
           { "nombre": "Alison Alape", "foto": "" },
-          { "nombre": "Sebastián Vargas", "foto": "" }
+          { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" }
         ]
       }
     },
@@ -195,7 +195,7 @@
           { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
           { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
-          { "nombre": "Sebastián Vargas", "foto": "" },
+          { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
           { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
           { "nombre": "Leidy Ovando", "foto": "" },
           { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
@@ -222,7 +222,7 @@
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
           { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
           { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler" },
-          { "nombre": "Sebastián Vargas", "foto": "" },
+          { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
           { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
           { "nombre": "Leidy Ovando", "foto": "" },
           { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
