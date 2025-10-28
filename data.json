@@ -48,7 +48,7 @@
       { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
       { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" },
       { "nombre": "Alisson Niño", "foto": "Padre Alisson Niño.jpg" },
-      { "nombre": "Samir Ramírez", "foto": "Padre Samir Ramírez.jpg" }
+      { "nombre": "Samir Esteban Ramírez", "foto": "Padre Samir Esteban Ramirez.jpg" }
     ],
     "santo": [
       { "nombre": "María Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
@@ -257,7 +257,7 @@
           { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
           { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" },
           { "nombre": "Alisson Niño", "foto": "Padre Alisson Niño.jpg" },
-          { "nombre": "Samir Ramírez", "foto": "Padre Samir Ramírez.jpg" }
+          { "nombre": "Samir Esteban Ramírez", "foto": "Padre Samir Esteban Ramirez.jpg" }
         ]
       }
     },
@@ -400,6 +400,7 @@
     ]
   }
 }
+
 
 
 
