@@ -41,7 +41,7 @@
       { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
       { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
       { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
-      { "nombre": "Yosselin", "foto": "Padre Josselin.jpg" },
+      { "nombre": "Yosselin Salazar Urrego", "foto": "Padre Josselin.jpg" },
       { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
       { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
       { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
@@ -250,7 +250,7 @@
           { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
           { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
           { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
-          { "nombre": "Yosselin", "foto": "Padre Josselin.jpg" },
+          { "nombre": "Yosselin Salazar Urrego", "foto": "Padre Josselin.jpg" },
           { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
           { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
           { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
@@ -399,3 +399,4 @@
     ]
   }
 }
+
