@@ -85,13 +85,13 @@
     "lucero": [
       { "nombre": "Alison Alape", "foto": "" },
       { "nombre": "Sebastián Vargas", "foto": "" },
-      { "nombre": Felipe Vargas", "foto": "" },
+      { "nombre": "Felipe Vargas", "foto": "" },
       { "nombre": "Leidy Ovando", "foto": "" },
       { "nombre": "Hanna García", "foto": "" },
       { "nombre": "Juan Diego Salazar", "foto": "" },
       { "nombre": "Karol Aponte", "foto": "" },
       { "nombre": "Natán Tavares", "foto": "" },
-      { "nombre": "Dylan López, "foto": "" },
+      { "nombre": "Dylan López", "foto": "" },
       { "nombre": "Luifer Fernández", "foto": "" },
       { "nombre": "Damián Pineda", "foto": "" },
       { "nombre": "Diana Escorcia", "foto": "" }
@@ -385,6 +385,7 @@
     ]
   }
 }
+
 
 
 
