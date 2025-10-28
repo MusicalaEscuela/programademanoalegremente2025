@@ -99,10 +99,9 @@
     {
       "id": "escena-1",
       "titulo": "El sol no canta / Mi cuerpo es solo mío",
-      "sentido": "Sofía inicia el camino para recuperar su autonomía corporal y el derecho a decir ‘esto no está bien’.",
+      "sentido": "Sofía llega a un lugar donde el sol dejó de cantar. Allí recuerda que su cuerpo le pertenece, que puede decir “no”, y que cuando su voz se enciende, también vuelve la luz.",
       "imagen": "escena1.jpg",
       "musica": "Mi cuerpo es solo mío",
-      "ubicacionMusica": "Inicio (Orquesta + coro)",
       "centros": ["Lucero", "GMMMC"],
       "galeria": {
         "gmmmc": [
@@ -123,10 +122,9 @@
     {
       "id": "escena-2",
       "titulo": "Buenos Aires del Alma / Mango Tango",
-      "sentido": "Llega el aire, el ritmo y la risa que devuelven la alegría vital.",
+      "sentido": "El viento trae ritmo y risas. Entre telas y flores, Sofía vuelve a moverse con libertad y descubre la alegría de dejarse llevar.",
       "imagen": "escena2.jpg",
       "musica": "Mango Tango",
-      "ubicacionMusica": "Mitad (Orquesta)",
       "centros": ["Arroyo"],
       "galeria": {
         "arroyo": [
@@ -144,10 +142,9 @@
     {
       "id": "escena-3",
       "titulo": "Pueblo Tambor / Siyahamba",
-      "sentido": "Sofía se reconoce en comunidad: donde hay tambor, hay camino.",
+      "sentido": "Los tambores despiertan la memoria del pueblo. Sofía entiende que cuando los corazones laten juntos, la música vuelve a nacer.",
       "imagen": "escena3.jpg",
       "musica": "Siyahamba / Pueblo Tambor",
-      "ubicacionMusica": "Final (Orquesta + tambores)",
       "centros": ["Betania"],
       "galeria": {
         "betania": [
@@ -167,10 +164,9 @@
     {
       "id": "escena-4",
       "titulo": "Ciudad Rima / Happy Blues",
-      "sentido": "La tristeza se canta y se baila; la historia se dice con dignidad.",
+      "sentido": "Entre grafitis y versos, Sofía descubre que la tristeza también se canta. Al decir su historia con arte, vuelve a respirar con dignidad.",
       "imagen": "escena4.jpg",
       "musica": "Happy Blues",
-      "ubicacionMusica": "Mitad (Orquesta)",
       "centros": ["Jerusalén"],
       "galeria": {
         "jerusalen": [
@@ -188,10 +184,9 @@
     {
       "id": "escena-5",
       "titulo": "Montaña Trenza / Vivo en un País",
-      "sentido": "Conecta con raíces, memoria y pertenencia.",
+      "sentido": "En la altura, Sofía se reencuentra con sus raíces. Cada paso la une con su familia, su tierra y su memoria: también es raíz.",
       "imagen": "escena5.jpg",
       "musica": "Vivo en un país",
-      "ubicacionMusica": "Final (Orquesta + coro)",
       "centros": ["Lucero", "Santo Domingo"],
       "galeria": {
         "santo": [
@@ -212,10 +207,9 @@
     {
       "id": "escena-6",
       "titulo": "Tierra Imaginaria / La vida es un carnaval",
-      "sentido": "Imaginar es libertad y creación.",
+      "sentido": "Sofía entra a un lugar donde lo imposible existe. Imaginar no es huir: es libertad, creación y resistencia.",
       "imagen": "escena6.jpg",
       "musica": "Tierra Imaginaria",
-      "ubicacionMusica": "Inicio (Orquesta)",
       "centros": ["Lucero", "GMMMC"],
       "galeria": {
         "gmmmc": [
@@ -239,10 +233,9 @@
     {
       "id": "escena-7",
       "titulo": "Isla Alegría / Merengue del Primer Dedo",
-      "sentido": "El cuerpo merece gozo; el ritmo nace de un gesto mínimo.",
+      "sentido": "En una isla luminosa, Sofía celebra el derecho al gozo. El ritmo nace de un gesto mínimo y se convierte en fiesta del cuerpo.",
       "imagen": "escena7.jpg",
       "musica": "Merengue del primer dedo",
-      "ubicacionMusica": "Inicio (Orquesta + percusión caribeña)",
       "centros": ["Padre Misericordioso B"],
       "galeria": {
         "padre": [
@@ -264,10 +257,9 @@
     {
       "id": "escena-8",
       "titulo": "Colombia Tierra Querida",
-      "sentido": "Apoteosis: celebración de la vida, la voz y la tierra.",
+      "sentido": "Apoteosis: después del viaje, Sofía vuelve a casa transformada. Su voz tiene ritmo, su historia color y su alma canta junto a todo un país.",
       "imagen": "escena8.jpg",
       "musica": "Colombia Tierra Querida",
-      "ubicacionMusica": "Mitad → final (Orquesta)",
       "centros": ["Santo Domingo", "Lucero"],
       "galeria": {
         "santo": [
@@ -389,23 +381,3 @@
     ]
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
