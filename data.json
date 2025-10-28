@@ -83,7 +83,7 @@
     "lucero": [
       { "nombre": "Alison Alape", "foto": "" },
       { "nombre": "Sebastián Vargas", "foto": "" },
-      { "nombre": "Felipe Vargas", "foto": "" },
+      { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
       { "nombre": "Leidy Ovando", "foto": "" },
       { "nombre": "Hanna García", "foto": "" },
       { "nombre": "Juan Diego Salazar", "foto": "" },
@@ -201,7 +201,7 @@
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
           { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
           { "nombre": "Sebastián Vargas", "foto": "" },
-          { "nombre": "Felipe Vargas", "foto": "" },
+          { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
           { "nombre": "Leidy Ovando", "foto": "" },
           { "nombre": "Hanna García", "foto": "" },
           { "nombre": "Juan Diego Salazar", "foto": "" },
@@ -225,7 +225,13 @@
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas María Paz Rivera.jpeg" },
           { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle Medina.jpeg" },
-          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
+          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
+          { "nombre": "Sebastián Vargas", "foto": "" },
+          { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
+          { "nombre": "Leidy Ovando", "foto": "" },
+          { "nombre": "Hanna García", "foto": "" },
+          { "nombre": "Juan Diego Salazar", "foto": "" },
+          { "nombre": "Karol Aponte", "foto": "" }
         ]
       }
     },
@@ -380,6 +386,7 @@
     ]
   }
 }
+
 
 
 
