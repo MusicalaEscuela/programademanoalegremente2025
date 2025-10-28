@@ -82,7 +82,7 @@
     ],
     "lucero": [
       { "nombre": "Alison Alape", "foto": "" },
-      { "nombre": "Sebastián Vargas", "foto": "" },
+      { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
       { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
       { "nombre": "Leidy Ovando", "foto": "" },
       { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
@@ -382,5 +382,6 @@
     ]
   }
 }
+
 
 
