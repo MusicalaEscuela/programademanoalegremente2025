@@ -81,7 +81,7 @@
       { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
     ],
     "lucero": [
-      { "nombre": "Alison Alape", "foto": "" },
+      { "nombre": "Alison Alape", "foto": "Lucero Alison Alape.jpg" },
       { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
       { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
       { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando.jpeg" },
@@ -116,7 +116,7 @@
           { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
         ],
         "lucero": [
-          { "nombre": "Alison Alape", "foto": "" },
+          { "nombre": "Alison Alape", "foto": "Lucero Alison Alape.jpg" },
           { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" }
         ]
       }
@@ -399,4 +399,5 @@
     ]
   }
 }
+
 
