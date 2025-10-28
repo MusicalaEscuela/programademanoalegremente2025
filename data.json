@@ -3,7 +3,6 @@
     "titulo": "AlegreMente 2025",
     "subtitulo": "Un viaje por el cuerpo, la memoria y la alegría"
   },
-
   "repositorio_fotos": {
     "arroyo": [
       { "nombre": "Ariany Mosquera", "foto": "Arroyo Ariany Mosquera.jpg" },
@@ -13,7 +12,7 @@
       { "nombre": "Kimberly Parra", "foto": "Arroyo Kimberly Parra.jpg" },
       { "nombre": "Leonardo Moreno", "foto": "Arroyo Leonardo Moreno.jpg" },
       { "nombre": "Liseth Cadena", "foto": "Arroyo Liseth Cadena.jpg" },
-      { "nombre": "Nicol Silgado", "foto": "Arroyo Nicol Salgado.jpg" }
+      { "nombre": "Nicol Salgado", "foto": "Arroyo Nicol Salgado.jpg" }
     ],
     "betania": [
       { "nombre": "Antonella García", "foto": "Betania - Antonella García Niña carnaval.jpg" },
@@ -33,20 +32,20 @@
       { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
       { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
       { "nombre": "Sara Michelle Miranda", "foto": "" },
-      { "nombre": "Estefania Barragán", "foto": "" },
+      { "nombre": "Estefanía Barragán", "foto": "" },
       { "nombre": "Jean Paul Hernández", "foto": "" },
       { "nombre": "Helem Stacey Mape", "foto": "" }
     ],
     "padre": [
       { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
       { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
-      { "nombre": "Emar Cantillo", "foto": "Padre Emmar Oliveros.jpg" },
+      { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
       { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
-      { "nombre": "Yosselin", "foto": "Padre Josselin.jpg" },
+      { "nombre": "Josselin", "foto": "Padre Josselin.jpg" },
       { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
       { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
       { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
-      { "nombre": "Paola Martínez", "foto": "Padre Paola Anaya.jpg" },
+      { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
       { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" },
       { "nombre": "Alisson Niño", "foto": "" },
       { "nombre": "Samir Ramírez", "foto": "" }
@@ -64,7 +63,7 @@
       { "nombre": "Angélica Rivero", "foto": "" },
       { "nombre": "Camilo Carvajal", "foto": "" },
       { "nombre": "Julián Vento", "foto": "" },
-      { "nombre": "Sara Muñóz", "foto": "" },
+      { "nombre": "Sara Muñoz", "foto": "" },
       { "nombre": "Carlos Freites", "foto": "" },
       { "nombre": "Sheidy Peña", "foto": "" },
       { "nombre": "Danna Delgadillo", "foto": "" },
@@ -75,7 +74,7 @@
       { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
       { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
       { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
-      { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+      { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
       { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
       { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
       { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
@@ -95,9 +94,8 @@
       { "nombre": "Luifer Fernández", "foto": "" },
       { "nombre": "Damián Pineda", "foto": "" },
       { "nombre": "Diana Escorcia", "foto": "" }
-    ],
+    ]
   },
-
   "escenas": [
     {
       "id": "escena-1",
@@ -112,7 +110,7 @@
           { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
-          { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+          { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
           { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
@@ -140,7 +138,7 @@
           { "nombre": "Kimberly Parra", "foto": "Arroyo Kimberly Parra.jpg" },
           { "nombre": "Leonardo Moreno", "foto": "Arroyo Leonardo Moreno.jpg" },
           { "nombre": "Liseth Cadena", "foto": "Arroyo Liseth Cadena.jpg" },
-          { "nombre": "Nicol Silgado", "foto": "Arroyo Nicol Salgado.jpg" }
+          { "nombre": "Nicol Salgado", "foto": "Arroyo Nicol Salgado.jpg" }
         ]
       }
     },
@@ -182,11 +180,11 @@
           { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
           { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
           { "nombre": "Sara Michelle Miranda", "foto": "" },
-          { "nombre": "Estefania Barragán", "foto": "" },
+          { "nombre": "Estefanía Barragán", "foto": "" },
           { "nombre": "Jean Paul Hernández", "foto": "" },
           { "nombre": "Helem Stacey Mape", "foto": "" }
         ]
-        }
+      }
     },
     {
       "id": "escena-5",
@@ -226,9 +224,9 @@
           { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
-          { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+          { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
-          { "nombre": "Sara Michelle", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
         ]
       }
@@ -243,7 +241,7 @@
       "centros": ["Padre Misericordioso B"],
       "galeria": {
         "padre": [
-          { "nombre": "Breiner Mejia", "foto": "Padre Breiner Mejia.jpg" },
+          { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
           { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
           { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
           { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
@@ -277,7 +275,7 @@
           { "nombre": "Angélica Rivero", "foto": "" },
           { "nombre": "Camilo Carvajal", "foto": "" },
           { "nombre": "Julián Vento", "foto": "" },
-          { "nombre": "Sara Muñóz", "foto": "" },
+          { "nombre": "Sara Muñoz", "foto": "" },
           { "nombre": "Carlos Freites", "foto": "" },
           { "nombre": "Sheidy Peña", "foto": "" },
           { "nombre": "Danna Delgadillo", "foto": "" },
@@ -292,7 +290,6 @@
       }
     }
   ],
-
   "creditos": {
     "Dirección artística": [
       "Catalina Medina Leal",
@@ -302,7 +299,7 @@
     "Coordinación general": [
       "María Mercedes Copello Vergara",
       "Diana Patricia Molina Cobaleda",
-      "Mario Esteban Ujueta Marín",     
+      "Mario Esteban Ujueta Marín",
       "Catalina Medina Leal",
       "Alexander Caballero Moreno",
       "Jean W. Casilimas"
