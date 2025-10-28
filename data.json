@@ -75,7 +75,7 @@
       { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
       { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
       { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
-      { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
+      { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpeg" },
       { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
       { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
       { "nombre": "Ana Sofía Campos", "foto": "" },
@@ -111,8 +111,8 @@
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
-          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
-          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpeg" },
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle Medina.jpeg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
           { "nombre": "Ana Sofía Campos", "foto": "" },
           { "nombre": "Zoe Soler", "foto": "" },
@@ -225,8 +225,8 @@
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
-          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
-          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpeg" },
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle Medina.jpeg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
         ]
       }
@@ -264,7 +264,7 @@
       "centros": ["Santo Domingo", "Lucero"],
       "galeria": {
         "santo": [
-          { "nombre": "Alejandra Mercado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+          { "nombre": "Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
           { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
           { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
@@ -382,5 +382,6 @@
     ]
   }
 }
+
 
 
