@@ -88,7 +88,7 @@
       { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
       { "nombre": "Juan Diego Salazar", "foto": "" },
       { "nombre": "Karol Aponte", "foto": "" },
-      { "nombre": "Natán Tavares", "foto": "" },
+      { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
       { "nombre": "Dylan López", "foto": "" },
       { "nombre": "Luifer Fernández", "foto": "" },
       { "nombre": "Damián Pineda", "foto": "" },
@@ -287,7 +287,7 @@
           { "nombre": "Danna Delgadillo", "foto": "Santo Domingo Danna Delgadillo.jpg" },
           { "nombre": "Shairy Torres", "foto": "Santo Domingo Shairy Torres.jpg" },
           { "nombre": "Johan Amador", "foto": "Santo Domingo Johan Amador.jpg" },
-          { "nombre": "Natán Tavares", "foto": "" },
+          { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
           { "nombre": "Dylan López", "foto": "" },
           { "nombre": "Luifer Fernández", "foto": "" },
           { "nombre": "Damián Pineda", "foto": "" },
@@ -388,6 +388,7 @@
     ]
   }
 }
+
 
 
 
