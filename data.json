@@ -91,7 +91,7 @@
       { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
       { "nombre": "Dylan López", "foto": "" },
       { "nombre": "Luifer Fernández", "foto": "" },
-      { "nombre": "Damián Pineda", "foto": "" },
+      { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
       { "nombre": "Diana Escorcia", "foto": "" }
     ]
   },
@@ -284,7 +284,7 @@
           { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
           { "nombre": "Dylan López", "foto": "" },
           { "nombre": "Luifer Fernández", "foto": "" },
-          { "nombre": "Damián Pineda", "foto": "" },
+          { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
           { "nombre": "Diana Escorcia", "foto": "" }
         ]
       }
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
