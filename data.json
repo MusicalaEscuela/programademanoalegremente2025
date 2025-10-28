@@ -10,27 +10,32 @@
       { "nombre": "David López", "foto": "Arroyo David Lopez.jpg" },
       { "nombre": "Heleny Mosquera", "foto": "Arroyo Heleny Mosquera.jpg" },
       { "nombre": "Joel Marín", "foto": "Arroyo Joel Marin.jpg" },
-      { "nombre": "Joiner Mejía", "foto": "Arroyo Joiner Mejia.jpg" },
       { "nombre": "Kimberly Parra", "foto": "Arroyo Kimberly Parra.jpg" },
       { "nombre": "Leonardo Moreno", "foto": "Arroyo Leonardo Moreno.jpg" },
       { "nombre": "Liseth Cadena", "foto": "Arroyo Liseth Cadena.jpg" },
-      { "nombre": "Nicol Salgado", "foto": "Arroyo Nicol Salgado.jpg" }
+      { "nombre": "Nicol Silgado", "foto": "Arroyo Nicol Salgado.jpg" }
     ],
     "betania": [
       { "nombre": "Antonella García", "foto": "Betania - Antonella García Niña carnaval.jpg" },
       { "nombre": "Briannelys Sambrano", "foto": "Betania - Briannelys Sambrano Niña carnaval.jpg" },
       { "nombre": "Daniela González", "foto": "Betania - Daniela González Tambor viviente.jpg" },
       { "nombre": "Heydi Mar Ohep", "foto": "Betania - Heydi Mar Ohep Niña carnaval.jpg" },
-      { "nombre": "Jenifer González", "foto": "Betania - Jenifer González Anciana.jpg" },
+      { "nombre": "Jennifer González", "foto": "Betania - Jenifer González Anciana.jpg" },
       { "nombre": "Maicol Luna", "foto": "Betania - Maicol Luna Tambor viviente.jpg" },
       { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
-      { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" }
+      { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" },
+      { "nombre": "Sara Victoria Alfonso", "foto": "" },
+      { "nombre": "Enyerber Alexander García", "foto": "" }
     ],
     "jerusalen": [
       { "nombre": "Ángel David Vanegas", "foto": "Jerusalen Angel David Vanegas.jpg" },
       { "nombre": "Daviana Salomé Robles", "foto": "Jerusalen Daviana Salome Robles.jpg" },
       { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
-      { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" }
+      { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
+      { "nombre": "Sara Michelle Miranda", "foto": "" },
+      { "nombre": "Estefania Barragán", "foto": "" },
+      { "nombre": "Jean Paul Hernández", "foto": "" },
+      { "nombre": "Helem Stacey Mape", "foto": "" }
     ],
     "padre": [
       { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
@@ -49,7 +54,20 @@
       { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
       { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
       { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
-      { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" }
+      { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
+      { "nombre": "María Alejandra Alvarado", "foto": "" },
+      { "nombre": "Yael Jiménez", "foto": "" },
+      { "nombre": "Yaniel Jiménez", "foto": "" },
+      { "nombre": "Danna Gómez", "foto": "" },
+      { "nombre": "Angélica Rivero", "foto": "" },
+      { "nombre": "Camilo Carvajal", "foto": "" },
+      { "nombre": "Julián Vento", "foto": "" },
+      { "nombre": "Sara Muñóz", "foto": "" },
+      { "nombre": "Carlos Freites", "foto": "" },
+      { "nombre": "Sheidy Peña", "foto": "" },
+      { "nombre": "Danna Delgadillo", "foto": "" },
+      { "nombre": "Shairy Torres", "foto": "" },
+      { "nombre": "Johan Amador", "foto": "" }
     ],
     "gmmmc": [
       { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
@@ -101,11 +119,10 @@
           { "nombre": "David López", "foto": "Arroyo David Lopez.jpg" },
           { "nombre": "Heleny Mosquera", "foto": "Arroyo Heleny Mosquera.jpg" },
           { "nombre": "Joel Marín", "foto": "Arroyo Joel Marin.jpg" },
-          { "nombre": "Joiner Mejía", "foto": "Arroyo Joiner Mejia.jpg" },
           { "nombre": "Kimberly Parra", "foto": "Arroyo Kimberly Parra.jpg" },
           { "nombre": "Leonardo Moreno", "foto": "Arroyo Leonardo Moreno.jpg" },
           { "nombre": "Liseth Cadena", "foto": "Arroyo Liseth Cadena.jpg" },
-          { "nombre": "Nicol Salgado", "foto": "Arroyo Nicol Salgado.jpg" }
+          { "nombre": "Nicol Silgado", "foto": "Arroyo Nicol Salgado.jpg" }
         ]
       }
     },
@@ -123,10 +140,12 @@
           { "nombre": "Briannelys Sambrano", "foto": "Betania - Briannelys Sambrano Niña carnaval.jpg" },
           { "nombre": "Daniela González", "foto": "Betania - Daniela González Tambor viviente.jpg" },
           { "nombre": "Heydi Mar Ohep", "foto": "Betania - Heydi Mar Ohep Niña carnaval.jpg" },
-          { "nombre": "Jenifer González", "foto": "Betania - Jenifer González Anciana.jpg" },
+          { "nombre": "Jennifer González", "foto": "Betania - Jenifer González Anciana.jpg" },
           { "nombre": "Maicol Luna", "foto": "Betania - Maicol Luna Tambor viviente.jpg" },
           { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
-          { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" }
+          { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" },
+          { "nombre": "Sara Victoria Alfonso", "foto": "" },
+          { "nombre": "Enyerber Alexander García", "foto": "" }
         ]
       }
     },
@@ -143,7 +162,11 @@
           { "nombre": "Ángel David Vanegas", "foto": "Jerusalen Angel David Vanegas.jpg" },
           { "nombre": "Daviana Salomé Robles", "foto": "Jerusalen Daviana Salome Robles.jpg" },
           { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
-          { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" }
+          { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
+          { "nombre": "Sara Michelle Miranda", "foto": "" },
+          { "nombre": "Estefania Barragán", "foto": "" },
+          { "nombre": "Jean Paul Hernández", "foto": "" },
+          { "nombre": "Helem Stacey Mape", "foto": "" }
         ]
         }
     },
@@ -161,7 +184,8 @@
           { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
           { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
-          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" }
+          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
+          { "nombre": "María Alejandra Alvarado", "foto": "" }
         ]
       }
     },
@@ -222,7 +246,19 @@
           { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
           { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
-          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" }
+          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
+          { "nombre": "Yael Jiménez", "foto": "" },
+          { "nombre": "Yaniel Jiménez", "foto": "" },
+          { "nombre": "Danna Gómez", "foto": "" },
+          { "nombre": "Angélica Rivero", "foto": "" },
+          { "nombre": "Camilo Carvajal", "foto": "" },
+          { "nombre": "Julián Vento", "foto": "" },
+          { "nombre": "Sara Muñóz", "foto": "" },
+          { "nombre": "Carlos Freites", "foto": "" },
+          { "nombre": "Sheidy Peña", "foto": "" },
+          { "nombre": "Danna Delgadillo", "foto": "" },
+          { "nombre": "Shairy Torres", "foto": "" },
+          { "nombre": "Johan Amador", "foto": "" }
         ]
       }
     }
@@ -320,6 +356,7 @@
     ]
   }
 }
+
 
 
 
