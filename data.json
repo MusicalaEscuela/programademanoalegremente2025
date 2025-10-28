@@ -78,7 +78,7 @@
       { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
       { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
       { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
-      { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler" }
+      { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
     ],
     "lucero": [
       { "nombre": "Alison Alape", "foto": "" },
@@ -221,7 +221,7 @@
           { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
           { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
-          { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler" },
+          { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
           { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
           { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
           { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando" },
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
