@@ -40,14 +40,16 @@
     "padre": [
       { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
       { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
-      { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
+      { "nombre": "Emar Cantillo", "foto": "Padre Emmar Oliveros.jpg" },
       { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
-      { "nombre": "Josselin", "foto": "Padre Josselin.jpg" },
+      { "nombre": "Yosselin", "foto": "Padre Josselin.jpg" },
       { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
       { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
       { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
-      { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
-      { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" }
+      { "nombre": "Paola Martínez", "foto": "Padre Paola Anaya.jpg" },
+      { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" },
+      { "nombre": "Alisson Niño", "foto": "" },
+      { "nombre": "Samir Ramírez", "foto": "" }
     ],
     "santo": [
       { "nombre": "Alejandra Mercado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
@@ -79,7 +81,21 @@
       { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
       { "nombre": "Ana Sofía Campos", "foto": "" },
       { "nombre": "Zoe Soler", "foto": "" }
-    ]
+    ],
+    "lucero": [
+      { "nombre": "Alison Alape", "foto": "" },
+      { "nombre": "Sebastián Vargas", "foto": "" },
+      { "nombre": Felipe Vargas", "foto": "" },
+      { "nombre": "Leidy Ovando", "foto": "" },
+      { "nombre": "Hanna García", "foto": "" },
+      { "nombre": "Juan Diego Salazar", "foto": "" },
+      { "nombre": "Karol Aponte", "foto": "" },
+      { "nombre": "Natán Tavares", "foto": "" },
+      { "nombre": "Dylan López, "foto": "" },
+      { "nombre": "Luifer Fernández", "foto": "" },
+      { "nombre": "Damián Pineda", "foto": "" },
+      { "nombre": "Diana Escorcia", "foto": "" }
+    ],
   },
 
   "escenas": [
@@ -101,7 +117,9 @@
           { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
           { "nombre": "Ana Sofía Campos", "foto": "" },
-          { "nombre": "Zoe Soler", "foto": "" }
+          { "nombre": "Zoe Soler", "foto": "" },
+          { "nombre": "Alison Alape", "foto": "" },
+          { "nombre": "Sebastián Vargas", "foto": "" }
         ]
       }
     },
@@ -185,7 +203,13 @@
           { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
           { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
-          { "nombre": "María Alejandra Alvarado", "foto": "" }
+          { "nombre": "María Alejandra Alvarado", "foto": "" },
+          { "nombre": "Sebastián Vargas", "foto": "" },
+          { "nombre": Felipe Vargas", "foto": "" },
+          { "nombre": "Leidy Ovando", "foto": "" },
+          { "nombre": "Hanna García", "foto": "" },
+          { "nombre": "Juan Diego Salazar", "foto": "" },
+          { "nombre": "Karol Aponte", "foto": "" }
         ]
       }
     },
@@ -258,7 +282,12 @@
           { "nombre": "Sheidy Peña", "foto": "" },
           { "nombre": "Danna Delgadillo", "foto": "" },
           { "nombre": "Shairy Torres", "foto": "" },
-          { "nombre": "Johan Amador", "foto": "" }
+          { "nombre": "Johan Amador", "foto": "" },
+          { "nombre": "Natán Tavares", "foto": "" },
+          { "nombre": "Dylan López, "foto": "" },
+          { "nombre": "Luifer Fernández", "foto": "" },
+          { "nombre": "Damián Pineda", "foto": "" },
+          { "nombre": "Diana Escorcia", "foto": "" }
         ]
       }
     }
@@ -356,6 +385,7 @@
     ]
   }
 }
+
 
 
 
