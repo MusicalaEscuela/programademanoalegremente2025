@@ -32,7 +32,7 @@
       { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
       { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
       { "nombre": "Sara Michelle Miranda", "foto": "Jerusalén Sara Michelle Miranda.jpg" },
-      { "nombre": "Estefanía Barragán", "foto": "Jerusalén Estefanía Barragán.jpeg" },
+      { "nombre": "Estefanía Barragán", "foto": "Jerusalén Estefania Barragán.jpeg" },
       { "nombre": "Jean Paul Hernández", "foto": "Jerusalén Jean Paul Hernandez.jpg" },
       { "nombre": "Helem Stacey Mape", "foto": "Jerusalén Helem Mape.jpg" }
     ],
@@ -179,7 +179,7 @@
           { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
           { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
           { "nombre": "Sara Michelle Miranda", "foto": "Jerusalén Sara Michelle Miranda.jpg" },
-          { "nombre": "Estefanía Barragán", "foto": "Jerusalén Estefanía Barragán.jpeg" },
+          { "nombre": "Estefanía Barragán", "foto": "Jerusalén Estefania Barragán.jpeg" },
           { "nombre": "Jean Paul Hernández", "foto": "Jerusalén Jean Paul Hernandez.jpg" },
           { "nombre": "Helem Stacey Mape", "foto": "Jerusalén Helem Mape.jpg" }
         ]
@@ -388,6 +388,7 @@
     ]
   }
 }
+
 
 
 
