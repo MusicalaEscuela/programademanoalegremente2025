@@ -41,7 +41,7 @@
       { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
       { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
       { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
-      { "nombre": "Yosselin Salazar Urrego", "foto": "Padre Josselin.jpg" },
+      { "nombre": "Yosselin", "foto": "Padre Josselin.jpg" },
       { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
       { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
       { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
@@ -103,7 +103,23 @@
       "imagen": "escena1.jpg",
       "musica": "Mi cuerpo es solo mío",
       "centros": ["Lucero", "GMMMC"],
-      "galeria": { "gmmmc": [], "lucero": [] }
+      "galeria": {
+        "gmmmc": [
+          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
+          { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
+          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
+          { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas María Paz Rivera.jpeg" },
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
+          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
+          { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
+          { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
+        ],
+        "lucero": [
+          { "nombre": "Alison Alape", "foto": "" },
+          { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" }
+        ]
+      }
     },
     {
       "id": "escena-2",
@@ -111,8 +127,19 @@
       "sentido": "El viento trae ritmo y risas. Entre telas y flores, Sofía vuelve a moverse con libertad y descubre la alegría de dejarse llevar.",
       "imagen": "escena2.jpg",
       "musica": "Mango Tango",
-      "centros": ["Arroyo", "Jerusalén", "Lucero"],
-      "galeria": { "arroyo": [] }
+      "centros": ["Arroyo"],
+      "galeria": {
+        "arroyo": [
+          { "nombre": "Ariany Mosquera", "foto": "Arroyo Ariany Mosquera.jpg" },
+          { "nombre": "David López", "foto": "Arroyo David Lopez.jpg" },
+          { "nombre": "Heleny Mosquera", "foto": "Arroyo Heleny Mosquera.jpg" },
+          { "nombre": "Joel Marín", "foto": "Arroyo Joel Marin.jpg" },
+          { "nombre": "Kimberly Parra", "foto": "Arroyo Kimberly Parra.jpg" },
+          { "nombre": "Leonardo Moreno", "foto": "Arroyo Leonardo Moreno.jpg" },
+          { "nombre": "Liseth Cadena", "foto": "Arroyo Liseth Cadena.jpg" },
+          { "nombre": "Nicol Salgado", "foto": "Arroyo Nicol Salgado.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-3",
@@ -120,8 +147,21 @@
       "sentido": "Los tambores despiertan la memoria del pueblo. Sofía entiende que cuando los corazones laten juntos, la música vuelve a nacer.",
       "imagen": "escena3.jpg",
       "musica": "Siyahamba / Pueblo Tambor",
-      "centros": ["Arroyo", "Betania"],
-      "galeria": { "betania": [] }
+      "centros": ["Betania"],
+      "galeria": {
+        "betania": [
+          { "nombre": "Antonella García", "foto": "Betania - Antonella García Niña carnaval.jpg" },
+          { "nombre": "Briannelys Sambrano", "foto": "Betania - Briannelys Sambrano Niña carnaval.jpg" },
+          { "nombre": "Daniela González", "foto": "Betania - Daniela González Tambor viviente.jpg" },
+          { "nombre": "Heydi Mar Ohep", "foto": "Betania - Heydi Mar Ohep Niña carnaval.jpg" },
+          { "nombre": "Jennifer González", "foto": "Betania - Jenifer González Anciana.jpg" },
+          { "nombre": "Maicol Luna", "foto": "Betania - Maicol Luna Tambor viviente.jpg" },
+          { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
+          { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" },
+          { "nombre": "Sara Victoria Alfonso", "foto": "Betania Sara Victoria Alfonso.jpg" },
+          { "nombre": "Enyerber Alexander García", "foto": "Betania Enyerber Alexander Garcia.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-4",
@@ -129,8 +169,19 @@
       "sentido": "Entre grafitis y versos, Sofía descubre que la tristeza también se canta. Al decir su historia con arte, vuelve a respirar con dignidad.",
       "imagen": "escena4.jpg",
       "musica": "Happy Blues",
-      "centros": ["Jerusalén", "Lucero", "Arroyo"],
-      "galeria": { "jerusalen": [] }
+      "centros": ["Jerusalén"],
+      "galeria": {
+        "jerusalen": [
+          { "nombre": "Ángel David Vanegas", "foto": "Jerusalen Angel David Vanegas.jpg" },
+          { "nombre": "Daviana Salomé Robles", "foto": "Jerusalen Daviana Salome Robles.jpg" },
+          { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
+          { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
+          { "nombre": "Sara Michelle Miranda", "foto": "Jerusalén Sara Michelle Miranda.jpg" },
+          { "nombre": "Estefanía Barragán", "foto": "Jerusalén Estefania Barragán.jpeg" },
+          { "nombre": "Jean Paul Hernández", "foto": "Jerusalén Jean Paul Hernandez.jpg" },
+          { "nombre": "Helem Stacey Mape", "foto": "Jerusalen Helem Mape.jpg" }
+        ]
+      }
     },
     {
       "id": "escena-5",
@@ -138,8 +189,24 @@
       "sentido": "En la altura, Sofía se reencuentra con sus raíces. Cada paso la une con su familia, su tierra y su memoria: también es raíz.",
       "imagen": "escena5.jpg",
       "musica": "Vivo en un país",
-      "centros": ["Jerusalén", "Santo Domingo"],
-      "galeria": { "santo": [] }
+      "centros": ["Lucero", "Santo Domingo"],
+      "galeria": {
+        "santo": [
+          { "nombre": "María Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+          { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
+          { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
+          { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
+          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" }
+        ],
+        "lucero": [
+          { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
+          { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
+          { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando.jpeg" },
+          { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
+          { "nombre": "Juan Diego Salazar", "foto": "Lucero Juan Diego Salazar.jpeg" },
+          { "nombre": "Karol Aponte", "foto": "" }
+        ]
+      }
     },
     {
       "id": "escena-6",
@@ -147,8 +214,28 @@
       "sentido": "Sofía entra a un lugar donde lo imposible existe. Imaginar no es huir: es libertad, creación y resistencia.",
       "imagen": "escena6.jpg",
       "musica": "Tierra Imaginaria",
-      "centros": ["Jerusalén", "Arroyo", "Colegio"],
-      "galeria": { "gmmmc": [] }
+      "centros": ["Lucero", "GMMMC"],
+      "galeria": {
+        "gmmmc": [
+          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
+          { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
+          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
+          { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
+          { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas María Paz Rivera.jpeg" },
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
+          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
+          { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
+          { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
+        ],
+        "lucero": [
+          { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
+          { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
+          { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando.jpeg" },
+          { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
+          { "nombre": "Juan Diego Salazar", "foto": "Lucero Juan Diego Salazar.jpeg" },
+          { "nombre": "Karol Aponte", "foto": "" }
+        ]
+      }
     },
     {
       "id": "escena-7",
@@ -157,7 +244,22 @@
       "imagen": "escena7.jpg",
       "musica": "Merengue del primer dedo",
       "centros": ["Padre Misericordioso B"],
-      "galeria": { "padre": [] }
+      "galeria": {
+        "padre": [
+          { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
+          { "nombre": "Emily Cárdenas", "foto": "Padre Emily Cárdenas.jpg" },
+          { "nombre": "Emmar Oliveros", "foto": "Padre Emmar Oliveros.jpg" },
+          { "nombre": "Evelyn Parada", "foto": "Padre Evelyn Parada.jpg" },
+          { "nombre": "Yosselin", "foto": "Padre Josselin.jpg" },
+          { "nombre": "Kevin Parada", "foto": "Padre Kevin Parada.jpg" },
+          { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
+          { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
+          { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
+          { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" },
+          { "nombre": "Alisson Niño", "foto": "" },
+          { "nombre": "Samir Ramírez", "foto": "" }
+        ]
+      }
     },
     {
       "id": "escena-8",
@@ -165,30 +267,135 @@
       "sentido": "Apoteosis: después del viaje, Sofía vuelve a casa transformada. Su voz tiene ritmo, su historia color y su alma canta junto a todo un país.",
       "imagen": "escena8.jpg",
       "musica": "Colombia Tierra Querida",
-      "centros": ["Santo Domingo", "Lucero", "Padre Misericordioso B"],
-      "galeria": { "santo": [] }
+      "centros": ["Santo Domingo", "Lucero"],
+      "galeria": {
+        "santo": [
+          { "nombre": "María Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+          { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
+          { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
+          { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
+          { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
+          { "nombre": "Yael Jiménez", "foto": "Santo Domingo Yael Jiménez.jpg" },
+          { "nombre": "Yaniel Jiménez", "foto": "Santo Domingo Yaniel Jiménez.jpg" },
+          { "nombre": "Danna Gómez", "foto": "Santo Domingo Danna Gómez.jpg" },
+          { "nombre": "Angélica Rivero", "foto": "Santo Domingo Angélica Rivero.jpg" },
+          { "nombre": "Camilo Carvajal", "foto": "Santo Domingo Camilo Carvajal.jpg" },
+          { "nombre": "Julián Vento", "foto": "Santo Domingo Julián Vento.jpg" },
+          { "nombre": "Sara Muñoz", "foto": "Santo Domingo Sara Muñoz.jpg" },
+          { "nombre": "Carlos Freites", "foto": "Santo Domingo Carlos Freites.jpg" },
+          { "nombre": "Sheidy Peña", "foto": "Santo Domingo Sheidy Peña.jpg" },
+          { "nombre": "Danna Delgadillo", "foto": "Santo Domingo Danna Delgadillo.jpg" },
+          { "nombre": "Shairy Torres", "foto": "Santo Domingo Shairy Torres.jpg" },
+          { "nombre": "Johan Amador", "foto": "Santo Domingo Johan Amador.jpg" }
+        ],
+        "lucero": [
+          { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
+          { "nombre": "Dylan Betín", "foto": "Lucero Dylan Betín.jpeg" },
+          { "nombre": "Luifer Fernández", "foto": "" },
+          { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
+          { "nombre": "Diana Escorcia", "foto": "Lucero Diana Escorcia.jpeg" }
+        ]
+      }
     }
   ],
   "creditos": {
-    "Dirección artística": ["Catalina Medina Leal", "Alexander Caballero Moreno", "Jean W. Casilimas"],
-    "Coordinación general": ["María Mercedes Copello Vergara", "Diana Patricia Molina Cobaleda", "Mario Esteban Ujueta Marín", "Catalina Medina Leal", "Alexander Caballero Moreno", "Jean W. Casilimas"],
-    "Producción": ["Alexander Caballero Moreno", "Catalina Medina Leal", "Jean W. Casilimas"],
-    "Stage Manager": ["Carlos Valencia", "Felipe Monzón Urrego"],
-    "Sonido e iluminación": ["Leidy Tatiana Parra Calderón", "Edwin Estepa Durán"],
-    "Formadores · Teatro": ["Eryck Santiago Martínez", "Leydy Jhoana Díaz", "Angie Natalia Nitola"],
-    "Formadores · Danza": ["Angie Natalia Nitola", "María Camila Piraján", "Erika Tatiana López"],
-    "Formadores · Artes plásticas": ["Santiago Gutiérrez Fonseca", "Angie Natalia Nitola", "Leydy Jhoana Díaz"],
-    "Escenografía y utilería": ["Santiago Gutiérrez Fonseca", "Angie Natalia Nitola", "Leydy Jhoana Díaz", "NNA de los Centros Redes de la FSA"],
-    "Director Orquestal y Coral": ["Jean W. Casilimas"],
-    "Maestros de Cátedra · Violín/Viola": ["Steven Barbosa"],
-    "Maestros de Cátedra · Violonchelo/Contrabajo": ["Juan Diego González"],
-    "Maestros de Cátedra · Clarinete": ["Boderek Triviño"],
-    "Maestros de Cátedra · Flauta": ["Adriana Hernández"],
-    "Maestros de Cátedra · Guitarra/Percusión": ["Daniel Martínez", "Julian Andrés Cubides"],
-    "Talleristas · Asistente Coral": ["María Camila Molina Valero"],
-    "Talleristas · Violín": ["David Felipe Lindo Parada"],
-    "Talleristas · Viola": ["Marcelo Cárdenas Vásquez"],
-    "Talleristas · Violoncello": ["Camilo Ahumada"],
-    "Agradecimientos": ["Familias", "Fundación San Antonio", "Musicala", "Formadoras y Formadores", "Niñas, niños y adolescentes participantes", "Equipo de voluntariado", "Aliados y donantes", "Comunidades y parroquias", "Equipo técnico y de sala"]
+    "Dirección artística": [
+      "Catalina Medina Leal",
+      "Alexander Caballero Moreno",
+      "Jean W. Casilimas"
+    ],
+    "Coordinación general": [
+      "María Mercedes Copello Vergara",
+      "Diana Patricia Molina Cobaleda",
+      "Mario Esteban Ujueta Marín",
+      "Catalina Medina Leal",
+      "Alexander Caballero Moreno",
+      "Jean W. Casilimas"
+    ],
+    "Producción": [
+      "Alexander Caballero Moreno",
+      "Catalina Medina Leal",
+      "Jean W. Casilimas"
+    ],
+    "Stage Manager": [
+      "Carlos Valencia",
+      "Felipe Monzón Urrego"
+    ],
+    "Sonido e iluminación": [
+      "Leidy Tatiana Parra Calderón",
+      "Edwin Estepa Durán"
+    ],
+    "Formadores · Teatro": [
+      "Eryck Santiago Martínez",
+      "Leydy Jhoana Díaz",
+      "Angie Natalia Nitola"
+    ],
+    "Formadores · Danza": [
+      "Angie Natalia Nitola",
+      "María Camila Piraján",
+      "Erika Tatiana López"
+    ],
+    "Formadores · Artes plásticas": [
+      "Santiago Gutiérrez Fonseca",
+      "Angie Natalia Nitola",
+      "Leydy Jhoana Díaz"
+    ],
+    "Escenografía y utilería": [
+      "Santiago Gutiérrez Fonseca",
+      "Angie Natalia Nitola",
+      "Leydy Jhoana Díaz",
+      "NNA de los Centros Redes de la FSA"
+    ],
+    "Director Orquestal y Coral": [
+      "Jean W. Casilimas"
+    ],
+    "Maestros de Cátedra · Violín/Viola": [
+      "Steven Barbosa"
+    ],
+    "Maestros de Cátedra · Violonchelo/Contrabajo": [
+      "Juan Diego González"
+    ],
+    "Maestros de Cátedra · Clarinete": [
+      "Boderek Triviño"
+    ],
+    "Maestros de Cátedra · Flauta": [
+      "Adriana Hernández"
+    ],
+    "Maestros de Cátedra · Guitarra/Percusión": [
+      "Daniel Martínez",
+      "Julian Andrés Cubides"
+    ],
+    "Talleristas · Asistente Coral": [
+      "María Camila Molina Valero"
+    ],
+    "Talleristas · Violín": [
+      "David Felipe Lindo Parada"
+    ],
+    "Talleristas · Viola": [
+      "Marcelo Cárdenas Vásquez"
+    ],
+    "Talleristas · Violoncello": [
+      "Camilo Ahumada"
+    ],
+     "Líderes Casas Kiwa": [
+      "Angie Forero",
+      "Cintya Pinilla",
+      "Flor Torres",
+      "Liliana Alvis",
+      "Nataly Escobar",
+      "Pamela Ayerbe",
+      "Lizeth Rodríguez"
+    ],
+    "Agradecimientos": [
+      "Familias",
+      "Fundación San Antonio",
+      "Musicala",
+      "Formadoras y Formadores",
+      "Niñas, niños y adolescentes participantes",
+      "Equipo de voluntariado",
+      "Aliados y donantes",
+      "Comunidades y parroquias",
+      "Equipo técnico y de sala"
+    ]
   }
 }
