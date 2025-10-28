@@ -57,8 +57,10 @@
       { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
       { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
       { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
-      { "nombre": "Sara Michelle", "foto": "GMMMC Danzas Sara Michelle.jpg" },
-      { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
+      { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+      { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
+      { "nombre": "Ana Sofía Campos", "foto": "" },
+      { "nombre": "Zoe Soler", "foto": "" }
     ]
   },
 
@@ -78,8 +80,10 @@
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
           { "nombre": "María Camila Castrillon", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
-          { "nombre": "Sara Michelle", "foto": "GMMMC Danzas Sara Michelle.jpg" },
-          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" }
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+          { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
+          { "nombre": "Ana Sofía Campos", "foto": "" },
+          { "nombre": "Zoe Soler", "foto": "" }
         ]
       }
     },
@@ -316,6 +320,7 @@
     ]
   }
 }
+
 
 
 
