@@ -92,7 +92,7 @@
       { "nombre": "Dylan Betín", "foto": "Lucero Dylan Betín.jpeg" },
       { "nombre": "Luifer Fernández", "foto": "" },
       { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
-      { "nombre": "Diana Escorcia", "foto": "" }
+      { "nombre": "Diana Escorcia", "foto": "Lucero Diana Escorcia.jpeg" }
     ]
   },
   "escenas": [
@@ -285,7 +285,7 @@
           { "nombre": "Dylan Betín", "foto": "Lucero Dylan Betín.jpeg" },
           { "nombre": "Luifer Fernández", "foto": "" },
           { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
-          { "nombre": "Diana Escorcia", "foto": "" }
+          { "nombre": "Diana Escorcia", "foto": "Lucero Diana Escorcia.jpeg" }
         ]
       }
     }
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
