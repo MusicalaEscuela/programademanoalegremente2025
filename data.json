@@ -160,8 +160,8 @@
           { "nombre": "Maicol Luna", "foto": "Betania - Maicol Luna Tambor viviente.jpg" },
           { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
           { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" },
-          { "nombre": "Sara Victoria Alfonso", "foto": ""Betania Sara Victoria Alfonso.jpg"" },
-          { "nombre": "Enyerber Alexander García", "foto": "" }
+          { "nombre": "Sara Victoria Alfonso", "foto": "Betania Sara Victoria Alfonso.jpg" },
+          { "nombre": "Enyerber Alexander García", "foto": "Betania Enyerber Alexander García.jpg" }
         ]
       }
     },
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
