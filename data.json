@@ -73,7 +73,7 @@
     "gmmmc": [
       { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
       { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
-      { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
+      { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
       { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
       { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
       { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
@@ -109,7 +109,7 @@
         "gmmmc": [
           { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
-          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
+          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
           { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
@@ -223,7 +223,7 @@
         "gmmmc": [
           { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
-          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
+          { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas Maria Paz Rivera.jpg" },
           { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
@@ -382,4 +382,5 @@
     ]
   }
 }
+
 
