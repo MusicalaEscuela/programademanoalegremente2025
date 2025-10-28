@@ -75,7 +75,7 @@
       { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
       { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
       { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas María Paz Rivera.jpeg" },
-      { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle.jpg" },
+      { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
       { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
       { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
       { "nombre": "Zoe Soler", "foto": "" }
@@ -110,7 +110,7 @@
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas María Paz Rivera.jpeg" },
-          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle Medina.jpeg" },
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
           { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
           { "nombre": "Zoe Soler", "foto": "" },
@@ -218,7 +218,7 @@
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpeg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
           { "nombre": "Maria Paz Rivera", "foto": "GMMMC Danzas María Paz Rivera.jpeg" },
-          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Danzas Sara Michelle Medina.jpeg" },
+          { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
           { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
           { "nombre": "Sebastián Vargas", "foto": "" },
@@ -381,3 +381,4 @@
     ]
   }
 }
+
