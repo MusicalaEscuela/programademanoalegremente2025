@@ -81,7 +81,7 @@
       { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
     ],
     "lucero": [
-      { "nombre": "Alison Alape", "foto": "Lucero Alison Alape.jpg" },
+      { "nombre": "Alison Alape", "foto": "Lucero Alison Alape.jpeg" },
       { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" },
       { "nombre": "Felipe Vargas", "foto": "Lucero Felipe Vargas.jpeg" },
       { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando.jpeg" },
@@ -90,7 +90,7 @@
       { "nombre": "Karol Aponte", "foto": "Lucero Karol Aponte.jpeg" },
       { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
       { "nombre": "Dylan Betín", "foto": "Lucero Dylan Betín.jpeg" },
-      { "nombre": "Luifer Fernández", "foto": "" },
+      { "nombre": "Luifer Fernández", "foto": "Lucero Luifer Fernández.jpeg" },
       { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
       { "nombre": "Diana Escorcia", "foto": "Lucero Diana Escorcia.jpeg" }
     ]
@@ -116,7 +116,7 @@
           { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" }
         ],
         "lucero": [
-          { "nombre": "Alison Alape", "foto": "Lucero Alison Alape.jpg" },
+          { "nombre": "Alison Alape", "foto": "Lucero Alison Alape.jpeg" },
           { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" }
         ]
       }
@@ -291,7 +291,7 @@
         "lucero": [
           { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
           { "nombre": "Dylan Betín", "foto": "Lucero Dylan Betín.jpeg" },
-          { "nombre": "Luifer Fernández", "foto": "" },
+          { "nombre": "Luifer Fernández", "foto": "Lucero Luifer Fernández.jpeg" },
           { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
           { "nombre": "Karol Aponte", "foto": "Lucero Karol Aponte.jpeg" },
           { "nombre": "Diana Escorcia", "foto": "Lucero Diana Escorcia.jpeg" }
@@ -400,6 +400,7 @@
     ]
   }
 }
+
 
 
 
