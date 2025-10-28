@@ -254,7 +254,9 @@
           { "nombre": "Mariana Guerrero", "foto": "Padre Mariana Guerrero.jpg" },
           { "nombre": "Michelle Páez", "foto": "Padre Michelle Páez.jpg" },
           { "nombre": "Paola Anaya", "foto": "Padre Paola Anaya.jpg" },
-          { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" }
+          { "nombre": "Xavi Cárdenas", "foto": "Padre Xavi Cárdenas.jpg" },
+          { "nombre": "Alisson Niño", "foto": "" },
+          { "nombre": "Samir Ramírez", "foto": "" }
         ]
       }
     },
@@ -386,6 +388,7 @@
     ]
   }
 }
+
 
 
 
