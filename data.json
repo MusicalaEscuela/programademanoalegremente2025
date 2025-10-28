@@ -87,7 +87,7 @@
       { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando.jpeg" },
       { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
       { "nombre": "Juan Diego Salazar", "foto": "Lucero Juan Diego Salazar.jpeg" },
-      { "nombre": "Karol Aponte", "foto": "" },
+      { "nombre": "Karol Aponte", "foto": "Lucero Karol Aponte.jpeg" },
       { "nombre": "Nathan Tabares", "foto": "Lucero Nathan Tabares.jpeg" },
       { "nombre": "Dylan Betín", "foto": "Lucero Dylan Betín.jpeg" },
       { "nombre": "Luifer Fernández", "foto": "" },
@@ -204,7 +204,7 @@
           { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando.jpeg" },
           { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
           { "nombre": "Juan Diego Salazar", "foto": "Lucero Juan Diego Salazar.jpeg" },
-          { "nombre": "Karol Aponte", "foto": "" }
+          { "nombre": "Karol Aponte", "foto": "Lucero Karol Aponte.jpeg" }
         ]
       }
     },
@@ -233,7 +233,7 @@
           { "nombre": "Leidy Ovando", "foto": "Lucero Leidy Ovando.jpeg" },
           { "nombre": "Hanna García", "foto": "Lucero Hanna García.jpeg" },
           { "nombre": "Juan Diego Salazar", "foto": "Lucero Juan Diego Salazar.jpeg" },
-          { "nombre": "Karol Aponte", "foto": "" }
+          { "nombre": "Karol Aponte", "foto": "Lucero Karol Aponte.jpeg" }
         ]
       }
     },
@@ -293,6 +293,7 @@
           { "nombre": "Dylan Betín", "foto": "Lucero Dylan Betín.jpeg" },
           { "nombre": "Luifer Fernández", "foto": "" },
           { "nombre": "Damián Pineda", "foto": "Lucero Damian Pineda.jpeg" },
+          { "nombre": "Karol Aponte", "foto": "Lucero Karol Aponte.jpeg" },
           { "nombre": "Diana Escorcia", "foto": "Lucero Diana Escorcia.jpeg" }
         ]
       }
@@ -399,5 +400,6 @@
     ]
   }
 }
+
 
 
