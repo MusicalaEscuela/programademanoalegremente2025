@@ -24,7 +24,7 @@
       { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
       { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" },
       { "nombre": "Sara Victoria Alfonso", "foto": "Betania Sara Victoria Alfonso.jpg" },
-      { "nombre": "Enyerber Alexander García", "foto": "Betania Enyerber Alexander García.jpg" }
+      { "nombre": "Enyerber Alexander García", "foto": "Betania Enyerber Alexander Garcia.jpg" }
     ],
     "jerusalen": [
       { "nombre": "Ángel David Vanegas", "foto": "Jerusalen Angel David Vanegas.jpg" },
@@ -161,7 +161,7 @@
           { "nombre": "Rousse Castañeda", "foto": "Betania - Rousse Castañeda Sofía.jpg" },
           { "nombre": "Sara Morales", "foto": "Betania - Sara Morales Niña carnaval.jpg" },
           { "nombre": "Sara Victoria Alfonso", "foto": "Betania Sara Victoria Alfonso.jpg" },
-          { "nombre": "Enyerber Alexander García", "foto": "Betania Enyerber Alexander García.jpg" }
+          { "nombre": "Enyerber Alexander García", "foto": "Betania Enyerber Alexander Garcia.jpg" }
         ]
       }
     },
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
