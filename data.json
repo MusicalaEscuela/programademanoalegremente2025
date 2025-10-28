@@ -34,7 +34,7 @@
       { "nombre": "Sara Michelle Miranda", "foto": "Jerusalén Sara Michelle Miranda.jpg" },
       { "nombre": "Estefanía Barragán", "foto": "Jerusalén Estefania Barragán.jpeg" },
       { "nombre": "Jean Paul Hernández", "foto": "Jerusalén Jean Paul Hernandez.jpg" },
-      { "nombre": "Helem Stacey Mape", "foto": "Jerusalén Helem Mape.jpg" }
+      { "nombre": "Helem Stacey Mape", "foto": "Jerusalen Helem Mape.jpg" }
     ],
     "padre": [
       { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
@@ -181,7 +181,7 @@
           { "nombre": "Sara Michelle Miranda", "foto": "Jerusalén Sara Michelle Miranda.jpg" },
           { "nombre": "Estefanía Barragán", "foto": "Jerusalén Estefania Barragán.jpeg" },
           { "nombre": "Jean Paul Hernández", "foto": "Jerusalén Jean Paul Hernandez.jpg" },
-          { "nombre": "Helem Stacey Mape", "foto": "Jerusalén Helem Mape.jpg" }
+          { "nombre": "Helem Stacey Mape", "foto": "Jerusalen Helem Mape.jpg" }
         ]
       }
     },
@@ -388,6 +388,7 @@
     ]
   }
 }
+
 
 
 
