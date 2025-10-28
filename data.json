@@ -113,7 +113,7 @@
           { "nombre": "Sara Michelle Medina", "foto": "GMMMC Sara Michelle Medina.jpeg" },
           { "nombre": "Valentina Hurtado", "foto": "GMMMC Danzas Valentina Hurtado.jpg" },
           { "nombre": "Ana Sofía Campos", "foto": "GMMMC Ana Sofía Campos.jpeg" },
-          { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler" },
+          { "nombre": "Zoe Soler", "foto": "GMMMC Danzas Zoe Soler.jpeg" },
           { "nombre": "Alison Alape", "foto": "" },
           { "nombre": "Sebastián Vargas", "foto": "Lucero Sebastián Vargas.jpeg" }
         ]
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
