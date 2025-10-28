@@ -71,7 +71,7 @@
       { "nombre": "Johan Amador", "foto": "" }
     ],
     "gmmmc": [
-      { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
+      { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
       { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
       { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
       { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
@@ -107,7 +107,7 @@
       "centros": ["Lucero", "GMMMC"],
       "galeria": {
         "gmmmc": [
-          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
+          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
@@ -221,7 +221,7 @@
       "centros": ["Lucero", "GMMMC"],
       "galeria": {
         "gmmmc": [
-          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpg" },
+          { "nombre": "Emma Camelo", "foto": "GMMMC Danzas Emma Camelo.jpeg" },
           { "nombre": "Gabriela Suarez", "foto": "GMMMC Danzas Gabriela Suarez.jpg" },
           { "nombre": "María Alejandra Serrano", "foto": "GMMMC Danzas María Alejandra Serrano.jpg" },
           { "nombre": "María Camila Castrillón", "foto": "GMMMC Danzas Maria Camila Castrillon.jpg" },
@@ -382,3 +382,4 @@
     ]
   }
 }
+
