@@ -31,10 +31,10 @@
       { "nombre": "Daviana Salomé Robles", "foto": "Jerusalen Daviana Salome Robles.jpg" },
       { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
       { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
-      { "nombre": "Sara Michelle Miranda", "foto": "" },
+      { "nombre": "Sara Michelle Miranda", "foto": "Sara Michelle Miranda.jpg" },
       { "nombre": "Estefanía Barragán", "foto": "" },
-      { "nombre": "Jean Paul Hernández", "foto": "" },
-      { "nombre": "Helem Stacey Mape", "foto": "" }
+      { "nombre": "Jean Paul Hernández", "foto": "Jerusalén Jean Paul Hernandez.jpg" },
+      { "nombre": "Helem Stacey Mape", "foto": "Helem Mape.jpg" }
     ],
     "padre": [
       { "nombre": "Breiner Mejía", "foto": "Padre Breiner Mejia.jpg" },
@@ -179,10 +179,10 @@
           { "nombre": "Daviana Salomé Robles", "foto": "Jerusalen Daviana Salome Robles.jpg" },
           { "nombre": "Laura Ciranicicua Cortés", "foto": "Jerusalen Laura Ciranicicua Cortes.jpg" },
           { "nombre": "Victoria Muñoz", "foto": "Jerusalen Victoria Muñoz.jpg" },
-          { "nombre": "Sara Michelle Miranda", "foto": "" },
+          { "nombre": "Sara Michelle Miranda", "foto": "Sara Michelle Miranda.jpg" },
           { "nombre": "Estefanía Barragán", "foto": "" },
-          { "nombre": "Jean Paul Hernández", "foto": "" },
-          { "nombre": "Helem Stacey Mape", "foto": "" }
+          { "nombre": "Jean Paul Hernández", "foto": "Jerusalén Jean Paul Hernandez.jpg" },
+          { "nombre": "Helem Stacey Mape", "foto": "Helem Mape.jpg" }
         ]
       }
     },
@@ -382,6 +382,7 @@
     ]
   }
 }
+
 
 
 
