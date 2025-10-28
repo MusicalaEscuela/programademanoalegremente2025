@@ -284,7 +284,7 @@
           { "nombre": "Shairy Torres", "foto": "" },
           { "nombre": "Johan Amador", "foto": "" },
           { "nombre": "Natán Tavares", "foto": "" },
-          { "nombre": "Dylan López, "foto": "" },
+          { "nombre": "Dylan López", "foto": "" },
           { "nombre": "Luifer Fernández", "foto": "" },
           { "nombre": "Damián Pineda", "foto": "" },
           { "nombre": "Diana Escorcia", "foto": "" }
@@ -385,6 +385,7 @@
     ]
   }
 }
+
 
 
 
