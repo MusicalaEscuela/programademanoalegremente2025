@@ -51,12 +51,11 @@
       { "nombre": "Samir Ramírez", "foto": "" }
     ],
     "santo": [
-      { "nombre": "Alejandra Mercado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+      { "nombre": "María Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
       { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
       { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
       { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
       { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
-      { "nombre": "María Alejandra Alvarado", "foto": "" },
       { "nombre": "Yael Jiménez", "foto": "" },
       { "nombre": "Yaniel Jiménez", "foto": "" },
       { "nombre": "Danna Gómez", "foto": "" },
@@ -196,12 +195,11 @@
       "centros": ["Lucero", "Santo Domingo"],
       "galeria": {
         "santo": [
-          { "nombre": "Alejandra Mercado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+          { "nombre": "María Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
           { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
           { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
           { "nombre": "Paola Madueño", "foto": "Santo Domingo Paola Madueño.jpg" },
-          { "nombre": "María Alejandra Alvarado", "foto": "" },
           { "nombre": "Sebastián Vargas", "foto": "" },
           { "nombre": "Felipe Vargas", "foto": "" },
           { "nombre": "Leidy Ovando", "foto": "" },
@@ -264,7 +262,7 @@
       "centros": ["Santo Domingo", "Lucero"],
       "galeria": {
         "santo": [
-          { "nombre": "Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
+          { "nombre": "María Alejandra Alvarado", "foto": "Santo Domingo Alejandra Mercado.jpg" },
           { "nombre": "Ashly Salamanca", "foto": "Santo Domingo Ashly Salamanca.jpg" },
           { "nombre": "Diana Páez", "foto": "Santo Domingo Diana Páez.jpg" },
           { "nombre": "Jorge Garcés", "foto": "Santo Domingo Jorge Garcés.jpg" },
@@ -382,6 +380,7 @@
     ]
   }
 }
+
 
 
 
